@@ -1,10 +1,14 @@
+import Navbar from '../components/Navbar'
 
 
-const Layout = ({ children }) => {
+const Layout: React.FC<{}>  = ({ children }) => {
   return (
-    <div>
+    <>
+    <Navbar />
+    <div className='min-h-screen'>
         {children}
     </div>
+    </>
   );
 };
 export default Layout;
