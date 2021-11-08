@@ -12,6 +12,11 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+.hero {
+    filter: brightness(50%);
+    background-size: cover;
+    
+  }
 
 @layer base {
   /* Write your own custom base styles here */

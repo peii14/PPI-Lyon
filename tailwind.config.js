@@ -14,6 +14,9 @@ module.exports = {
         title: '#595959',
         secondHover: '#b32a00',
       },
+      backgroundImage: theme => ({
+        'bghero': "url('/images/home/hero1.png')",
+      }),
       screens: {
         'samsung': '370px',
         // => @media (min-width: 640px) { ... }
