@@ -11,11 +11,9 @@ const Home: NextPage = () => {
         <title>PPI-Lyon</title>
         <meta name="keywords" content="Perhimpunan Pelajar Indonesia"></meta>
       </Head>
-      <div className="w-screen">
+      <div className="w-screen overflow-y-hidden">
         <Hero img={bg1} />
-       
-      </div>
-      <div className='text-black'>
+        <div className='text-black'>
         <h1>duar</h1>
         <h1>duar</h1>
         <h1>duar</h1>
@@ -23,6 +21,8 @@ const Home: NextPage = () => {
         <h1>duar</h1>
 
       </div>
+      </div>
+
       
       
     </>

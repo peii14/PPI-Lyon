@@ -4,8 +4,8 @@ import logo from "../images/logo.png";
 const Hero = (props: any): JSX.Element => {
   return (
     <section className="w-screen h-screen ">
-      <div className='absolute'>
-        <Image src={props.img} alt="" className="hero" />
+      <div className=' block'>
+        <Image src={props.img} alt="" className="hero" priority layout='fill' />
       </div>
       <div className="flex justify-center items-center h-screen">
         <Image src={logo} alt="" className="z-0" />
