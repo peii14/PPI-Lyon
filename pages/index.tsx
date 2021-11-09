@@ -11,9 +11,19 @@ const Home: NextPage = () => {
         <title>PPI-Lyon</title>
         <meta name="keywords" content="Perhimpunan Pelajar Indonesia"></meta>
       </Head>
-      <div className="flex w-screen">
+      <div className="w-screen">
         <Hero img={bg1} />
+       
       </div>
+      <div className='text-black'>
+        <h1>duar</h1>
+        <h1>duar</h1>
+        <h1>duar</h1>
+        <h1>duar</h1>
+        <h1>duar</h1>
+
+      </div>
+      
       
     </>
   );
