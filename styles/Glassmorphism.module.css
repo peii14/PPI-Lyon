@@ -1,0 +1,14 @@
+.Glass {
+  background: linear-gradient(
+    105.27deg,
+    rgba(255, 255, 255, 0.1) -0.57%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  padding: 3rem;
+  box-shadow: 0px 0px 16px -1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(100px);
+
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 45px;
+}
+
