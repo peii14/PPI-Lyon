@@ -1,76 +1,51 @@
-import * as React from "react";
-import { Options } from "react-lottie";
-import { Container, LottieWrapper } from "./Animation.styled";
-import * as loopAnimation from "../animations/loop.json";
-import * as doneAnimation from "../animations/complete.json";
+import React, { useEffect, useRef } from "react";
+import lottie from "lottie-web";
+import suitcase from "../animations/suitcase.json"
+import town from  "../animations/town.json"
+import coins from "../animations/coins.json"
+import school from "../animations/school.json"
+const Animation=(props)=> {
+  const container = useRef(null);
+  var animate;
+  if(props.status == 1)
+    animate = suitcase;
+  else if(props.status == 2 )
+    animate = town;
+  else if(props.status == 3)
+    animate = school;
+  else if(props.status == 4)
+    animate = coins;
 
-const animationLoopOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: loopAnimation,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
-  }
-};
+    
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: false,
+      animationData: animate,
+    });
 
-const animationCompleteOptions = {
-  loop: false,
-  autoplay: true,
-  animationData: doneAnimation,
-  rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice"
-  }
-};
-
-const useCallback = (callback: any, values: any) => {
-  const self = React.useRef({
-    values: values,
-    handler: (...args) => {
-      return callback(...args, self.current.values);
-    }
-  });
-  self.current.values = values;
-  return self.current.handler;
-};
-
-const Animation = () => {
-  const [animationOptions, setAnimationOptions] = React.useState<Options>(
-    animationLoopOptions
-  );
-  const [animationSwap, setAnimationSwap] = React.useState<boolean | null>(
-    false
-  );
-
-  const handleLoopComplete = useCallback(
-    (event, [animationSwap]) => {
-      if (animationSwap) {
-        setAnimationOptions(animationCompleteOptions);
-        setAnimationSwap(null);
-      }
-    },
-    [animationSwap]
-  );
+    return () => {
+      lottie.destroy();
+    };
+  }, []);
 
   return (
-    <Container
-      onClick={() => {
-        setAnimationSwap(true);
-      }}
-    >
-      <LottieWrapper
-        isClickToPauseDisabled
-        options={animationOptions}
-        height={100}
-        width={100}
-        eventListeners={[
-          {
-            eventName: "loopComplete",
-            callback: handleLoopComplete
-          }
-        ]}
+    <div>
+      <div
+        ref={container}
+        onMouseEnter={() => {
+          lottie.setDirection(1);
+          lottie.play();
+        }}
+        onMouseLeave={() => {
+          lottie.setDirection(-1);
+          lottie.play();
+        }}
       />
-    </Container>
+    </div>
   );
-};
+}
 
 export default Animation;

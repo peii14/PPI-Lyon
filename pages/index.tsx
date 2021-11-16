@@ -9,7 +9,6 @@ import s from "../styles/Home.module.css";
 import ProkerSwiper from "../components/ProkerSwiper";
 import Neuromorphism from "../components/Neuromorphism";
 import Animation from "../components/Animation";
-
 const Home: NextPage = () => {
   return (
     <>
@@ -79,15 +78,21 @@ const Home: NextPage = () => {
         <div className="py-10">
           <ProkerSwiper />
         </div>
-        <div className="grid grid-flow-col grid-cols-2 max-w-3xl mx-auto gap-20 self-center ">
+        <div className="grid  grid-cols-2 max-w-3xl mx-auto gap-20 self-center text-center  ">
           <Neuromorphism>
-            <div className='flex flex-col text-center gap-5'>
-            <Animation />
-            <h1>duar</h1>
-            </div>
+            <Animation status="1" />
+            <h3 className='font-medium text-primary'>Keberankatran</h3>
           </Neuromorphism>
           <Neuromorphism>
-            <h1>duar</h1>
+            <Animation status="2" />
+            <h3 className='font-medium text-primary'>Tiba di Lyon</h3>
+          </Neuromorphism>
+          <Neuromorphism>
+            <Animation status="3" />
+            <h3 className='font-medium text-primary'>Perancis jangka panjang</h3>
+          </Neuromorphism><Neuromorphism>
+            <Animation status="4" />
+            <h3 className='font-medium text-primary'>Contoh BUdgeting</h3>
           </Neuromorphism>
         </div>
       </section>
