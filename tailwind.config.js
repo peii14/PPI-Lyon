@@ -16,9 +16,9 @@ module.exports = {
       },
       colors: {
         // 500 for gradient, 600 for hover
-        primary: { DEFAULT: "#8000FF", 500: "#7E26A8", 600: "#4f009e" },
+        primary: { DEFAULT: "#282828" },
         //400 to 600 gradient
-        secondary: { DEFAULT: "#F6521E", 500: "#F44E61", 600: "#F7521E" },
+        sec: { DEFAULT: "#f0f0f0" },
         title: "#595959",
         secondHover: "#b32a00",
       },

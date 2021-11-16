@@ -5,7 +5,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="w-screen bg-black opacity-60 py-5 max-h-16 fixed z-10">
+    <nav className="w-screen bg-black opacity-60 py-5 max-h-16 fixed z-50">
       <ul className="flex flex-row text-white justify-between max-w-md mx-auto text-center">
         <li>
           <Link href="/">

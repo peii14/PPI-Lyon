@@ -9,6 +9,9 @@ import s from "../styles/Home.module.css";
 import ProkerSwiper from "../components/ProkerSwiper";
 import Neuromorphism from "../components/Neuromorphism";
 import Animation from "../components/Animation";
+import qt from "../images/double-quotes-l.png";
+import Footer from "../components/Footer";
+import Link from "next/link";
 const Home: NextPage = () => {
   return (
     <>
@@ -21,9 +24,9 @@ const Home: NextPage = () => {
       </div>
 
       <section className="p-20  max-w-6xl mx-auto ">
-      <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
-            <Image src={blur1} />
-          </div>
+        <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
+          <Image src={blur1} />
+        </div>
         <div className=" z-10 ">
           <Glassmorphism>
             <div className="flex flex-col gap-10 text-primary">
@@ -72,7 +75,6 @@ const Home: NextPage = () => {
               </div>
             </div>
           </Glassmorphism>
-          
         </div>
       </section>
       <section className=" text-primary z-0">
@@ -84,29 +86,48 @@ const Home: NextPage = () => {
       <section className="flex flex-col gap-10 p-20">
         <h1 className="text-center text-primary">Guideline</h1>
         <div className="grid  grid-cols-2 max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
-          <Neuromorphism>
-            <Animation status="1" />
-            <h3 className="font-medium text-primary">Keberankatran</h3>
-          </Neuromorphism>
-          <Neuromorphism>
-            <Animation status="2" />
-            <h3 className="font-medium text-primary">Tiba di Lyon</h3>
-          </Neuromorphism>
-          <Neuromorphism>
-            <Animation status="3" />
-            <h3 className="font-medium text-primary">
-              Perancis jangka panjang
-            </h3>
-          </Neuromorphism>
-          <Neuromorphism>
-            <Animation status="4" />
-            <h3 className="font-medium text-primary ">Contoh Budgeting</h3>
-          </Neuromorphism>
+          <Link href="/Keberangkatan">
+            <Neuromorphism>
+              <Animation status="1" />
+              <h3 className="font-medium text-primary">Keberankatran</h3>
+            </Neuromorphism>
+          </Link>
+          <Link href="/TibadiLyon">
+            <Neuromorphism>
+              <Animation status="2" />
+              <h3 className="font-medium text-primary">Tiba di Lyon</h3>
+            </Neuromorphism>
+          </Link>
+          <Link href="/PerancisJangkaPanjang">
+            <Neuromorphism>
+              <Animation status="3" />
+              <h3 className="font-medium text-primary">
+                Perancis jangka panjang
+              </h3>
+            </Neuromorphism>
+          </Link>
+          <Link href="/Budgeting">
+            <Neuromorphism>
+              <Animation status="4" />
+              <h3 className="font-medium text-primary ">Contoh Budgeting</h3>
+            </Neuromorphism>
+          </Link>
         </div>
         <div className="w-7/12 absolute -right-32 z-0 ">
           <Image src={blur1} alt="" />
         </div>
       </section>
+      <section className=" flex justify-center p-10">
+        <Glassmorphism>
+          <div className="flex flex-col gap-10 items-center justify-center">
+            <Image src={qt} />
+            <div className="flex flex-row gap-5 text-primary">
+              <h3 className="italic font-normal">Idham Habibie</h3>
+            </div>
+          </div>
+        </Glassmorphism>
+      </section>
+      <Footer />
     </>
   );
 };
