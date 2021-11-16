@@ -24,7 +24,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/ProkerSwiper.tsx"  ],
   "exclude": [
     "node_modules"
   ]

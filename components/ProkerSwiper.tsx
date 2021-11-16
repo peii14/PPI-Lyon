@@ -68,6 +68,7 @@ const ProkerSwiper = () => {
 
         .swiper-slide {
           text-align: center;
+          
           font-size: 18px;
           display: -webkit-box;
           display: -ms-flexbox;

@@ -73,26 +73,32 @@ const Home: NextPage = () => {
           </Glassmorphism>
         </div>
       </section>
-      <section className="h-screen text-primary z-0">
+      <section className=" text-primary z-0">
         <h1 className="text-center">Program Kerja</h1>
-        <div className="py-10">
+        <div className="">
           <ProkerSwiper />
         </div>
+      </section>
+      <section className="flex flex-col gap-10 p-20">
+        <h1 className="text-center text-primary">Guideline</h1>
         <div className="grid  grid-cols-2 max-w-3xl mx-auto gap-20 self-center text-center  ">
           <Neuromorphism>
             <Animation status="1" />
-            <h3 className='font-medium text-primary'>Keberankatran</h3>
+            <h3 className="font-medium text-primary">Keberankatran</h3>
           </Neuromorphism>
           <Neuromorphism>
             <Animation status="2" />
-            <h3 className='font-medium text-primary'>Tiba di Lyon</h3>
+            <h3 className="font-medium text-primary">Tiba di Lyon</h3>
           </Neuromorphism>
           <Neuromorphism>
             <Animation status="3" />
-            <h3 className='font-medium text-primary'>Perancis jangka panjang</h3>
-          </Neuromorphism><Neuromorphism>
+            <h3 className="font-medium text-primary">
+              Perancis jangka panjang
+            </h3>
+          </Neuromorphism>
+          <Neuromorphism>
             <Animation status="4" />
-            <h3 className='font-medium text-primary'>Contoh BUdgeting</h3>
+            <h3 className="font-medium text-primary">Contoh BUdgeting</h3>
           </Neuromorphism>
         </div>
       </section>
