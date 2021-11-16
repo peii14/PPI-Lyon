@@ -33,7 +33,7 @@ const Animation=(props)=> {
 
   return (
     <div>
-      <div
+      <div className='w-8/12 flex m-auto'
         ref={container}
         onMouseEnter={() => {
           lottie.setDirection(1);
