@@ -6,15 +6,15 @@ import coins from "../animations/coins.json"
 import school from "../animations/school.json"
 const Animation=(props)=> {
   const container = useRef(null);
-  var animate;
+  var animate = [];
   if(props.status == 1)
-    animate = suitcase;
+    animate.push(suitcase);
   else if(props.status == 2 )
-    animate = town;
+    animate.push(town);
   else if(props.status == 3)
-    animate = school;
+    animate.push(school);
   else if(props.status == 4)
-    animate = coins;
+    animate.push(coins);
 
     
   useEffect(() => {
@@ -23,13 +23,13 @@ const Animation=(props)=> {
       renderer: "svg",
       loop: false,
       autoplay: false,
-      animationData: animate,
+      animationData: animate[0],
     });
 
     return () => {
       lottie.destroy();
     };
-  }, []);
+  }, [animate]);
 
   return (
     <div>
