@@ -83,7 +83,7 @@ const Home: NextPage = () => {
           <ProkerSwiper />
         </div>
       </section>
-      <section className="flex flex-col gap-10 p-20">
+      <section className="flex flex-col gap-10 p-20 overflow-hidden  mx-auto">
         <h1 className="text-center text-primary">Guideline</h1>
         <div className="grid  grid-cols-2 max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
           <Link href="/Keberangkatan">
@@ -113,8 +113,8 @@ const Home: NextPage = () => {
             </Neuromorphism>
           </Link>
         </div>
-        <div className="w-7/12 absolute -right-32 z-0 ">
-          <Image src={blur1} alt="" />
+        <div className=" absolute z-0 overflow-hidden md:right-14 2xl:right-52 3xl:mr-20 mr-0">
+          <Image src={blur1} alt="" width={600} height={700} />
         </div>
       </section>
       <section className=" flex justify-center p-10">

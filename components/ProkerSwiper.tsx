@@ -25,6 +25,7 @@ const ProkerSwiper = () => {
         // pagination={{
         //   type: "progressbar",
         // }}
+        draggable={true}
         cssMode={true}
         navigation={true}
         loop={false}
@@ -82,7 +83,7 @@ const ProkerSwiper = () => {
           .swiper-button-next,
           .swiper-button-prev {
             color: black;
-            margin: 0px 300px;
+            margin: 0px 200px;
         }
         @media screen and (max-width:1441px){
           .swiper-button-next,

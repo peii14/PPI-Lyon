@@ -10,6 +10,7 @@ module.exports = {
         primary: "#282828",
         secondary: "#ffed4a",
         danger: "#e3342f",
+        textSecond:"#777777"
       },
       dropShadow: {
         '3xl': '0 45px 45px rgba(0, 0, 0, 0.55)',
