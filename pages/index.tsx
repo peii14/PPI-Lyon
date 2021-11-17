@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import blur1 from "../images/blur1.png";
@@ -7,12 +8,14 @@ import bg1 from "../images/home/hero1.png";
 import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
 import ProkerSwiper from "../components/ProkerSwiper";
-import Neuromorphism from "../components/Neuromorphism";
-import Animation from "../components/Animation";
 import qt from "../images/double-quotes-l.png";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import GuidelineSection from "../components/GuidelineSection";
+
 const Home: NextPage = () => {
+  const [isHover, setHover] = useState(false);
+
   return (
     <>
       <Head>
@@ -87,30 +90,24 @@ const Home: NextPage = () => {
         <h1 className="text-center text-primary">Guideline</h1>
         <div className="grid  grid-cols-2 max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
           <Link href="/Keberangkatan">
-            <Neuromorphism>
-              <Animation status="1" />
-              <h3 className="font-medium text-primary">Keberankatran</h3>
-            </Neuromorphism>
+            <a>
+              <GuidelineSection status="1" />
+            </a>
           </Link>
           <Link href="/TibadiLyon">
-            <Neuromorphism>
-              <Animation status="2" />
-              <h3 className="font-medium text-primary">Tiba di Lyon</h3>
-            </Neuromorphism>
+            <a>
+              <GuidelineSection status="2" />
+            </a>
           </Link>
           <Link href="/PerancisJangkaPanjang">
-            <Neuromorphism>
-              <Animation status="3" />
-              <h3 className="font-medium text-primary">
-                Perancis jangka panjang
-              </h3>
-            </Neuromorphism>
+            <a>
+              <GuidelineSection status="3" />
+            </a>
           </Link>
           <Link href="/Budgeting">
-            <Neuromorphism>
-              <Animation status="4" />
-              <h3 className="font-medium text-primary ">Contoh Budgeting</h3>
-            </Neuromorphism>
+            <a>
+              <GuidelineSection status="4" />
+            </a>
           </Link>
         </div>
         <div className=" absolute z-0 overflow-hidden md:right-14 2xl:right-52 3xl:mr-20 mr-0">
