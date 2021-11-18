@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="w-screen bg-primary opacity-80 max-h-16 fixed z-50">
       <ul className="flex flex-row text-white justify-between max-w-md mx-auto text-center transition-all duration-300">
         <Link href="/">
-          <li className="transition-all duration-300 hover:bg-white hover:text-primary p-5 cursor-pointer h-full">
+          <li className="transition-all duration-300 hover:bg-gray-300 hover:text-black p-5 cursor-pointer h-full">
             <a>Home</a>
           </li>
         </Link>
@@ -18,7 +18,7 @@ const Navbar = () => {
           <Disclosure>
             {({ open }) => (
               <>
-                <Disclosure.Button className="space-x-3 p-5 hover:bg-white hover:text-primary">
+                <Disclosure.Button className="space-x-3 p-5 hover:bg-gray-300 hover:text-black">
                   <span>Guideline</span>
                   <FontAwesomeIcon
                     className={`transform duration-500 
@@ -44,22 +44,22 @@ const Navbar = () => {
                       >
                         <ul className="flex flex-col text-left gap-3">
                           <Link href="/Keberangkatan">
-                            <li className="transition-all duration-100 px-5 py-1 cursor-pointer hover:bg-white hover:text-primary ">
+                            <li className="transition-all duration-100 px-5 py-1 cursor-pointer hover:bg-gray-300 hover:text-black ">
                               <a>Keberangkatan</a>
                             </li>
                           </Link>
                           <Link href="/TibadiLyon">
-                            <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-white hover:text-primary">
+                            <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-gray-300 hover:text-black">
                               <a>Tiba di Lyon</a>
                             </li>
                           </Link>
                           <Link href="/PerancisJangkaPanjang">
-                            <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-white hover:text-primary">
+                            <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-gray-300 hover:text-black">
                               <a>Perancis Jangka Panjang</a>
                             </li>
                           </Link>
                           <Link href="/Budgeting">
-                            <li className="transition-all duration-100 px-5 pt-1 pb-2 cursor-pointer hover:bg-white hover:text-primary">
+                            <li className="transition-all duration-100 px-5 pt-1 pb-2 cursor-pointer hover:bg-gray-300 hover:text-black">
                               <a>Budgeting</a>
                             </li>
                           </Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
           </Disclosure>
         </li>
         <Link href="/Gallery">
-          <li className="transition-all duration-300 hover:bg-white hover:text-primary p-5 cursor-pointer h-full">
+          <li className="transition-all duration-300 hover:bg-white hover:text-black p-5 cursor-pointer h-full">
             <a>Gallery</a>
           </li>
         </Link>
