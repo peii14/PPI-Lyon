@@ -30,33 +30,42 @@ const Navbar = () => {
                   enter="transition duration-300 ease-out"
                   enterFrom="transform scale-95 translate-10 opacity-0"
                   enterTo="transform scale-100 translate-0 opacity-100"
-                  leave="transition duration-100 ease-out"
+                  leave="transition duration-100 ease-out delay-150"
                   leaveFrom="transform scale-100 translate-0 opacity-100"
                   leaveTo="transform scale-95 -translate-20 opacity-0"
                 >
                   <Disclosure.Panel className="w-11/12 mx-auto bg-primary">
-                    <ul className="flex flex-col text-left gap-3">
-                      <Link href="/Keberangkatan">
-                        <li className="transition-all duration-100 px-5 py-1 cursor-pointer hover:bg-white hover:text-primary ">
-                          <a>Keberangkatan</a>
-                        </li>
-                      </Link>
-                      <Link href="/TibadiLyon">
-                        <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-white hover:text-primary">
-                          <a>Tiba di Lyon</a>
-                        </li>
-                      </Link>
-                      <Link href="/PerancisJangkaPanjang">
-                        <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-white hover:text-primary">
-                          <a>Perancis Jangka Panjang</a>
-                        </li>
-                      </Link>
-                      <Link href="/Budgeting">
-                        <li className="transition-all duration-100 px-5 pt-1 pb-2 cursor-pointer hover:bg-white hover:text-primary">
-                          <a>Budgeting</a>
-                        </li>
-                      </Link>
-                    </ul>
+                    {({ close }) => (
+                      <button
+                        onClick={async () => {
+                          await fetch("/accept-terms", { method: "POST" });
+                          close();
+                        }}
+                      >
+                        <ul className="flex flex-col text-left gap-3">
+                          <Link href="/Keberangkatan">
+                            <li className="transition-all duration-100 px-5 py-1 cursor-pointer hover:bg-white hover:text-primary ">
+                              <a>Keberangkatan</a>
+                            </li>
+                          </Link>
+                          <Link href="/TibadiLyon">
+                            <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-white hover:text-primary">
+                              <a>Tiba di Lyon</a>
+                            </li>
+                          </Link>
+                          <Link href="/PerancisJangkaPanjang">
+                            <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-white hover:text-primary">
+                              <a>Perancis Jangka Panjang</a>
+                            </li>
+                          </Link>
+                          <Link href="/Budgeting">
+                            <li className="transition-all duration-100 px-5 pt-1 pb-2 cursor-pointer hover:bg-white hover:text-primary">
+                              <a>Budgeting</a>
+                            </li>
+                          </Link>
+                        </ul>
+                      </button>
+                    )}
                   </Disclosure.Panel>
                 </Transition>
               </>
