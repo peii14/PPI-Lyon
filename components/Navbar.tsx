@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { Disclosure, Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
-  const router = useRouter();
   return (
     <nav className="w-screen bg-primary opacity-80 max-h-16 fixed z-50">
       <ul className="flex flex-row text-white justify-between max-w-md mx-auto text-center transition-all duration-300">
