@@ -56,7 +56,6 @@ const Keberangkatan = () => {
         </div>
       </section>
       <section className='p-10'>
-
       </section>
       <Footer />
     </>
