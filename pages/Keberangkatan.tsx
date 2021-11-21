@@ -8,6 +8,7 @@ import uang from "../images/icon/uang.png";
 import school from "../images/icon/school.png";
 import apartment from "../images/icon/apartment.png";
 import Glassmorphism from "../components/Glassmorphism";
+import s from "../styles/Home.module.css";
 
 const Keberangkatan = () => {
   return (
@@ -42,7 +43,7 @@ const Keberangkatan = () => {
           Mencari Tempat Tinggal Dari Indonesia
         </h1>
         <div>
-          <p className="max-w-3xl mx-auto text-justify">
+          <p className="max-w-4xl mx-auto text-justify">
             Di Prancis, pada umumnya para pelajar tinggal di tempat tinggal
             (logement) berupa apartemen di mana kamu membayar tagihan bulanan
             (loyer) yang terkadang bisa termasuk biaya listrik, air, gas dan
@@ -67,7 +68,7 @@ const Keberangkatan = () => {
             </div>
           </div>
         </div>
-        <div className="max-w-3xl mx-auto flex flex-col gap-5 py-10">
+        <div className="max-w-4xl mx-auto flex flex-col gap-5 py-10">
           <h3 className="text-center">Kontrak</h3>
           <p className="text-justify">
             Apartemen dapat disewakan dalam bentuk Properti perseorangan
@@ -138,7 +139,7 @@ const Keberangkatan = () => {
               apartemen khusus pelajar yang biasanya merupakan:{" "}
             </p>
           </div>
-          <ul className="list-disc list-inside gap-3">
+          <ul className={s.listed}>
             <li>
               Milik <span className="font-bold">suatu institusi</span>{" "}
               pendidikan untuk mahasiswa/i universitas tersebut (seperti di INSA
@@ -192,7 +193,7 @@ const Keberangkatan = () => {
           </div>
         </div>
       </section>
-      <section className="p-10 text-primary max-w-3xl mx-auto ">
+      <section className="py-10 text-primary max-w-4xl mx-auto ">
         <h2 className="text-center  mx-auto">
           Keuntungan, Kekurangan dan Poin Penting Pada Saat Memilih Tempat
           Tinggal
@@ -241,7 +242,7 @@ const Keberangkatan = () => {
           </Glassmorphism>
         </div>
       </section>
-      <section className="text-primary max-w-3xl mx-auto py-5">
+      <section className="text-primary max-w-4xl mx-auto py-5">
         <h2 className="text-center">
           Istilah-Istilah Penting Saat Proses Administrasi Menyewa Apartemen
         </h2>
@@ -275,7 +276,86 @@ const Keberangkatan = () => {
               ketika kamu pergi.
             </p>
           </Glassmorphism>
+          <Glassmorphism>
+            <h3 className="text-third text-center">
+              ATTESTATION D’HÉBERGEMENT/JUSTIFICATIF DE DOMICILE
+            </h3>
+            <p className="mt-5 text-justify">
+              Surat sebagai bukti bahwa kamu benar-benar tinggal di apartemenmu,
+              berdasarkan dan dilindungi oleh pemerintah Prancis di bawah bail
+              yang sudah ditandatangani oleh pemilik dan kamu. Dokumen ini
+              penting untuk semua proses administrasi prancis seperti OFII,
+              membuka akun bank dan mengurus asuransi kesehatan. Apabila kamu
+              tinggal bersama colocataire namun namamu tidak tercantum di bail,
+              kamu bisa meminta colocmu untuk membuatkan justificatif de
+              domicile yang menyatakan bahwa kamu benar tinggal bersama dia, dan
+              setiap kali dibutuhkan bawa justificatif ini bersama dengan bail
+              yang mencantumkan nama coloc-mu.
+            </p>
+          </Glassmorphism>
+          <Glassmorphism>
+            <h3 className="text-third text-center">ASSURANCE D’HABITATION</h3>
+            <p className="mt-5 text-justify">
+              Setiap penduduk di Prancis harus memiliki asuransi tempat tinggal
+              untuk menjamin tempat tinggalmu ketika terjadi kebakaran,
+              perampokan atau bencana alam lainnya. Asuransi ini harus
+              dipersiapkan ketika menandatangani kontrak dan ditawarkan
+              agen-agen asuransi dan bank dengan biaya 20- 60€ per tahun.
+            </p>
+          </Glassmorphism>
+          <Glassmorphism>
+            <h3 className="text-third text-center">
+              AGARANT/CAUTION SOLIDAIRE
+            </h3>
+            <p className="mt-5 text-justify">
+              Individu yang akan bertanggung jawab menjamin pembayaran loyer
+              kalau kamu tidak bisa bayar, di mana individu tersebut akan
+              menandatangani surat perjanjian sebagai buktinya. Seorang garant
+              harus memiliki pekerjaan tetap di Prancis, atau bisa diperluas di
+              Uni Eropa di mana dia harus mempunyai penghasilan minimal tiga
+              kali harga loyer per bulan. Garant ini biasanya diminta ketika
+              membuat permohonan apartemen baru, dan menjadi kendala untuk
+              mahasiswa internasional karena tidak adanya garant di Prancis.
+              Sebagai solusi, kamu bisa:
+            </p>
+            <ul className={s.listed}>
+              <li>
+                Mengajukan permohonan garant untuk mahasiswa dari pemerintah
+                Prancis melalui website visale.fr, tanpa dipungut biaya dan
+                biasanya dokumen garantor dalam bentuk PDF bisa keluar dalam
+                satu minggu. Kekurangan Visale adalah loyer di atas 800€ per
+                bulan tidak bisa dijamin dengan Visale.
+              </li>
+              <li>
+                Mengajukan permohonan garant dari bank dengan membayar biaya
+                bulanan atau tahunan yang dikalkulasikan berdasarkan loyermu.
+                Garant dari bank bisa diajukan untuk apartemen di atas 800€ per
+                bulan
+              </li>
+              <li>
+                Mencari apartemen di situs seperti leboncoin.fr yang tidak
+                meminta garant. Walaupun jarang, ada beberapa propriétaire yang
+                tidak mementingkan garant dan memberimu pilihan untuk membayar
+                caution yang lebih besar misal 3-6 bulan pertama. Pilihan ini
+                tidak terlalu direkomendasikan karena walau mempermudah proses
+                administrasi apartemen, garant adalah persyaratan wajib yang
+                ditentukan oleh pemerintah Prancis
+              </li>
+            </ul>
+          </Glassmorphism>
         </div>
+      </section>
+      <section className="max-w-4xl mx-auto text-primary py-5">
+        <h1 className="text-center">Mempersiapkan Dana Untuk Bulan Pertama</h1>
+        <p className='mt-5 text-justify'>
+          Setiba di Prancis, kamu akan langsung mengeluarkan sejumlah biaya
+          untuk kebutuhanmu. Apabila kamu ingin melakukan transfer uang
+          bulananmu dari Indonesia ke Prancis, proses ini dapat memakan waktu
+          sampai be berapa bulan karena membuka akun bank di Prancis cukup lama.
+          Oleh karena itu, PPI Lyon menyarankan agar kamu menyiapkan dana
+          pengeluaran untuk beberapa bulan pertama setelah tiba, contohnya 3
+          bulan pertama.
+        </p>
       </section>
       <Footer />
     </>
