@@ -2,11 +2,8 @@ import Hero from "../components/Hero";
 import k from "../images/keberangkatan/keberangkatanHero.png";
 import Image from "next/image";
 import ifi from "../images/keberangkatan/IFI.png";
-import Neuromorphism from "../components/Neuromorphism";
 import Footer from "../components/Footer";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { Disclosure, Transition } from "@headlessui/react";
+import RoomType from "../components/RoomType";
 const Keberangkatan = () => {
   return (
     <>
@@ -48,15 +45,25 @@ const Keberangkatan = () => {
             tinggal sendiri atau bersama penghuni lain (colocataire).
           </p>
         </div>
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10  ">
           <h3 className="text-center">Tipe-tipe tempat tinggal</h3>
-          <div className="grid grid-cols-2 gap-x-20 gap-y-10">
-           
+          <div className="grid grid-cols-2 gap-10 w-7/12 justify-items-center mx-auto justify-center ">
+          <div className='col-span-2 min-w-full '>
+              <RoomType type="Studio" />
+            </div>
+            <RoomType type="T1" />
+            <RoomType type="T2" />
+            <RoomType type="T3" />
+            <RoomType type="T4" />
+            <RoomType type="T5" />
+            <RoomType type="BIS" />
+            <div className='col-span-2 min-w-full self-stretch'>
+              <RoomType type="Chamber" />
+            </div>
           </div>
         </div>
       </section>
-      <section className='p-10'>
-      </section>
+      <section className="p-10"></section>
       <Footer />
     </>
   );
