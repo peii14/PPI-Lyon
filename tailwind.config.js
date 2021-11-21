@@ -20,6 +20,7 @@ module.exports = {
         primary: { DEFAULT: "#282828" },
         //400 to 600 gradient
         sec: { DEFAULT: "#f0f0f0" },
+        third: { DEFAULT: "#771011" },
         title: "#595959",
         secondHover: "#b32a00",
       },
