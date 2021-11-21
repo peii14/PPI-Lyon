@@ -356,6 +356,9 @@ const Keberangkatan = () => {
           pengeluaran untuk beberapa bulan pertama setelah tiba, contohnya 3
           bulan pertama.
         </p>
+        <div className='py-10'>
+
+        </div>
       </section>
       <Footer />
     </>
