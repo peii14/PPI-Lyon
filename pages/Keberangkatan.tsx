@@ -358,8 +358,8 @@ const Keberangkatan = () => {
         </p>
         <div className="py-10 grid grid-cols-3 gap-10 text-center">
           <div>
-            <Image src={uang} />
-            <div className='flex flex-col py-5 gap-10 '>
+            <Image src={uang} layout='fixed' />
+            <div className='flex flex-col  gap-5 mt-2 '>
               <h4>Kartu Debit atau Kredit</h4>
               <p>
                 dari salah satu bank di Indonesia dengan logo Visa, Mastercard
@@ -369,10 +369,10 @@ const Keberangkatan = () => {
               </p>
             </div>
           </div>
-          <div className='flex flex-col gap-10 '>
-            <Image src={uang} />
-            <div>
-              <h4>Kartu Multivalas atau Kartu Tabungan Mata Uang Asing</h4>
+          <div className='flex flex-col items-center '>
+            <Image src={uang} layout='fixed' />
+            <div className='flex flex-col gap-2'>
+              <h4>Kartu Multivalas / Kartu Tabungan Mata Uang Asing</h4>
               <p>
                 seperti Jenius yang bisa menyimpan dana dalam Rupiah dan dapat
                 dikonversi ke Euro lewat aplikasinya. Kartu ini dapat digunakan
@@ -382,9 +382,9 @@ const Keberangkatan = () => {
               </p>
             </div>
           </div>
-          <div>
-            <Image src={uang} />
-            <div>
+          <div className='flex flex-col items-center'>
+            <Image src={uang} layout='fixed' />
+            <div className='flex flex-col gap-5 mt-2'>
               <h4>Cash Euro</h4>
               <p>
                 hati-hati dengan cash. Tips dari PPI Lyon adalah kamu bisa
