@@ -347,7 +347,7 @@ const Keberangkatan = () => {
       </section>
       <section className="max-w-4xl mx-auto text-primary py-5">
         <h1 className="text-center">Mempersiapkan Dana Untuk Bulan Pertama</h1>
-        <p className='mt-5 text-justify'>
+        <p className="mt-5 text-justify">
           Setiba di Prancis, kamu akan langsung mengeluarkan sejumlah biaya
           untuk kebutuhanmu. Apabila kamu ingin melakukan transfer uang
           bulananmu dari Indonesia ke Prancis, proses ini dapat memakan waktu
@@ -356,8 +356,46 @@ const Keberangkatan = () => {
           pengeluaran untuk beberapa bulan pertama setelah tiba, contohnya 3
           bulan pertama.
         </p>
-        <div className='py-10 flex flex-row justify-between'>
-
+        <div className="py-10 grid grid-cols-3 gap-10 text-center">
+          <div>
+            <Image src={uang} />
+            <div className='flex flex-col py-5 gap-10 '>
+              <h4>Kartu Debit atau Kredit</h4>
+              <p>
+                dari salah satu bank di Indonesia dengan logo Visa, Mastercard
+                dan sebagainya yang dapat melakukan penarikan tunai dalam bentuk
+                Euro (€) di mesin ATM Prancis dan bisa juga digunakan untuk
+                pembayaran langsung di mesin kartu kredit di Prancis.
+              </p>
+            </div>
+          </div>
+          <div className='flex flex-col gap-10 '>
+            <Image src={uang} />
+            <div>
+              <h4>Kartu Multivalas atau Kartu Tabungan Mata Uang Asing</h4>
+              <p>
+                seperti Jenius yang bisa menyimpan dana dalam Rupiah dan dapat
+                dikonversi ke Euro lewat aplikasinya. Kartu ini dapat digunakan
+                untuk menarik cash Euro dan membayar Euro dengan sistem
+                contactless pada mesin kartu, fitur yang sangat digunakan di
+                Prancis.
+              </p>
+            </div>
+          </div>
+          <div>
+            <Image src={uang} />
+            <div>
+              <h4>Cash Euro</h4>
+              <p>
+                hati-hati dengan cash. Tips dari PPI Lyon adalah kamu bisa
+                membagi dana untuk bulan pertama dalam bentuk cash, sedangkan
+                untuk dua bulan berikutnya dalam kartu kredit atau debit untuk
+                mencegah kemungkinan adanya kehilangan atau pencurian di
+                Prancis! Untuk dana yang kamu siapkan perbulannya, lihat bagian
+                4 untuk contoh budgeting bulanan di Lyon
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <Footer />

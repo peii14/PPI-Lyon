@@ -8,6 +8,7 @@ const ProkerContent = (props) => {
           {props.t1} <br />
           <span className="font-light">{props.t2}</span>
         </h1>
+        
         <div className="absolute top-10 w-5/12 z-0 max-w-2xl">
           <Image src={blur1} alt="" width={500} height={500} />
         </div>
