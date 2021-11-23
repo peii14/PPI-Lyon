@@ -411,6 +411,9 @@ const Keberangkatan = () => {
           </p>
         </div>
       </section>
+      <section>
+        
+      </section>
       <Footer />
     </>
   );
