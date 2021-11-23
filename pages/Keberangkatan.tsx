@@ -346,7 +346,7 @@ const Keberangkatan = () => {
         </div>
       </section>
       <section className="max-w-4xl mx-auto text-primary py-5">
-        <h1 className="text-center">Mempersiapkan Dana Untuk Bulan Pertama</h1>
+        <h2 className="text-center">Mempersiapkan Dana Untuk Bulan Pertama</h2>
         <p className="mt-5 text-justify">
           Setiba di Prancis, kamu akan langsung mengeluarkan sejumlah biaya
           untuk kebutuhanmu. Apabila kamu ingin melakukan transfer uang
@@ -358,8 +358,8 @@ const Keberangkatan = () => {
         </p>
         <div className="py-10 grid grid-cols-3 gap-10 text-center">
           <div>
-            <Image src={uang} layout='fixed' />
-            <div className='flex flex-col  gap-5 mt-2 '>
+            <Image src={uang} layout="fixed" />
+            <div className="flex flex-col  gap-5 mt-2 ">
               <h4>Kartu Debit atau Kredit</h4>
               <p>
                 dari salah satu bank di Indonesia dengan logo Visa, Mastercard
@@ -369,9 +369,9 @@ const Keberangkatan = () => {
               </p>
             </div>
           </div>
-          <div className='flex flex-col items-center '>
-            <Image src={uang} layout='fixed' />
-            <div className='flex flex-col gap-2'>
+          <div className="flex flex-col items-center ">
+            <Image src={uang} layout="fixed" />
+            <div className="flex flex-col gap-2">
               <h4>Kartu Multivalas / Kartu Tabungan Mata Uang Asing</h4>
               <p>
                 seperti Jenius yang bisa menyimpan dana dalam Rupiah dan dapat
@@ -382,9 +382,9 @@ const Keberangkatan = () => {
               </p>
             </div>
           </div>
-          <div className='flex flex-col items-center'>
-            <Image src={uang} layout='fixed' />
-            <div className='flex flex-col gap-5 mt-2'>
+          <div className="flex flex-col items-center">
+            <Image src={uang} layout="fixed" />
+            <div className="flex flex-col gap-5 mt-2">
               <h4>Cash Euro</h4>
               <p>
                 hati-hati dengan cash. Tips dari PPI Lyon adalah kamu bisa
@@ -396,6 +396,19 @@ const Keberangkatan = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="flex flex-col gap-10">
+          <h2 className="text-center">
+            Mempersiapkan Data Internet Di Prancis
+          </h2>
+          <p className="text-left">
+            PPI Lyon menyarankan kamu untuk membeli paket internet internasional
+            dari Indonesia agar dapat roaming (setidaknya untuk 1 minggu),
+            sampai kamu dapat membeli kartu SIM Prancis. Roaming ini biasanya
+            bertahan selama satu bulan dan digunakan untuk kebutuhan penting
+            seperti: komunikasi darurat, komunikasi dengan keluarga, navigasi
+            dengan Google Maps, mengakses dokumen online dsb.
+          </p>
         </div>
       </section>
       <Footer />
