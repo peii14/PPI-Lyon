@@ -414,7 +414,7 @@ const Keberangkatan = () => {
       <section className='text-primary max-w-4xl mx-auto'>
         <h2 className='text-center'>Memilih Moda Transportasi ke Lyon</h2>
         <div>
-
+                
         </div>
       </section>
       <Footer />
