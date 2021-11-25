@@ -9,6 +9,8 @@ import school from "../images/icon/school.png";
 import apartment from "../images/icon/apartment.png";
 import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
+import cc1 from "../images/icon/cc1.png"
+import cc2 from '../image/icon/cc2.png';
 
 const Keberangkatan = () => {
   return (
@@ -358,7 +360,7 @@ const Keberangkatan = () => {
         </p>
         <div className="py-10 grid grid-cols-3 gap-10 text-center">
           <div>
-            <Image src={uang} layout="fixed" />
+            <Image src={cc1} layout="fixed" />
             <div className="flex flex-col  gap-5 mt-2 ">
               <h4>Kartu Debit atau Kredit</h4>
               <p>
@@ -370,7 +372,7 @@ const Keberangkatan = () => {
             </div>
           </div>
           <div className="flex flex-col items-center ">
-            <Image src={uang} layout="fixed" />
+            <Image src={cc2} layout="fixed" />
             <div className="flex flex-col gap-2">
               <h4>Kartu Multivalas / Kartu Tabungan Mata Uang Asing</h4>
               <p>
@@ -414,7 +416,7 @@ const Keberangkatan = () => {
       <section className='text-primary max-w-4xl mx-auto'>
         <h2 className='text-center'>Memilih Moda Transportasi ke Lyon</h2>
         <div>
-                
+
         </div>
       </section>
       <Footer />
