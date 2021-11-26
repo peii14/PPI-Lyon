@@ -7,6 +7,9 @@ const TibadiLyon = () =>{
         <>
         <Navbar />
         <Hero img={k} />
+        <section className='max-w-4xl text-primary mx-auto'>
+            <h1 className='text-center max-w-md'>Membuat Rekening Bank Prancis</h1>
+        </section>
         </>
     )
 }
