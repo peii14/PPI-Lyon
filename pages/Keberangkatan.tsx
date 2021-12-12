@@ -11,7 +11,7 @@ import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
 import cc1 from "../images/icon/cc1.png"
 import cc2 from '../image/icon/cc2.png';
-
+// GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
     <>

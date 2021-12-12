@@ -1,7 +1,7 @@
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import k from "../images/keberangkatan/keberangkatanHero.png";
-
+// GANTI PHOTO
 const TibadiLyon = () =>{
     return(
         <>
