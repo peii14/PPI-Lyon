@@ -12,7 +12,7 @@ import qt from "../images/double-quotes-l.png";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
-
+// photo full team aja buat cover nya
 const Home: NextPage = () => {
   const [isHover, setHover] = useState(false);
 
