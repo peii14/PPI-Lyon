@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "../images/logo.png";
+
 const Footer = () => {
   return (
     <section className="absolute w-screen bg-primary p-20">

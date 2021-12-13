@@ -15,7 +15,6 @@ import GuidelineSection from "../components/GuidelineSection";
 // photo full team aja buat cover nya
 const Home: NextPage = () => {
   const [isHover, setHover] = useState(false);
-
   return (
     <>
       <Head>
@@ -115,6 +114,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className=" flex justify-center p-10">
+        {/* tolong mintain ke mas idham */}
         <Glassmorphism>
           <div className="flex flex-col gap-10 items-center justify-center">
             <Image src={qt} />
