@@ -9,8 +9,8 @@ import school from "../images/icon/school.png";
 import apartment from "../images/icon/apartment.png";
 import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
-import cc1 from "../images/icon/cc1.png"
-import cc2 from '../image/icon/cc2.png';
+import cc1 from "../images/icon/cc1.png";
+import cc2 from '../images/icon/cc2.png';
 // GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
@@ -201,7 +201,7 @@ const Keberangkatan = () => {
           Tinggal
         </h2>
         <div className="grid grid-cols-3 gap-10 mx-auto max-w-4xl py-10 ">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center gap-3">
             <Image src={uang} layout="fixed" />
             <h4>Harga Murah</h4>
             <p className="text-center ">
@@ -211,18 +211,18 @@ const Keberangkatan = () => {
               baik dilakukan secepat mungkin.
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center gap-3">
             <Image src={school} layout="fixed" />
-            <h4>Harga Murah</h4>
+            <h4>Dekat Sekolah</h4>
             <p className="text-center">
               Kalau universitas kamu menawarkan apartemen mereka, kamu bisa
               tinggal di kampus sehingga kamu bisa dekat dengan kelas,
               perpustakaan, administrasi.
             </p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center gap-3">
             <Image src={apartment} layout="fixed" />
-            <h4>Harga Murah</h4>
+            <h4>Apartemen Nyaman</h4>
             <p className="text-center">
               Walaupun cenderung lebih mahal, apartemen pribadi bisa lebih
               nyaman karena dapurnya luas, ada ruang tengah terpisah, tidak
