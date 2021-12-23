@@ -10,7 +10,7 @@ import apartment from "../images/icon/apartment.png";
 import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
 import cc1 from "../images/icon/cc1.png";
-import cc2 from '../images/icon/cc2.png';
+import cc2 from "../images/icon/cc2.png";
 // GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
@@ -361,9 +361,9 @@ const Keberangkatan = () => {
         <div className="py-10 grid grid-cols-3 gap-10 text-center">
           <div>
             <Image src={cc1} layout="fixed" />
-            <div className="flex flex-col  gap-5 mt-2 ">
+            <div className="flex flex-col gap-5 mt-2 ">
               <h4>Kartu Debit atau Kredit</h4>
-              <p>
+              <p className="text-justify">
                 dari salah satu bank di Indonesia dengan logo Visa, Mastercard
                 dan sebagainya yang dapat melakukan penarikan tunai dalam bentuk
                 Euro (€) di mesin ATM Prancis dan bisa juga digunakan untuk
@@ -371,11 +371,13 @@ const Keberangkatan = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center ">
-            <Image src={cc2} layout="fixed" />
-            <div className="flex flex-col gap-2">
+          <div className="flex flex-col items-center -mt-5 ">
+            <div className="ml-10">
+              <Image src={cc2} layout="fixed" />
+            </div>
+            <div className="flex flex-col my-5 gap-5">
               <h4>Kartu Multivalas / Kartu Tabungan Mata Uang Asing</h4>
-              <p>
+              <p className="text-jusitfy">
                 seperti Jenius yang bisa menyimpan dana dalam Rupiah dan dapat
                 dikonversi ke Euro lewat aplikasinya. Kartu ini dapat digunakan
                 untuk menarik cash Euro dan membayar Euro dengan sistem
@@ -388,7 +390,7 @@ const Keberangkatan = () => {
             <Image src={uang} layout="fixed" />
             <div className="flex flex-col gap-5 mt-2">
               <h4>Cash Euro</h4>
-              <p>
+              <p className="text-justify">
                 hati-hati dengan cash. Tips dari PPI Lyon adalah kamu bisa
                 membagi dana untuk bulan pertama dalam bentuk cash, sedangkan
                 untuk dua bulan berikutnya dalam kartu kredit atau debit untuk
@@ -413,10 +415,33 @@ const Keberangkatan = () => {
           </p>
         </div>
       </section>
-      <section className='text-primary max-w-4xl mx-auto'>
-        <h2 className='text-center'>Memilih Moda Transportasi ke Lyon</h2>
-        <div>
-
+      <section className="text-primary max-w-4xl mx-auto">
+        <h2 className="text-center">Memilih Moda Transportasi ke Lyon</h2>
+        <div className="py-5">
+          <h3 className="italic">Langsung Ke Lyon</h3>
+          <p>
+            Terbang langsung ke Lyon melalui Bandara Lyon-Saint Exupéry (LYS)
+            cenderung lebih <span className="font-bold">mahal</span> namun lebih{" "}
+            <span className="font-bold">efisien dan cepat</span>. Contoh seperti
+            maskapai Turkish Airlines CGK-IST-LYS dalam 18 jam 45 menit seharga
+            Rp 9.700.000. Pilihan lain seperti maskapai Emirates CGK-DXB-LYS
+            ditempuh dalam 23 jam 50 menit seharga Rp 8.400.000.
+          </p>
+        </div>
+        <div className="pb-5">
+          <h3 className="italic">
+            Terbang ke Paris diikuti dengan kereta atau bus ke Lyon
+          </h3>
+          <p>
+            Cara ini cenderung lebih murah namun memakan waktu dan melelahkan,
+            khususnya ketika pertama kali tiba di Prancis. Kereta cepat Prancis
+            TGV dari CDG – Lyon memakan waktu sekitar dua jam, namun lebih mahal
+            daripada menggunakan bus yang mana memakan waktu sekitar 6 jam.
+            Contoh : Turkish Airlines CGK-IST-CDG dalam 17 jam 35 menit seharga
+            Rp.7.000.000 dengan TGV CDG – Lyon Rp.750.000 atau dengan bus
+            Flixbus CDG – Lyon Rp.150.000. TGV dapat dibooking di oui.sncf, bus
+            seperti Flixbus di flixbus.fr atau ouibus di fr.ouibus.com.
+          </p>
         </div>
       </section>
       <Footer />
