@@ -83,7 +83,7 @@ const ProkerSwiper = () => {
           .swiper-button-next,
           .swiper-button-prev {
             color: black;
-            margin: 0px 200px;
+            margin: 0px 100px;
         }
         @media screen and (max-width:1441px){
           .swiper-button-next,

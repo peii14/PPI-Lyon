@@ -476,6 +476,9 @@ const Keberangkatan = () => {
             </p>
           </Glassmorphism>
         </section>
+        <section>
+          
+        </section>
       </div>
       <Footer />
     </>
