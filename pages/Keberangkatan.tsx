@@ -257,7 +257,7 @@ const Keberangkatan = () => {
           <h2 className="text-center">
             Istilah-Istilah Penting Saat Proses Administrasi Menyewa Apartemen
           </h2>
-          <div className="py-10 flex flex-col gap-10">
+          <div className="py-10 flex flex-col gap-10 max-w-4xl mx-auto ">
             <Glassmorphism>
               <h3 className="text-third text-center">
                 CONTRAT DE LOCATION/BAIL
