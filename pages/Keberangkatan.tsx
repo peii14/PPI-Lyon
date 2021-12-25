@@ -11,6 +11,9 @@ import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
 import cc1 from "../images/icon/cc1.png";
 import cc2 from "../images/icon/cc2.png";
+import hangat from "../images/icon/baju.png";
+import baju from "../images/icon/pakaian.png";
+import cooker from "../images/icon/pemasakanasi.png";
 // GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
@@ -477,7 +480,25 @@ const Keberangkatan = () => {
           </Glassmorphism>
         </section>
         <section>
-          
+          <h2 className="text-center">Memilih Barang yang Akan di Bawa</h2>
+          <p className="font-bold text-center p-5">
+            Selain kebutuhan utama seperti pakaian, dokumen penting dan
+            kebutuhan pribadi lainnya, kamu bisa ikuti tips di bawah ini:
+          </p>
+          <div className="flex flex-row gap-10 p-5">
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={hangat} width={100} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Pakaian Musim Dingin</h4>
+                <p>
+                  kami menyarankan lebih baik agar tidak membawa terlalu banyak
+                  dan tidak terlalu tebal karena berat sehingga memakan banyak
+                  bagasi. Kamu bisa mendapatkan jaket tebal di Prancis dengan
+                  harga terjangkau
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
       <Footer />
