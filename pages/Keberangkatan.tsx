@@ -21,9 +21,9 @@ const Keberangkatan = () => {
       <Hero img={k} />
       <div className="layout">
         <section className="text-primary p-20 mx-auto">
-          <h1 className="text-center max-w-xl mx-auto">
+          <h2 className="text-center max-w-xl mx-auto">
             Mengajukan visa VLS-TS
-          </h1>
+          </h2>
           <div className="flex flex-row justify-around py-10">
             <Image src={ifi} alt="" layout="fixed" />
             <p className="max-w-xl">
@@ -49,9 +49,9 @@ const Keberangkatan = () => {
           </div>
         </section>
         <section className="text-primary mx-auto flex flex-col gap-10">
-          <h1 className="text-center max-w-2xl mx-auto">
+          <h2 className="text-center max-w-3xl mx-auto">
             Mencari Tempat Tinggal Dari Indonesia
-          </h1>
+          </h2>
           <div>
             <p className="max-w-4xl mx-auto text-justify">
               Di Prancis, pada umumnya para pelajar tinggal di tempat tinggal
@@ -205,9 +205,8 @@ const Keberangkatan = () => {
           </div>
         </section>
         <section className="py-10 text-primary mx-auto ">
-          <h2 className="text-center  mx-auto">
-            Keuntungan, Kekurangan dan Poin Penting Pada Saat Memilih Tempat
-            Tinggal
+          <h2 className="text-center max-w-3xl mx-auto ">
+            Poin Penting Pada Saat Memilih Tempat Tinggal
           </h2>
           <div className="grid grid-cols-3 gap-10 mx-auto max-w-4xl py-10 ">
             <div className="flex flex-col items-center gap-3">
@@ -254,7 +253,7 @@ const Keberangkatan = () => {
           </div>
         </section>
         <section className="text-primary mx-auto py-5">
-          <h2 className="text-center">
+          <h2 className="text-center max-w-3xl mx-auto">
             Istilah-Istilah Penting Saat Proses Administrasi Menyewa Apartemen
           </h2>
           <div className="py-10 flex flex-col gap-10 max-w-4xl mx-auto ">
@@ -394,7 +393,7 @@ const Keberangkatan = () => {
               </div>
               <div className="flex flex-col my-5 gap-5">
                 <h4>Kartu Multivalas / Kartu Tabungan Mata Uang Asing</h4>
-                <p className="text-jusitfy">
+                <p className="text-justify">
                   seperti Jenius yang bisa menyimpan dana dalam Rupiah dan dapat
                   dikonversi ke Euro lewat aplikasinya. Kartu ini dapat
                   digunakan untuk menarik cash Euro dan membayar Euro dengan
