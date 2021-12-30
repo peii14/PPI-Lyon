@@ -9,7 +9,7 @@ const RoomType = (props) => {
     <div className='w-10/12 mx-auto'>
       <Neuromorphism>
         <div className="flex flex-col gap-10 justify-center items-center">
-          <h1>{props.type}</h1>
+          <h1 >{props.type}</h1>
           <Disclosure>
             {({ open }) => (
               <>
