@@ -13,7 +13,8 @@ import cc1 from "../images/icon/cc1.png";
 import cc2 from "../images/icon/cc2.png";
 import hangat from "../images/icon/baju.png";
 import baju from "../images/icon/pakaian.png";
-import cooker from "../images/icon/pemasakanasi.png";
+import cooker from "../images/icon/pemasaknasi.png";
+import photo from "../images/icon/photo.png";
 // GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
@@ -484,7 +485,7 @@ const Keberangkatan = () => {
             Selain kebutuhan utama seperti pakaian, dokumen penting dan
             kebutuhan pribadi lainnya, kamu bisa ikuti tips di bawah ini:
           </p>
-          <div className="flex flex-row gap-10 p-5">
+          <div className="flex flex-col gap-10 p-5">
             <div className="flex flex-row gap-5 mx-auto">
               <Image src={hangat} width={100} height={100} alt="" />
               <div className="max-w-3xl">
@@ -494,6 +495,55 @@ const Keberangkatan = () => {
                   dan tidak terlalu tebal karena berat sehingga memakan banyak
                   bagasi. Kamu bisa mendapatkan jaket tebal di Prancis dengan
                   harga terjangkau
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={baju} width={100} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Pakaian Sehari-hari</h4>
+                <p>
+                  Lebih baik membawa banyak pakaian dalam, termasuk kaus kaki
+                  untuk digunakan sehari-hari karena kemungkinan besar kamu akan
+                  membeli beberapa pakaian di Prancis, jadi lebih baik tidak
+                  memenuhi koper dengan terlalu banyak pakaian.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={cooker} width={85} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Pemasak Nasi</h4>
+                <p>
+                  Alat pemasak nasi memakan banyak tempat di bagasi dan
+                  sebenarnya ada banyak pilihan pemasak nasi dengan harga murah
+                  di toko elektronik Prancis. Pilihan yang lebih hemat adalah
+                  kamu bisa belajar memasak nasi di panci, jadi tidak perlu beli
+                  pemasak nasi.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={photo} width={85} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Pas Photo</h4>
+                <p>
+                  Tidak perlu bawa banyak kopi dan tipe pas foto untuk dibawa ke
+                  Prancis (secukupnya saja), karena proses administrasi seperti
+                  OFII pun mengharuskan kamu untuk membuat pas foto di Prancis
+                  dengan mesin photomaton yang sudah distandardisasi pemerintah.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={photo} width={85} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Mie Instan</h4>
+                <p>
+                  Tidak perlu bawa banyak mie instan karena beberapa tempat di
+                  Lyon menjualnya, seperti toko-toko Asia dengan harga sekitar
+                  50 sen per bungkus. Lebih baik membawa bumbu-bumbu instan
+                  untuk masak seperti bumbu Bamboe, bumbu instan Royco, dsb.
                 </p>
               </div>
             </div>
