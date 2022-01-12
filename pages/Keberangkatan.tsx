@@ -15,6 +15,10 @@ import hangat from "../images/icon/baju.png";
 import baju from "../images/icon/pakaian.png";
 import cooker from "../images/icon/pemasaknasi.png";
 import photo from "../images/icon/photo.png";
+import mi from "../images/icon/emi.png";
+import batik from "../images/icon/shirt.png";
+import obat from "../images/icon/fontisto_pills.png";
+import books from "../images/icon/books.png"
 // GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
@@ -479,7 +483,7 @@ const Keberangkatan = () => {
             </p>
           </Glassmorphism>
         </section>
-        <section>
+        <section className="pb-20">
           <h2 className="text-center">Memilih Barang yang Akan di Bawa</h2>
           <p className="font-bold text-center p-5">
             Selain kebutuhan utama seperti pakaian, dokumen penting dan
@@ -536,7 +540,7 @@ const Keberangkatan = () => {
               </div>
             </div>
             <div className="flex flex-row gap-5 mx-auto">
-              <Image src={photo} width={85} height={100} alt="" />
+              <Image src={mi} width={85} height={100} alt="" />
               <div className="max-w-3xl">
                 <h4>Mie Instan</h4>
                 <p>
@@ -544,6 +548,44 @@ const Keberangkatan = () => {
                   Lyon menjualnya, seperti toko-toko Asia dengan harga sekitar
                   50 sen per bungkus. Lebih baik membawa bumbu-bumbu instan
                   untuk masak seperti bumbu Bamboe, bumbu instan Royco, dsb.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={batik} width={85} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Batik</h4>
+                <p>
+                  Jangan lupa untuk bawa pakaian daerah seperti Batik untuk
+                  dipakai di acara-acara kultural yang melibatkan PPI Lyon.
+                  Pakaian yang mudah digunakan dan simpel seperti kemeja Batik
+                  bisa menjadi contoh budaya Indonesia di depan masyarakat
+                  Prancis!
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={obat} width={100} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Obat- Obatan</h4>
+                <p>
+                  Jangan lupa untuk mencatat dan mempersiapkan semua kebutuhan
+                  medis pribadi kamu dari Indonesia seperti obat penyakit
+                  spesifik, pereda alergi, paracetamol, lensa kontak dsb.
+                  terkadang harga obat di Prancis jauh lebih mahal, jadi lebih
+                  baik dipersiapkan dari Indonesia.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-row gap-5 mx-auto">
+              <Image src={books} width={100} height={100} alt="" />
+              <div className="max-w-3xl">
+                <h4>Buku</h4>
+                <p>
+                  Kalau memungkinkan, tidak perlu membawa banyak buku berat
+                  seperti kamus atau buku kelas Prancis karena versi
+                  elektroniknya dapat didownload dan disimpan di handphone atau
+                  laptop. Untuk catatan pribadi, bisa difoto di handphone.
                 </p>
               </div>
             </div>
