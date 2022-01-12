@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import k from "../images/keberangkatan/keberangkatanHero.png";
 import Image from "next/image";
 import bank from "../images/tiba/gambar.png";
+import Footer from "../components/Footer";
+import check from "../images/icon/check.png";
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
@@ -24,10 +26,51 @@ const TibadiLyon = () => {
           </div>
         </section>
         <section>
-          <h2 className="text-center">Dokumen RIB <br />(Relevé d'Identité Bancaire)</h2>
-          <p className="text-center p-5">Pada saat membuka akun, Conseillermu akan langsung memberikan dokumen RIB yang berisikan:</p>
+          <h2 className="text-center">
+            Dokumen RIB <br />
+            (Relevé d'Identité Bancaire)
+          </h2>
+          <p className="text-center p-5">
+            Pada saat membuka akun, Conseillermu akan langsung memberikan
+            dokumen RIB yang berisikan:
+          </p>
+          <div className="flex flex-col gap-5 max-w-xl mx-auto">
+            <div className="flex flex-row gap-5">
+              <div className="my-auto">
+                <Image src={check} width={55} height={55} />
+              </div>
+              <p>
+                <span className="font-bold">Nomor IBAN</span>
+                <br />
+                (International Bank Account Number)<br />
+                Penting untuk semua tagihan,
+                pembayaran online
+              </p>
+            </div>
+            <div className="flex flex-row gap-5">
+              <div className="my-auto">
+                <Image src={check} width={55} height={55} />
+              </div>
+              <p>
+                <span className="font-bold">Nomor BIC </span>
+                <br />
+                (Bank Identifier Code)<br/>
+                Penting untuk kebutuhan transfer dana
+                dari bank Indonesia ke bank Prancis
+              </p>
+            </div>
+            <div className="flex flex-row gap-5">
+              <div className="my-auto">
+                <Image src={check} width={55} height={55} />
+              </div>
+              <p className="my-auto">
+                <span className="font-bold">Nama dan Alamat Pemilik Akun </span>
+              </p>
+            </div>
+          </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 };
