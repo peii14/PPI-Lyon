@@ -5,6 +5,7 @@ import Image from "next/image";
 import bank from "../images/tiba/gambar.png";
 import Footer from "../components/Footer";
 import check from "../images/icon/check.png";
+import Glassmorphism from "../components/Glassmorphism";
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
@@ -42,9 +43,9 @@ const TibadiLyon = () => {
               <p>
                 <span className="font-bold">Nomor IBAN</span>
                 <br />
-                (International Bank Account Number)<br />
-                Penting untuk semua tagihan,
-                pembayaran online
+                (International Bank Account Number)
+                <br />
+                Penting untuk semua tagihan, pembayaran online
               </p>
             </div>
             <div className="flex flex-row gap-5">
@@ -54,9 +55,10 @@ const TibadiLyon = () => {
               <p>
                 <span className="font-bold">Nomor BIC </span>
                 <br />
-                (Bank Identifier Code)<br/>
-                Penting untuk kebutuhan transfer dana
-                dari bank Indonesia ke bank Prancis
+                (Bank Identifier Code)
+                <br />
+                Penting untuk kebutuhan transfer dana dari bank Indonesia ke
+                bank Prancis
               </p>
             </div>
             <div className="flex flex-row gap-5">
@@ -68,6 +70,15 @@ const TibadiLyon = () => {
               </p>
             </div>
           </div>
+          <div className="p-10 ">
+            <p className="text-center mx-auto max-w-3xl">
+              Agar dapat melakukan transaksi secara online, jangan lupa untuk
+              meminta <span className="font-bold">aktivasi akun online</span> lewat conseiller kamu.{" "}
+            </p>
+          </div>
+        </section>
+        <section>
+            <Glassmorphism />
         </section>
       </div>
       <Footer />
