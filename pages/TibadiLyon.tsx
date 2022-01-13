@@ -78,7 +78,11 @@ const TibadiLyon = () => {
           </div>
         </section>
         <section>
-            <Glassmorphism />
+            <Glassmorphism > 
+              <div className="grid grid-rows-8 grid-cols-3 grid-flow-col" >
+                <p>Membuka akun</p>
+              </div>
+            </Glassmorphism>
         </section>
       </div>
       <Footer />
