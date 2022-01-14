@@ -29,7 +29,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         bghero: "url('/images/home/hero1.png')",
-      }),
+      }), 
       screens: {
         samsung: "370px",
         // => @media (min-width: 640px) { ... }

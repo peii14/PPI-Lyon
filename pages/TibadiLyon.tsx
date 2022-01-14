@@ -8,7 +8,8 @@ import check from "../images/icon/check.png";
 import Glassmorphism from "../components/Glassmorphism";
 import arrow from "../images/icon/arrow.png";
 import arrow2 from "../images/icon/arrow2.png";
-
+import id from "../images/icon/ID.png"
+import passport from "../images/icon/passport.png"
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
