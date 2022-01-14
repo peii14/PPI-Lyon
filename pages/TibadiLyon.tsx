@@ -6,6 +6,8 @@ import bank from "../images/tiba/gambar.png";
 import Footer from "../components/Footer";
 import check from "../images/icon/check.png";
 import Glassmorphism from "../components/Glassmorphism";
+import arrow from "../images/icon/arrow.png";
+import arrow2 from "../images/icon/arrow2.png";
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
@@ -13,7 +15,7 @@ const TibadiLyon = () => {
       <Navbar />
       <Hero img={k} />
       <div className="layout">
-        <section className="layout text-primary py-10 ">
+        <section className="layout text-primary pt-20 ">
           <h2 className="text-center">Membuat Rekening Bank Prancis</h2>
           <div className="flex flex-row justify-around gap-10 py-10 max-w-3xl mx-auto">
             <Image src={bank} width={1200} height={800} />
@@ -73,16 +75,44 @@ const TibadiLyon = () => {
           <div className="p-10 ">
             <p className="text-center mx-auto max-w-3xl">
               Agar dapat melakukan transaksi secara online, jangan lupa untuk
-              meminta <span className="font-bold">aktivasi akun online</span> lewat conseiller kamu.{" "}
+              meminta <span className="font-bold">aktivasi akun online</span>{" "}
+              lewat conseiller kamu.{" "}
             </p>
           </div>
         </section>
-        <section>
-            <Glassmorphism > 
-              <div className="grid grid-rows-8 grid-cols-3 grid-flow-col" >
-                <p>Membuka akun</p>
+        <section className="max-w-5xl mx-auto">
+          <Glassmorphism>
+            <div className="grid  grid-cols-3 text-center items-center align-middle">
+              <p className="">Membuka akun</p>
+              <div className=" row-span-16 col-start-2 ">
+                <div className="py-5">
+                  <Image src={arrow2} />
+                </div>
               </div>
-            </Glassmorphism>
+              <p className="row-span-16 col-start-3 -mt-10 ">
+                Memakan waktu sampai{" "}
+                <span className="font-bold">satu bulan</span>
+              </p>
+              <div className="">
+                <Image src={arrow} width={20} />
+              </div>
+              <p>
+                kartu tabungan akan dikirim melalui pos ke alamat tempat
+                tinggalmu
+              </p>
+              <div className="">
+                <Image src={arrow} width={20} />
+              </div>
+              <p>
+                PIN kartu juga akan dikirim di surat terpisah untuk menjaga
+                keamanan{" "}
+              </p>
+              <div className="">
+                <Image src={arrow} width={20} />
+              </div>
+              <p>Akun kamu sudah aktif dan dapat digunakan</p>
+            </div>
+          </Glassmorphism>
         </section>
       </div>
       <Footer />
