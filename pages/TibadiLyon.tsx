@@ -8,6 +8,7 @@ import check from "../images/icon/check.png";
 import Glassmorphism from "../components/Glassmorphism";
 import arrow from "../images/icon/arrow.png";
 import arrow2 from "../images/icon/arrow2.png";
+
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
@@ -112,7 +113,17 @@ const TibadiLyon = () => {
               </div>
               <p>Akun kamu sudah aktif dan dapat digunakan</p>
             </div>
+            <div className="text-center mt-10">
+              <p>
+                Username dan password akun internet juga <span className="font-bold">tidak</span> langsung jadi
+                melainkan akan dikirim melalui pos tapi jauh lebih cepat dari
+                proses diatas, kira-kira bisa sampai dalam <span className="font-bold">1 minggu.</span>
+              </p>
+            </div>
           </Glassmorphism>
+          <div className="text-center p-10">
+            <p>Dokumen yang dibutuhkan tergantung bank, namun biasanya <span className="font-bold">setidaknya</span>:</p>
+          </div>
         </section>
       </div>
       <Footer />
