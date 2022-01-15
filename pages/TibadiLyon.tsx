@@ -10,6 +10,9 @@ import arrow from "../images/icon/arrow.png";
 import arrow2 from "../images/icon/arrow2.png";
 import id from "../images/icon/ID.png";
 import passport from "../images/icon/passport.png";
+import sosh from "../images/tiba/sosh.png";
+import red from "../images/tiba/red.png";
+import byou from "../images/tiba/byou.png";
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
@@ -224,15 +227,81 @@ const TibadiLyon = () => {
                   website tersebut.
                 </p>
                 <p>
-                  kekurangannya adalah kamu harus <span className="font-bold">sudah punya akun bank Prancis
-                  atau setidaknya nomor IBAN dari akun tersebut</span> karena
-                  tagihannya akan ditarik secara otomatis dari rekening tersebut
+                  kekurangannya adalah kamu harus{" "}
+                  <span className="font-bold">
+                    sudah punya akun bank Prancis atau setidaknya nomor IBAN
+                    dari akun tersebut
+                  </span>{" "}
+                  karena tagihannya akan ditarik secara otomatis dari rekening
+                  tersebut
                 </p>
                 <p>
-                  Contoh abonnement low-cost adalah <span className="font-bold">RED by SFR</span> seharga 12€ per
+                  Contoh abonnement low-cost adalah{" "}
+                  <span className="font-bold">RED by SFR</span> seharga 12€ per
                   bulan untuk 60GB internet dengan telfon dan SMS gratis di
-                  Prancis <span className="font-bold">SOS dari Orange</span> dengan 12€ per bulan untuk 40GB
-                  internet.
+                  Prancis <span className="font-bold">SOS dari Orange</span>{" "}
+                  dengan 12€ per bulan untuk 40GB internet.
+                </p>
+              </div>
+            </Glassmorphism>
+          </div>
+        </section>
+        <section className="max-w-4xl mx-auto p-10">
+          <h2 className="text-center">Saran Dari PPI</h2>
+          <p className="mt-5 text-justify">
+            Beberapa minggu <span className="font-bold">pertama</span> kamu
+            menggunakan data internet roaming dari Indonesia, lalu kamu bisa
+            langsung memesan kartu SIM dengan abonnement setelah kamu punya akun
+            bank Prancis, atau sambil menunggu akun bank menggunakan kartu SIM
+            prépayée. <br />
+            <span className="font-bold">
+              Hati-hati dengan pilihan abonnement avec engagement
+            </span>{" "}
+            karena artinya kamu diikat kontrak untuk pilihan tersebut sampai
+            durasinya habis, biasanya satu tahun.
+          </p>
+        </section>
+        <section className="py-5">
+          <h2 className="text-center max-w-3xl mx-auto ">
+            Penilaian SIM Berdasarkan Pengalaman Mahasiswa di Prancis
+          </h2>
+          <div className="flex flex-row gap-20 py-10">
+            <Glassmorphism>
+              <h3 className="text-center">Sosh</h3>
+              <div className="p-5">
+                <p>
+                  Milik Orange France menawarkan sinyal{" "}
+                  <span className="font-bold">bagus</span> dan internet{" "}
+                  <span className="font-bold">cepat </span>
+                  bahkan sampai di pelosok desa-desa Prancis atau di{" "}
+                  <span className="font-bold">terowongan</span> bawah tanah
+                  métro, sehingga misalkan kamu sedang bepergian dengan bus,
+                  kamu tidak akan ada masalah koneksi.
+                  <br />
+                  <br />
+                  Kekurangannya lebih mahal dengan kuota internet lebih sedikit
+                  yaitu 12€/bulan 40GB
+                </p>
+              </div>
+              <div className="mx-auto">
+                <Image  src={sosh} la yout="fixed"/>
+              </div>
+            </Glassmorphism>
+            <Glassmorphism>
+              <h3 className="text-center">Red by SFR</h3>
+              <div className="p-5">
+                <p>
+                  Milik SFR dan B&You, milik Bouygues Telecom menawarkan sinyal
+                  dan kecepatan internet yang{" "}
+                  <span className="font-bold">cukup</span> bagus untuk kebutuhan
+                  sehari-hari di <span className="font-bold">kota besar</span>{" "}
+                  seperti Lyon dan di desa-desa yang cukup terkenal.
+                  <br />
+                  <span className="font-bold">Kekurangan</span>: kadang ada <span className="font-bold">penurunan</span> internet dari 4G ke 3G di
+                  tengah perjalanan bus atau ketika di dalam terowongan.
+                  <br />
+                  <span className="font-bold">Kelebihan</span>: paket lebih <span className="font-bold">murah</span> dari Sosh dengan kuota internet
+                  lebih banyak: 12€/bulan 60GB
                 </p>
               </div>
             </Glassmorphism>
