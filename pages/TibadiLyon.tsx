@@ -266,27 +266,29 @@ const TibadiLyon = () => {
             Penilaian SIM Berdasarkan Pengalaman Mahasiswa di Prancis
           </h2>
           <div className="flex flex-row gap-20 py-10">
-            <Glassmorphism>
-              <h3 className="text-center">Sosh</h3>
-              <div className="p-5">
-                <p>
-                  Milik Orange France menawarkan sinyal{" "}
-                  <span className="font-bold">bagus</span> dan internet{" "}
-                  <span className="font-bold">cepat </span>
-                  bahkan sampai di pelosok desa-desa Prancis atau di{" "}
-                  <span className="font-bold">terowongan</span> bawah tanah
-                  métro, sehingga misalkan kamu sedang bepergian dengan bus,
-                  kamu tidak akan ada masalah koneksi.
-                  <br />
-                  <br />
-                  Kekurangannya lebih mahal dengan kuota internet lebih sedikit
-                  yaitu 12€/bulan 40GB
-                </p>
-              </div>
-              <div className="mx-auto">
-                <Image  src={sosh} la yout="fixed"/>
-              </div>
-            </Glassmorphism>
+            <div className="basis-1/2">
+              <Glassmorphism>
+                <h3 className="text-center">Sosh</h3>
+                <div className="p-5">
+                  <p>
+                    Milik Orange France menawarkan sinyal{" "}
+                    <span className="font-bold">bagus</span> dan internet{" "}
+                    <span className="font-bold">cepat </span>
+                    bahkan sampai di pelosok desa-desa Prancis atau di{" "}
+                    <span className="font-bold">terowongan</span> bawah tanah
+                    métro, sehingga misalkan kamu sedang bepergian dengan bus,
+                    kamu tidak akan ada masalah koneksi.
+                    <br />
+                    <br />
+                    Kekurangannya lebih mahal dengan kuota internet lebih
+                    sedikit yaitu 12€/bulan 40GB
+                  </p>
+                </div>
+                <div className="w-max mx-auto">
+                  <Image src={sosh} layout="fixed" />
+                </div>
+              </Glassmorphism>
+            </div>
             <Glassmorphism>
               <h3 className="text-center">Red by SFR</h3>
               <div className="p-5">
@@ -297,12 +299,21 @@ const TibadiLyon = () => {
                   sehari-hari di <span className="font-bold">kota besar</span>{" "}
                   seperti Lyon dan di desa-desa yang cukup terkenal.
                   <br />
-                  <span className="font-bold">Kekurangan</span>: kadang ada <span className="font-bold">penurunan</span> internet dari 4G ke 3G di
-                  tengah perjalanan bus atau ketika di dalam terowongan.
+                  <span className="font-bold">Kekurangan</span>: kadang ada{" "}
+                  <span className="font-bold">penurunan</span> internet dari 4G
+                  ke 3G di tengah perjalanan bus atau ketika di dalam
+                  terowongan.
                   <br />
-                  <span className="font-bold">Kelebihan</span>: paket lebih <span className="font-bold">murah</span> dari Sosh dengan kuota internet
-                  lebih banyak: 12€/bulan 60GB
+                  <span className="font-bold">Kelebihan</span>: paket lebih{" "}
+                  <span className="font-bold">murah</span> dari Sosh dengan
+                  kuota internet lebih banyak: 12€/bulan 60GB
                 </p>
+              </div>
+              <div className="flex flex-row justify-around">
+                <div className="my-auto">
+                  <Image src={byou} layout="fixed" width={150} height={50}/>
+                </div>
+                <Image src={red} layout="fixed" width={150} height={130} />
               </div>
             </Glassmorphism>
           </div>
