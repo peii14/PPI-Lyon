@@ -15,6 +15,9 @@ module.exports = {
       dropShadow: {
         '3xl': '0 45px 45px rgba(0, 0, 0, 0.55)',
       },
+      gridRow: {        
+        'span-16': 'span 7 / span 7',      
+      },
       colors: {
         // 500 for gradient, 600 for hover
         primary: { DEFAULT: "#282828" },
@@ -28,7 +31,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         bghero: "url('/images/home/hero1.png')",
-      }),
+      }), 
       screens: {
         samsung: "370px",
         // => @media (min-width: 640px) { ... }
