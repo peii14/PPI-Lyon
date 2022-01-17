@@ -23,6 +23,8 @@ module.exports = {
         third: { DEFAULT: "#771011" },
         title: "#595959",
         secondHover: "#b32a00",
+        tip_box: "#D4DADE",
+        tip_box_outline: "radial-gradient"
       },
       backgroundImage: (theme) => ({
         bghero: "url('/images/home/hero1.png')",
