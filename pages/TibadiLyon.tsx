@@ -561,10 +561,10 @@ const TibadiLyon = () => {
               Semua penduduk di Prancis, termasuk mahasiswa, berhak mendapatkan
               asuransi pemerintah standar{" "}
               <span className="font-bold">gratis</span> yang disebut{" "}
-              <span className="font-bold">sécurité sociale</span>
+              <span className="font-bold">sécurité sociale </span>
               yang akan menutup <span className="font-bold">70%</span>{" "}
               pengeluaran kesehatan yang bersifat{" "}
-              <span className="font-bold">dasar</span>
+              <span className="font-bold">dasar </span>
               seperti{" "}
               <span className="font-bold">
                 konsultasi dokter umum, konsultasi dokter spesialis (terkecuali
@@ -581,9 +581,9 @@ const TibadiLyon = () => {
                 konsultasi dokter gigi, dokter mata dan dokter kulit
               </span>
               . Pemerintah Prancis
-              <span className="font-bold">tidak</span> memungut biaya sécurité
+              <span className="font-bold"> tidak</span> memungut biaya sécurité
               sociale untuk mahasiswa dan secara
-              <span className="font-bold">gratis</span> diperbaharui validasinya
+              <span className="font-bold"> gratis</span> diperbaharui validasinya
               setiap tahun ajaran{" "}
               <span className="font-bold">selama tetap status mahasiswa.</span>
               <br />
@@ -604,7 +604,7 @@ const TibadiLyon = () => {
               <br />
               <br />
               Contoh untuk mahasiswa adalah mutuelle seharga{" "}
-              <span className="font-bold ">15€/bulan</span> dari SMERRA yang
+              <span className="font-bold ">15€/bulan </span> dari SMERRA yang
               memberikan kamu keuntungan seperti konsultasi dokter gigi, bahkan
               membeli lensa kontak atau mengganti kacamata dua tahun sekali.
               <br />
@@ -612,7 +612,7 @@ const TibadiLyon = () => {
               Di Prancis, <span className="font-bold">
                 sécurité sociale
               </span>{" "}
-              adalah asuransi yang kamu <span className="font-bold">harus</span>
+              adalah asuransi yang kamu <span className="font-bold">harus </span>
               punya, sedangkan mutuelle bersifat{" "}
               <span className="font-bold">opsional</span>. Artinya,{" "}
               <span className="font-bold">

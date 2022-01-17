@@ -18,7 +18,8 @@ import photo from "../images/icon/photo.png";
 import mi from "../images/icon/emi.png";
 import batik from "../images/icon/shirt.png";
 import obat from "../images/icon/fontisto_pills.png";
-import books from "../images/icon/books.png"
+import books from "../images/icon/books.png";
+import blur1 from "../images/blur1.png";
 // GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
@@ -53,7 +54,7 @@ const Keberangkatan = () => {
             </p>
           </div>
         </section>
-        <section className="text-primary mx-auto flex flex-col gap-10">
+        <section className="text-primary mx-auto flex flex-col gap-10 relative">
           <h2 className="text-center max-w-3xl mx-auto">
             Mencari Tempat Tinggal Dari Indonesia
           </h2>
@@ -66,9 +67,9 @@ const Keberangkatan = () => {
               bisa tinggal sendiri atau bersama penghuni lain (colocataire).
             </p>
           </div>
-          <div className="flex flex-col gap-10  ">
+          <div className="flex flex-col gap-10 relative  ">
             <h3 className="text-center">Tipe-tipe tempat tinggal</h3>
-            <div className="grid grid-cols-2 gap-10 w-7/12 justify-items-center mx-auto justify-center ">
+            <div className="z-10 grid grid-cols-2 gap-10 w-7/12 justify-items-center mx-auto justify-center ">
               <div className="col-span-2 min-w-full ">
                 <RoomType type="Studio" />
               </div>
@@ -81,6 +82,12 @@ const Keberangkatan = () => {
               <div className="col-span-2 min-w-full self-stretch">
                 <RoomType type="Chamber" />
               </div>
+            </div>
+            <div className="absolute z-0 left-2/4 w-2/4"> 
+              <Image src={blur1} layout="intrinsic"/>
+            </div>
+            <div className="w-3/4 -left-2/4 bottom-0 absolute align-bottom ">
+            <Image src={blur1} layout="intrinsic"/>
             </div>
           </div>
           <div className="max-w-4xl mx-auto flex flex-col gap-5 py-10">
@@ -209,10 +216,13 @@ const Keberangkatan = () => {
             </div>
           </div>
         </section>
-        <section className="py-10 text-primary mx-auto ">
+        <section className="py-10 text-primary mx-auto relative ">
           <h2 className="text-center max-w-3xl mx-auto ">
             Poin Penting Pada Saat Memilih Tempat Tinggal
           </h2>
+          <div className="absolute w-11/12 -top-1/2 -right-2/4 ">
+            <Image src={blur1} />
+          </div>
           <div className="grid grid-cols-3 gap-10 mx-auto max-w-4xl py-10 ">
             <div className="flex flex-col items-center gap-3">
               <Image src={uang} layout="fixed" />
@@ -256,11 +266,15 @@ const Keberangkatan = () => {
               </p>
             </Glassmorphism>
           </div>
+          <div className="absolute w-10/12 -left-2/4 z-0">
+            <Image src={blur1} />
+          </div>
         </section>
-        <section className="text-primary mx-auto py-5">
+        <section className="text-primary mx-auto py-5 relative z-10">
           <h2 className="text-center max-w-3xl mx-auto">
             Istilah-Istilah Penting Saat Proses Administrasi Menyewa Apartemen
           </h2>
+          
           <div className="py-10 flex flex-col gap-10 max-w-4xl mx-auto ">
             <Glassmorphism>
               <h3 className="text-third text-center">
@@ -364,6 +378,9 @@ const Keberangkatan = () => {
                 </li>
               </ul>
             </Glassmorphism>
+          </div>
+          <div className="absolute bottom-0 left-3/4 w-3/4">
+            <Image src={blur1}/>
           </div>
         </section>
         <section className="mx-auto text-primary py-5">
