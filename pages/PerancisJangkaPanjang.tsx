@@ -54,7 +54,7 @@ const PerancisJangkaPanjang = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-xl flex flex-row gap-5 p-5">
+            <div className="bg-white rounded-lg shadow-2xl  flex flex-row gap-5 p-5">
               <div className="basis-1/4 m-auto">
                 <Image src={cm} layout="fixed" />
               </div>

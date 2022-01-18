@@ -464,7 +464,7 @@ const TibadiLyon = () => {
                   </span>{" "}
                   atau nomor mahasiswa Prancis, beserta dengan instruksi untuk
                   membuat akun di situs{" "}
-                  <span className="font-bold underline cursor-pointer">
+                  <span className="font-bold text-blue-700 underline cursor-pointer">
                     <a
                       href="https://www.messervices.etudiant.gouv.fr/envole/"
                       target={"_blank"}
@@ -525,7 +525,7 @@ const TibadiLyon = () => {
                 restoran universitas atau restoran milik CROUS
               </span>
               . Detailnya bisa dilihat di situs{" "}
-              <span className="underline font-bold">
+              <span className="underline font-bold text-blue-700">
                 <a href="https://izly.fr/" target={"_blank"}>
                   izly.fr
                 </a>
@@ -629,7 +629,7 @@ const TibadiLyon = () => {
               . Semua proses ini dapat dipantau, diubah dan dilakukan lewat
               badan kesehatan pemerintah Ameli{" "}
               <span className="font-bold">lewat website</span>
-              <span className="font-bold underline cursor-pointer">
+              <span className="font-bold underline text-blue-700 cursor-pointer">
                 {" "}
                 <a href="https://www.ameli.fr/">ameli.fr</a>
               </span>

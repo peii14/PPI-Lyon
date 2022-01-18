@@ -102,12 +102,12 @@ const Keberangkatan = () => {
               mengurus apartemen tersebut. Untuk mencari apartemen tipe ini,
               kamu bisa coba di link berikut:
             </p>
-            <ul className="grid grid-cols-2 list-disc list-inside gap-3">
+            <ul className="grid grid-cols-2 list-disc list-inside gap-3 ">
               <li>
                 <a
                   href="https://www.pap.fr/"
                   target="_blank"
-                  className="no-underline hover:underline"
+                  className="underline text-blue-700"
                 >
                   pap.fr
                 </a>
@@ -116,7 +116,7 @@ const Keberangkatan = () => {
                 <a
                   href="https://www.leboncoin.fr/"
                   target="_blank"
-                  className="no-underline hover:underline"
+                  className="underline text-blue-700"
                 >
                   leboncoin.fr
                 </a>
@@ -125,7 +125,7 @@ const Keberangkatan = () => {
                 <a
                   href="https://www.appartager.com/"
                   target="_blank"
-                  className="no-underline hover:underline"
+                  className="underline text-blue-700"
                 >
                   appartager.com
                 </a>
@@ -137,7 +137,7 @@ const Keberangkatan = () => {
                 <a
                   href="https://www.seloger.com/"
                   target="_blank"
-                  className="no-underline hover:underline"
+                  className="text-blue-700 underline"
                 >
                   seloger.com
                 </a>
@@ -146,7 +146,7 @@ const Keberangkatan = () => {
                 <a
                   href="https://www.lokaviz.fr/"
                   target="_blank"
-                  className="no-underline hover:underline"
+                  className="text-blue-700 underline"
                 >
                   lokaviz.fr
                 </a>
@@ -176,7 +176,7 @@ const Keberangkatan = () => {
                 <a
                   href="https://www.messervices.etudiant.gouv.fr/envole/"
                   target="_blank"
-                  className="no-underline hover:underline italic font-bold"
+                  className="text-blue-700 underline italic font-bold"
                 >
                   messervices.etudiant.gouv.fr
                 </a>
@@ -187,7 +187,7 @@ const Keberangkatan = () => {
                 <a
                   href="https://www.nexity-studea.com/"
                   target="_blank"
-                  className="no-underline hover:underline italic font-bold"
+                  className="text-blue-700 underline italic font-bold"
                 >
                   nexity-studea.com
                 </a>
@@ -195,7 +195,7 @@ const Keberangkatan = () => {
                 <a
                   href="https://www.studapart.com/en"
                   target="_blank"
-                  className="no-underline hover:underline italic font-bold"
+                  className="text-blue-700 underline italic font-bold"
                 >
                   studapart.com
                 </a>
@@ -209,7 +209,7 @@ const Keberangkatan = () => {
               <a
                 href="https://www.lyoncampus.com/vivre/liste-des-residences-etudiantes"
                 target="_blank"
-                className="no-underline hover:underline italic font-bold"
+                className="text-blue-700 underline italic font-bold"
               >
                 lyoncampus.com
               </a>
