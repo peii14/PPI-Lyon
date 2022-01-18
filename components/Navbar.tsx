@@ -87,7 +87,7 @@ const Navbar = () => {
               <>
                 <Disclosure.Button>
                   <div className="absolute z-50 p-5">
-                    <Hamburger color="#f0f0f0" />
+                    <Hamburger toggled={open} color="#f0f0f0" />
                   </div>
                 </Disclosure.Button>
 
@@ -101,7 +101,7 @@ const Navbar = () => {
                 >
                   <Disclosure.Panel>
                     {({ close }) => (
-                      <div className="h-screen w-auto bg-primary py-20 px-10  ">
+                      <div className="h-screen bg-primary py-20 px-10  ">
                         <ul className="flex flex-col gap-5 text-sec text-2xl cursor-pointer ">
                           <button
                             onClick={async () => {
@@ -117,7 +117,7 @@ const Navbar = () => {
                               </li>
                             </Link>
                           </button>
-                          <li>
+                          <li className="w-52">
                             <Disclosure>
                               {({ open }) => (
                                 <>
@@ -130,14 +130,14 @@ const Navbar = () => {
                                     />
                                   </Disclosure.Button>
                                   <Transition
-                                    enter="transition duration-300 ease-out"
-                                    enterFrom="transform scale-95 translate-10 opacity-0"
-                                    enterTo="transform scale-100 translate-0 opacity-100"
-                                    leave="transition duration-100 ease-out delay-150"
-                                    leaveFrom="transform scale-100 translate-0 opacity-100"
-                                    leaveTo="transform scale-95 -translate-20 opacity-0"
+                                    enter="transition duration-500 ease-out"
+                                    enterFrom="transform scale-95  -translate-y-20 opacity-0"
+                                    enterTo="transform scale-100 translate-y-0 opacity-100 scale-100"
+                                    leave="transition duration-300 ease-out"
+                                    leaveFrom="transform scale-100 translate-y-0 opacity-100"
+                                    leaveTo="transform scale-95 -translate-y-10 opacity-0"
                                   >
-                                    <Disclosure.Panel className="text-xl py-4 w-8/12 ">
+                                    <Disclosure.Panel className="text-xl py-4 ">
                                       <button
                                         onClick={async () => {
                                           await fetch("/accept-terms", {
@@ -158,7 +158,7 @@ const Navbar = () => {
                                             </li>
                                           </Link>
                                           <Link href="/PerancisJangkaPanjang">
-                                            <li className="  ">
+                                            <li className="">
                                               <a>Perancis Jangka Panjang</a>
                                             </li>
                                           </Link>
@@ -175,7 +175,22 @@ const Navbar = () => {
                               )}
                             </Disclosure>
                           </li>
+                          <button
+                          onClick={async () => {
+                            await fetch("/accept-terms", {
+                              method: "POST",
+                            });
+                            close();
+                          }}
+                        >
+                          <Link href="/Gallery">
+                            <li className="cursor-pointer text-left ">
+                              <a>Gallery</a>
+                            </li>
+                          </Link>
+                        </button>
                         </ul>
+                        
                       </div>
                     )}
                   </Disclosure.Panel>
