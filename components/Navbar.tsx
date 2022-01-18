@@ -3,9 +3,8 @@ import { Disclosure, Transition } from "@headlessui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Squash as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import ScrollLock from "react-scrolllock";
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <nav className="w-screen bg-primary opacity-80 max-h-16 fixed z-50 md:visible invisible">
@@ -80,7 +79,7 @@ const Navbar = () => {
           </Link>
         </ul>
       </nav>
-      <nav>
+      <nav className="md:hidden visible">
         <div className="absolute z-50 -top-5 ">
           <Disclosure>
             {({ open }) => (
@@ -195,10 +194,12 @@ const Navbar = () => {
                     )}
                   </Disclosure.Panel>
                 </Transition>
+                <ScrollLock isActive={open} />
               </>
             )}
           </Disclosure>
         </div>
+       
       </nav>
     </>
   );
