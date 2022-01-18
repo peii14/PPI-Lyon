@@ -22,7 +22,6 @@ import s from "../styles/Home.module.css";
 const TibadiLyon = () => {
   return (
     <>
-      <Navbar />
       <Hero img={k} />
       <div className="layout">
         <section className="text-primary pt-20 ">

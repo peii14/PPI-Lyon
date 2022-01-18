@@ -12,7 +12,6 @@ import loc from "../images/icon/location_outline.png";
 const PerancisJangkaPanjang = () => {
   return (
     <>
-      <Navbar />
       <Hero img={k} />
       <div className="layout text-justify">
         <section className="text-primary pt-20 mx-auto">
