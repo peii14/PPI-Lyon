@@ -6,14 +6,12 @@ import { Squash as Hamburger } from "hamburger-react";
 import ScrollLock from "react-scrolllock";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { stat } from "fs";
 
 export async function getServerSideProps() {
   console.log("rendering now");
   return { props: {} };
 }
 const Navbar = () => {
-  const [color, setColor] = useState({ color: "#f0f0f0" });
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -23,17 +21,14 @@ const Navbar = () => {
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    
   }, []);
-  
-  
+
   return (
     <>
-    
       <nav className="w-screen bg-primary opacity-80 max-h-16 fixed z-50 md:visible invisible">
         <ul className="flex flex-row text-white justify-between max-w-md mx-auto text-center transition-all duration-300">
           <Link href="/">
@@ -107,7 +102,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <nav className="md:hidden visible fixed z-50">
-        <div className="absolute -top-5  ">
+        <div className="absolute -top-5">
           <Disclosure>
             {({ open }) => (
               <>
@@ -115,11 +110,12 @@ const Navbar = () => {
                   <div className="absolute z-50 p-5">
                     <Hamburger
                       toggled={open}
-                      color={ open ?"#f0f0f0": scrollY > 200 ? "#282828" : "#f0f0f0"}
+                      color={
+                        open ? "#f0f0f0" : scrollY > 200 ? "#282828" : "#f0f0f0"
+                      }
                     />
                   </div>
                 </Disclosure.Button>
-
                 <Transition
                   enter="transition duration-300 ease-out"
                   enterFrom="transform -translate-x-full opacity-0"
@@ -130,96 +126,100 @@ const Navbar = () => {
                 >
                   <Disclosure.Panel>
                     {({ close }) => (
-                      <div className="h-screen bg-primary py-20 px-10  ">
-                        <ul className="flex flex-col gap-5 text-sec text-2xl cursor-pointer ">
-                          <button
-                            onClick={async () => {
-                              await fetch("/accept-terms", {
-                                method: "POST",
-                              });
-                              close();
-                            }}
-                          >
-                            <Link href="/">
-                              <li className=" text-sec text-2xl cursor-pointer h-full text-left">
-                                <a>Home</a>
-                              </li>
-                            </Link>
-                          </button>
-                          <li className="w-52">
-                            <Disclosure>
-                              {({ open }) => (
-                                <>
-                                  <Disclosure.Button className="space-x-3">
-                                    <span>Guideline</span>
-                                    <FontAwesomeIcon
-                                      className={`transform duration-500 
+                      <>
+                        <div className="w-screen h-2s bg-black bg-opacity-70 z-30 ">
+                          <div className="h-2s bg-primary py-20 px-10 z-40 overflow-hidden w-max opacity-100 ">
+                            <ul className="flex flex-col gap-5 text-sec text-2xl cursor-pointer ">
+                              <button
+                                onClick={async () => {
+                                  await fetch("/accept-terms", {
+                                    method: "POST",
+                                  });
+                                  close();
+                                }}
+                              >
+                                <Link href="/">
+                                  <li className=" text-sec text-2xl cursor-pointer h-full text-left">
+                                    <a>Home</a>
+                                  </li>
+                                </Link>
+                              </button>
+                              <li className="w-52">
+                                <Disclosure>
+                                  {({ open }) => (
+                                    <>
+                                      <Disclosure.Button className="space-x-3">
+                                        <span>Guideline</span>
+                                        <FontAwesomeIcon
+                                          className={`transform duration-500 
                                       ${open ? " rotate-180 " : " rotate-0 "} `}
-                                      icon={faChevronDown}
-                                    />
-                                  </Disclosure.Button>
-                                  <Transition
-                                    enter="transition duration-500 ease-out"
-                                    enterFrom="transform scale-95  -translate-y-20 opacity-0"
-                                    enterTo="transform scale-100 translate-y-0 opacity-100 scale-100"
-                                    leave="transition duration-300 ease-out"
-                                    leaveFrom="transform scale-100 translate-y-0 opacity-100"
-                                    leaveTo="transform scale-95 -translate-y-10 opacity-0"
-                                  >
-                                    <Disclosure.Panel className="text-xl py-4 ">
-                                      <button
-                                        onClick={async () => {
-                                          await fetch("/accept-terms", {
-                                            method: "POST",
-                                          });
-                                          close();
-                                        }}
+                                          icon={faChevronDown}
+                                        />
+                                      </Disclosure.Button>
+                                      <Transition
+                                        enter="transition duration-500 ease-out"
+                                        enterFrom="transform scale-95  -translate-y-20 opacity-0"
+                                        enterTo="transform scale-100 translate-y-0 opacity-100 scale-100"
+                                        leave="transition duration-300 ease-out"
+                                        leaveFrom="transform scale-100 translate-y-0 opacity-100"
+                                        leaveTo="transform scale-95 -translate-y-10 opacity-0"
                                       >
-                                        <ul className="flex flex-col text-left gap-5 ml-5">
-                                          <Link href="/Keberangkatan">
-                                            <li className="">
-                                              <a>Keberangkatan</a>
-                                            </li>
-                                          </Link>
-                                          <Link href="/TibadiLyon">
-                                            <li className="">
-                                              <a>Tiba di Lyon</a>
-                                            </li>
-                                          </Link>
-                                          <Link href="/PerancisJangkaPanjang">
-                                            <li className="">
-                                              <a>Perancis Jangka Panjang</a>
-                                            </li>
-                                          </Link>
-                                          <Link href="/Budgeting">
-                                            <li className="">
-                                              <a>Budgeting</a>
-                                            </li>
-                                          </Link>
-                                        </ul>
-                                      </button>
-                                    </Disclosure.Panel>
-                                  </Transition>
-                                </>
-                              )}
-                            </Disclosure>
-                          </li>
-                          <button
-                            onClick={async () => {
-                              await fetch("/accept-terms", {
-                                method: "POST",
-                              });
-                              close();
-                            }}
-                          >
-                            <Link href="/Gallery">
-                              <li className="cursor-pointer text-left ">
-                                <a>Gallery</a>
+                                        <Disclosure.Panel className="text-xl py-4 ">
+                                          <button
+                                            onClick={async () => {
+                                              await fetch("/accept-terms", {
+                                                method: "POST",
+                                              });
+                                              close();
+                                            }}
+                                          >
+                                            <ul className="flex flex-col text-left gap-5 ml-5">
+                                              <Link href="/Keberangkatan">
+                                                <li className="">
+                                                  <a>Keberangkatan</a>
+                                                </li>
+                                              </Link>
+                                              <Link href="/TibadiLyon">
+                                                <li className="">
+                                                  <a>Tiba di Lyon</a>
+                                                </li>
+                                              </Link>
+                                              <Link href="/PerancisJangkaPanjang">
+                                                <li className="">
+                                                  <a>Perancis Jangka Panjang</a>
+                                                </li>
+                                              </Link>
+                                              <Link href="/Budgeting">
+                                                <li className="">
+                                                  <a>Budgeting</a>
+                                                </li>
+                                              </Link>
+                                            </ul>
+                                          </button>
+                                        </Disclosure.Panel>
+                                      </Transition>
+                                    </>
+                                  )}
+                                </Disclosure>
                               </li>
-                            </Link>
-                          </button>
-                        </ul>
-                      </div>
+                              <button
+                                onClick={async () => {
+                                  await fetch("/accept-terms", {
+                                    method: "POST",
+                                  });
+                                  close();
+                                }}
+                              >
+                                <Link href="/Gallery">
+                                  <li className="cursor-pointer text-left ">
+                                    <a>Gallery</a>
+                                  </li>
+                                </Link>
+                              </button>
+                            </ul>
+                          </div>
+                        </div>
+                      </>
                     )}
                   </Disclosure.Panel>
                 </Transition>
