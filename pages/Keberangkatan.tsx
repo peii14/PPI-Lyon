@@ -2,7 +2,6 @@ import Hero from "../components/Hero";
 import k from "../images/keberangkatan/keberangkatanHero.png";
 import Image from "next/image";
 import ifi from "../images/keberangkatan/IFI.png";
-import Footer from "../components/Footer";
 import RoomType from "../components/RoomType";
 import uang from "../images/icon/uang.png";
 import school from "../images/icon/school.png";
@@ -609,7 +608,6 @@ const Keberangkatan = () => {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 };

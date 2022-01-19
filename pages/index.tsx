@@ -85,9 +85,9 @@ const Home: NextPage = () => {
           <ProkerSwiper />
         </div>
       </section>
-      <section className="flex flex-col gap-10 p-20 overflow-hidden  mx-auto">
+      <section className="flex flex-col gap-10 p-20 overflow-hidden mx-auto">
         <h1 className="text-center text-primary">Guideline</h1>
-        <div className="grid  grid-cols-2 max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
+        <div className="grid md:grid-cols-2  max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
           <Link href="/Keberangkatan">
             <a>
               <GuidelineSection status="1" />
@@ -124,7 +124,6 @@ const Home: NextPage = () => {
           </div>
         </Glassmorphism>
       </section>
-      <Footer />
     </>
   );
 };

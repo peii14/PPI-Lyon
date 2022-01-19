@@ -4,9 +4,36 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Squash as Hamburger } from "hamburger-react";
 import ScrollLock from "react-scrolllock";
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { stat } from "fs";
+
+export async function getServerSideProps() {
+  console.log("rendering now");
+  return { props: {} };
+}
 const Navbar = () => {
+  const [color, setColor] = useState({ color: "#f0f0f0" });
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+    
+  }, []);
+  
+  
   return (
     <>
+    
       <nav className="w-screen bg-primary opacity-80 max-h-16 fixed z-50 md:visible invisible">
         <ul className="flex flex-row text-white justify-between max-w-md mx-auto text-center transition-all duration-300">
           <Link href="/">
@@ -79,14 +106,17 @@ const Navbar = () => {
           </Link>
         </ul>
       </nav>
-      <nav className="md:hidden visible">
-        <div className="absolute z-50 -top-5 ">
+      <nav className="md:hidden visible fixed z-50">
+        <div className="absolute -top-5  ">
           <Disclosure>
             {({ open }) => (
               <>
                 <Disclosure.Button>
                   <div className="absolute z-50 p-5">
-                    <Hamburger toggled={open} color="#f0f0f0" />
+                    <Hamburger
+                      toggled={open}
+                      color={ open ?"#f0f0f0": scrollY > 200 ? "#282828" : "#f0f0f0"}
+                    />
                   </div>
                 </Disclosure.Button>
 
@@ -175,21 +205,20 @@ const Navbar = () => {
                             </Disclosure>
                           </li>
                           <button
-                          onClick={async () => {
-                            await fetch("/accept-terms", {
-                              method: "POST",
-                            });
-                            close();
-                          }}
-                        >
-                          <Link href="/Gallery">
-                            <li className="cursor-pointer text-left ">
-                              <a>Gallery</a>
-                            </li>
-                          </Link>
-                        </button>
+                            onClick={async () => {
+                              await fetch("/accept-terms", {
+                                method: "POST",
+                              });
+                              close();
+                            }}
+                          >
+                            <Link href="/Gallery">
+                              <li className="cursor-pointer text-left ">
+                                <a>Gallery</a>
+                              </li>
+                            </Link>
+                          </button>
                         </ul>
-                        
                       </div>
                     )}
                   </Disclosure.Panel>
@@ -199,7 +228,6 @@ const Navbar = () => {
             )}
           </Disclosure>
         </div>
-       
       </nav>
     </>
   );

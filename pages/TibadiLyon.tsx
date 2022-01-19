@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import k from "../images/keberangkatan/keberangkatanHero.png";
 import Image from "next/image";
 import bank from "../images/tiba/gambar.png";
-import Footer from "../components/Footer";
 import check from "../images/icon/check.png";
 import Glassmorphism from "../components/Glassmorphism";
 import arrow from "../images/icon/arrow.png";
@@ -654,7 +653,7 @@ const TibadiLyon = () => {
           <h2 className="max-w-3xl mx-auto text-center">Untuk Memulai Pengurusan Ameli Pertama Kali Tiba di Prancis:</h2>
         </section>
       </div>
-      <Footer />
+  
     </>
   );
 };

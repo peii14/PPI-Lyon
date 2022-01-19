@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Glassmorphism from "../components/Glassmorphism";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 import k from "../images/home/hero1.png";
 import td from "../images/icon/TD.png";
 import tp from "../images/icon/TP.png";
