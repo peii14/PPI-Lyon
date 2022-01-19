@@ -4,12 +4,11 @@ import Head from "next/head";
 import Image from "next/image";
 import blur1 from "../images/blur1.png";
 import Hero from "../components/Hero";
-import bg1 from "../images/home/hero1.png";
+import bg1 from "../images/home/hero1.jpg";
 import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
 import ProkerSwiper from "../components/ProkerSwiper";
 import qt from "../images/double-quotes-l.png";
-import Footer from "../components/Footer";
 import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
 // photo full team aja buat cover nya

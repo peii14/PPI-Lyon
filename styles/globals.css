@@ -13,9 +13,7 @@ body {
   overflow-x: hidden;
   background: #f0f0f0;
 }
-.hero {
-    filter: brightness(50%);
-}
+
 
 @layer base {
   /* Write your own custom base styles here */
