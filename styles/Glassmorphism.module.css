@@ -11,4 +11,8 @@
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 45px;
 }
-
+@media (max-width: 600px) {
+  .Glass{
+    padding: 2rem 1rem;
+  }
+}

@@ -50,6 +50,7 @@ body {
     max-width: 68.75rem;
     @apply mx-auto;
   }
+  
   @layer utilities {
     .text-gradient {
       background-clip: text;

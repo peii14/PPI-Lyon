@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <Hero img={bg1} />
       </div>
 
-      <section className="p-20  max-w-6xl mx-auto ">
+      <section className=" p-14 md:pt-0  max-w-6xl mx-auto ">
         <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
           <Image src={blur1} />
         </div>
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
                 dengan tujuan menghubungkan semua pelajar Indonesia yang sedang
                 menempuh pendidikan di kota Lyon.
               </p>
-              <div className="grid grid-flow-col gap-20">
+              <div className="grid md:grid-flow-col grid-flow-row gap-20">
                 <div className="">
                   <h3 className="text-center">Visi</h3>
                   <ul className={s.listed}>

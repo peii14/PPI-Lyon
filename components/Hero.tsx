@@ -3,12 +3,12 @@ import logo from "../images/logo.png";
 
 const Hero = (props: any): JSX.Element => {
   return (
-    <section className="w-screen md:h-screen relative">
-      <div className='absolute '>
-        <Image src={props.img} alt="" className="hero" layout='intrinsic'  />
+    <section className="relative w-screen md:h-screen">
+      <div className='z-0'>
+        <Image src={props.img} alt="" className="hero" layout="responsive" />
       </div>
-      <div className="flex justify-center items-center md:h-screen">
-        <Image src={logo} alt="" className="z-0 md:w-full"  />
+      <div className=" z-10 flex justify-center items-center px-20 md:py-20 py-10 ">
+        <Image src={logo} alt="" layout="intrinsic" />
       </div>
     </section>
   );
