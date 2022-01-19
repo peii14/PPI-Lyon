@@ -127,7 +127,7 @@ const Navbar = () => {
                   <Disclosure.Panel>
                     {({ close }) => (
                       <>
-                        <div className="w-screen h-2s bg-black bg-opacity-70 z-30 ">
+                        <div className={`bg-black  bg-fixed h-2s transition-all duration-1000 ${open ? 'w-2s bg-opacity-70':' bg-opacity-0 w-0'}`}>
                           <div className="h-2s bg-primary py-20 px-10 z-40 overflow-hidden w-max opacity-100 ">
                             <ul className="flex flex-col gap-5 text-sec text-2xl cursor-pointer ">
                               <button
