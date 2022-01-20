@@ -17,6 +17,9 @@ import tcl from "../images/tiba/tcl.png";
 import jempol from "../images/icon/jempol.png";
 import tcl2 from "../images/tiba/tcl2.png";
 import s from "../styles/Home.module.css";
+import cv from "../images/tiba/cartevitale.png";
+import caem from "../images/tiba/caem.png";
+import reimbursment from "../images/tiba/reimbursment.png";
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
@@ -581,8 +584,8 @@ const TibadiLyon = () => {
               . Pemerintah Prancis
               <span className="font-bold"> tidak</span> memungut biaya sécurité
               sociale untuk mahasiswa dan secara
-              <span className="font-bold"> gratis</span> diperbaharui validasinya
-              setiap tahun ajaran{" "}
+              <span className="font-bold"> gratis</span> diperbaharui
+              validasinya setiap tahun ajaran{" "}
               <span className="font-bold">selama tetap status mahasiswa.</span>
               <br />
               <br />
@@ -610,7 +613,8 @@ const TibadiLyon = () => {
               Di Prancis, <span className="font-bold">
                 sécurité sociale
               </span>{" "}
-              adalah asuransi yang kamu <span className="font-bold">harus </span>
+              adalah asuransi yang kamu{" "}
+              <span className="font-bold">harus </span>
               punya, sedangkan mutuelle bersifat{" "}
               <span className="font-bold">opsional</span>. Artinya,{" "}
               <span className="font-bold">
@@ -650,10 +654,226 @@ const TibadiLyon = () => {
           </div>
         </section>
         <section className="py-10">
-          <h2 className="max-w-3xl mx-auto text-center">Untuk Memulai Pengurusan Ameli Pertama Kali Tiba di Prancis:</h2>
+          <h2 className="max-w-3xl mx-auto text-center">
+            Untuk Memulai Pengurusan Ameli Pertama Kali Tiba di Prancis:
+          </h2>
+          <div className="grid grid-cols-2 gap-10 py-10 text-justify">
+            <Glassmorphism>
+              <h1 className="text-center">1</h1>
+              <p className="mt-5">
+                Buka situs{" "}
+                <a
+                  href="https://etudiant-etranger.ameli.fr/#/"
+                  target={"_blank"}
+                  className="font-bold underline text-blue-700"
+                >
+                  etudiant-etranger.ameli.fr
+                </a>{" "}
+                dan kamu akan melakukan{" "}
+                <span className="font-bold">registrasi online</span> dengan
+                memasukan pilihan étudiant sans activité professionnelle,
+                tanggal lahir dan kewarganegaraan
+              </p>
+            </Glassmorphism>
+            <Glassmorphism>
+              <h1 className="text-center">2</h1>
+              <p className="mt-5">
+                Kamu akan diberikan <span className="font-bold">instruksi</span>{" "}
+                untuk mengupload <span className="font-bold">dokumen</span>{" "}
+                seperti paspor, akte lahir, attestation d'inscription, RIB dsb.
+              </p>
+            </Glassmorphism>
+            <Glassmorphism>
+              <h1 className="text-center">3</h1>
+              <p className="mt-5">
+                Setelah semua dokumen selesai di upload, Ameli akan
+                <span className="font-bold"> memverifikasi</span> berkasmu dan
+                apabila sudah lengkap, kamu akan dikirimkan lewat email nomor{" "}
+                <span className="font-bold italic">
+                  sécurité sociale provisoire
+                </span>{" "}
+                yang artinya <span className="font-bold">sementara</span>,
+                karena nomor ini akan diganti dengan nomor sécurité sociale
+                fixe.
+              </p>
+            </Glassmorphism>
+            <Glassmorphism>
+              <h1 className="text-center">4</h1>
+              <p className="mt-5">
+                Dengan nomor sementara ini kamu{" "}
+                <span className="font-bold">
+                  sudah bisa pergi ke dokter dan meminta reimbursement
+                </span>
+                . Untuk cara melakukan permintaan reimbursement.
+              </p>
+            </Glassmorphism>
+            <Glassmorphism>
+              <h1 className="text-center">5</h1>
+              <p className="mt-5">
+                Setelah beberapa waktu yang bervariasi dari{" "}
+                <span className="font-bold">satu minggu sampai enam bulan</span>
+                , Ameli akan mengirimkan{" "}
+                <span className="font-bold">
+                  surat lewat pos ke alamat rumahmu
+                </span>{" "}
+                yang{" "}
+                <span className="font-bold">
+                  berisikan nomor sécurité sociale fixe{" "}
+                </span>{" "}
+                beserta{" "}
+                <span className="font-bold">
+                  password untuk mengakses akun Ameli permanenmu
+                </span>
+                . Kamu bisa login di website ameli.fr dan mengupload
+                dokumen-dokumen tambahan yang diminta apabila diminta. Situs{" "}
+                <a
+                  href="https://etudiant-etranger.ameli.fr/#/"
+                  target={"_blank"}
+                  className="font-bold underline text-blue-700"
+                >
+                  etudiant-etranger.ameli.fr
+                </a>{" "}
+                sudah tidak dipakai di langkah ini
+              </p>
+            </Glassmorphism>
+            <Glassmorphism>
+              <h1 className="text-center">6</h1>
+              <p className="mt-5">
+                Lalu kamu harus memesan{" "}
+                <span className="font-bold">carte vitale</span> dan{" "}
+                <span className="font-bold">
+                  CEAM (carte européenne d'assurance maladie)
+                </span>{" "}
+                yang bisa dilakukan di{" "}
+                <a
+                  href="https://www.ameli.fr/"
+                  target={"_blank"}
+                  className="text-blue-700 font-bold underline "
+                >
+                  ameli.fr
+                </a>
+                . Carte vitale digunakan sebagai{" "}
+                <span className="font-bold">
+                  kartu identitas sécurité sociale
+                </span>{" "}
+                untuk kebutuhan reimbursement, sedangkan CEAM digunakan untuk
+                <span className="font-bold">
+                  mengakses sécurité sociale Prancis ketika kamu mengalami
+                  masalah medis di Uni Eropa
+                </span>
+              </p>
+            </Glassmorphism>
+            <Glassmorphism>
+              <h1 className="text-center">7</h1>
+              <p className="mt-5">
+                Setelah dipesan, kedua kartu ini{" "}
+                <span className="font-bold">
+                  dikirim lewat pos ke alamat rumah yang terdaftar
+                </span>
+                . Proses ini bisa memakan waktu{" "}
+                <span className="font-bold">sampai beberapa bulan!</span>
+              </p>
+            </Glassmorphism>
+          </div>
+          <div className="text-center">
+            <h2>Tip Proses:</h2>
+            <p className="mt-5 text-justify max-w-3xl mx-auto">
+              Proses dari pertama kali membuat akun di situs Ameli untuk
+              mahasiswa internasional sampai mendapatkan carte vitale bisa
+              memakan waktu sampai 10 bulan, jadi lebih baik dilaksanakan
+              <span className="font-bold">secepat mungkin!</span>
+            </p>
+          </div>
+        </section>
+        <section>
+          <h2 className="text-center">
+            Contoh Proporsi Reimbursement Kesehatan Lewat Ameli.fr
+          </h2>
+          <div className="p-10">
+            <Image src={reimbursment} layout="responsive" />
+          </div>
+          <div className="flex flex-row justify-around text-center">
+            <div className="max-w-sm">
+              <h3>Carte Vitale</h3>
+              <Image src={cv} layout="intrinsic" />
+            </div>
+            <div className="max-w-sm">
+              <h3>CEAM</h3>
+              <Image src={caem} layout="intrinsic" />
+            </div>
+          </div>
+        </section>
+        <section className="py-20">
+          <h2 className="text-center">Mengurus Izin Tinggal: OFII</h2>
+          <p className="mt-5 max-w-4xl mx-auto text-justify">
+            <span className="font-bold">
+              OFII (Office Français de l'Immigration et Intégration)
+            </span>{" "}
+            adalah izin tinggal yang dikeluarkan pemerintah Prancis setelah
+            verifikasi{" "}
+            <span className="font-bold">Visa Long Séjour (VLS-TS)</span> kamu,
+            yang juga memberikan kamu hak untuk bepergian di dalam zona
+            Schengen.
+          </p>
+          <p className="mt-10 text-center">
+            Proses administrasi OFII harus dilakukan dalam waktu{" "}
+            <span className="font-bold">3 bulan pertama setelah tiba</span> di
+            Prancis dengan :
+          </p>
+          <div className="py-5 max-w-4xl mx-auto">
+            <Glassmorphism>
+              <div className="flex flex-col gap-5 text-center">
+                <p>
+                  Membuat akun di website administration- etrangers-en
+                  france.interieur.gouv.fr dengan memilih Je valide mon VLS-TS
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Mengikuti instruksi di website seperti memasukkan nomor visa
+                  dan identitas dengan hati-hati
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Membayar pajak sebagai biaya administrasi lewat perangko
+                  timbre fiscal online menggunakan kartu kredit atau debit di
+                  website yang sama, untuk tipe étudiant seharga 60€
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Kamu juga bisa membeli timbre fiscal sejumlah 60€ ini di tabac
+                  atau toko rokok. Kamu akan diberikan perangko dalam bentuk
+                  fisik dengan kode yang kamu bisa masukkan online
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Setelah semua langkah selesai, kamu akan menerima 2 email: ID
+                  pengguna yang harus disimpan untuk akses OFII online
+                  kedepannya dan dokumen konfirmasi validasi visa kamu
+                </p>
+              </div>
+              <p className="text-justify mt-14">
+                Dokumen konfirmasi inilah yang <span className="font-bold">harus kamu cetak dan selipkan di
+                paspor kamu bersama dengan visa VLS-TS</span>, karena <span className="font-bold"> kedua ini harus
+                ditunjukkan bersama sebagai bukti penduduk Prancis</span>. Penting
+                untuk diingat kalau visa <span className="font-bold">VLS-TS tanpa OFII tidak memberikan kamu
+                kebebasan bepergian di zona Schengen! </span> Kamu <span className="font-bold">harus membawa kedua
+                dokumen</span> ketika memasuki negara Schengen lain!
+              </p>
+            </Glassmorphism>
+          </div>
+        </section>
+        <section>
+          <h2 className="text-center">Dokumen Yang Harus Diupload Keakun OFII Onlinemu Antara Lain :</h2>
         </section>
       </div>
-  
     </>
   );
 };
