@@ -6,6 +6,12 @@ module.exports = {
       fontFamily: {
         primary: ["'Montserrat',sans-serif"],
       },
+      height: {        
+        '2s': '120vh',      
+      },
+      width: {        
+        '2s': '200vh',      
+      },
       textColor: {
         primary: "#282828",
         secondary: "#ffed4a",

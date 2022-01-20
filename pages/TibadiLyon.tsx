@@ -20,6 +20,10 @@ import s from "../styles/Home.module.css";
 import cv from "../images/tiba/cartevitale.png";
 import caem from "../images/tiba/caem.png";
 import reimbursment from "../images/tiba/reimbursment.png";
+import visa from "../images/icon/visa.png";
+import timbre from "../images/icon/timbre.png";
+import identitas from "../images/icon/identitas.png";
+import bukti from "../images/icon/bukti.png";
 // GANTI PHOTO
 const TibadiLyon = () => {
   return (
@@ -860,18 +864,290 @@ const TibadiLyon = () => {
                 </p>
               </div>
               <p className="text-justify mt-14">
-                Dokumen konfirmasi inilah yang <span className="font-bold">harus kamu cetak dan selipkan di
-                paspor kamu bersama dengan visa VLS-TS</span>, karena <span className="font-bold"> kedua ini harus
-                ditunjukkan bersama sebagai bukti penduduk Prancis</span>. Penting
-                untuk diingat kalau visa <span className="font-bold">VLS-TS tanpa OFII tidak memberikan kamu
-                kebebasan bepergian di zona Schengen! </span> Kamu <span className="font-bold">harus membawa kedua
-                dokumen</span> ketika memasuki negara Schengen lain!
+                Dokumen konfirmasi inilah yang{" "}
+                <span className="font-bold">
+                  harus kamu cetak dan selipkan di paspor kamu bersama dengan
+                  visa VLS-TS
+                </span>
+                , karena{" "}
+                <span className="font-bold">
+                  {" "}
+                  kedua ini harus ditunjukkan bersama sebagai bukti penduduk
+                  Prancis
+                </span>
+                . Penting untuk diingat kalau visa{" "}
+                <span className="font-bold">
+                  VLS-TS tanpa OFII tidak memberikan kamu kebebasan bepergian di
+                  zona Schengen!{" "}
+                </span>{" "}
+                Kamu{" "}
+                <span className="font-bold">harus membawa kedua dokumen</span>{" "}
+                ketika memasuki negara Schengen lain!
               </p>
             </Glassmorphism>
           </div>
         </section>
         <section>
-          <h2 className="text-center">Dokumen Yang Harus Diupload Keakun OFII Onlinemu Antara Lain :</h2>
+          <h2 className="text-center max-w-4xl mx-auto">
+            Dokumen Yang Harus Diupload Keakun OFII Onlinemu Antara Lain :
+          </h2>
+          <div className="grid grid-cols-3 gap-10 p-5 items-center justify-center text-center ">
+            <div className="flex flex-col">
+              <div className="mx-auto">
+                <Image src={passport} width={100} height={120} />
+              </div>
+              <p className="-ml-5">Passport</p>
+            </div>
+            <div className="flex flex-col">
+              <div className="mx-auto">
+                <Image src={visa} width={100} height={120} />
+              </div>
+              <p>Visa VLS-TS</p>
+            </div>
+            <div className="flex flex-col">
+              <div className="mx-auto">
+                <Image
+                  src={identitas}
+                  layout="intrinsic"
+                  width={100}
+                  height={120}
+                />
+              </div>
+              <p>
+                Foto identitas yang diambil di mesin foto{" "}
+                <span className="italic">Photomaton</span>
+              </p>
+            </div>
+            <div className="col-span-3 flex flex-row justify-around">
+              <div className="flex flex-col">
+                <div className="mx-auto">
+                  <Image
+                    src={bukti}
+                    layout="intrinsic"
+                    width={100}
+                    height={120}
+                  />
+                </div>
+                <p>
+                  Bukti tempat tinggal di Prancis <br />
+                  (Attestation d’hebergément)
+                </p>
+              </div>
+              <div className="flex flex-col">
+                <div className="mx-auto">
+                  <Image
+                    src={timbre}
+                    layout="intrinsic"
+                    width={100}
+                    height={120}
+                  />
+                </div>
+                <p>
+                  Bukti pembayaran timbre fiscal <br />
+                  sejumlah 60€
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 className="text-center">Mengurus Bantuan Tempat Tinggal: CAF</h2>
+          <p className="max-w-4xl text-justify mx-auto py-5">
+            <span className="font-bold">
+              CAF (Caisse d’allocation familiale)
+            </span>{" "}
+            adalah badan pemerintah Prancis yang bertanggung jawab atas{" "}
+            <span className="font-bold">bantuan sosial finansial</span> untuk
+            semua penduduk Prancis. CAF membantu memberikan bantuan dana seperti
+            untuk keluarga muda, pensiunan dan juga dalam bentuk subsidi{" "}
+            <span className="font-bold">
+              biaya tempat tinggal atau loyer yang disebut APL (Aide
+              personalisée au logement)
+            </span>
+            . APL ini dapat diminta ke CAF dan mereka akan menganalisa jumlah
+            dana yang akan disubsidikan berdasarkan beberapa faktor seperti
+            total loyer bulanan, kota, tipe apartemen dan situasi ekonomi yang
+            meminta.
+          </p>
+        </section>
+        <section className="max-w-4xl mx-auto text-center">
+          <h2>
+            Langkah-langkah Mengajukan Permohonan APL ke CAF Untuk Pertama
+            Kalinya:
+          </h2>
+          <div className="py-7">
+            <Glassmorphism>
+              <div className="flex flex-col gap-3">
+                <p>
+                  Membuka situs{" "}
+                  <a
+                    href="https://caf.fr/"
+                    target={"_blank"}
+                    className="font-bold underline text-blue-700"
+                  >
+                    caf.fr
+                  </a>
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Memilih{" "}
+                  <span className="font-bold">faire une simulation</span>, lalu
+                  di bawah kolom Vous n’êtes pas allocataire memilih le logement
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Mengikuti dan membaca dengan jelas setiap data yang mereka
+                  minta seperti kodepos, luas dan tipe apartemen. Jika ada yang
+                  kurang jelas mengenai apartemenmu, tanyakan langsung ke
+                  propriétaire. Untuk bagian bantuan finansial dan penghasilan
+                  di Prancis, pastikan kamu masukan 0 untuk semuanya apabila
+                  kamu tidak berpenghasilan di Prancis. Jika ada langkah
+                  spesifik yang kurang jelas bisa hubungi PPI Lyon langsung
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Ketika simulasi selesai, kamu akan mendapatkan estimasi
+                  subsidi dari CAF. Standar untuk apartemen di Lyon dengan
+                  kisaran 200-430€ per bulan, kamu bisa mendapatkan 85€ subsidi
+                  per bulan
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Setelah semua langkah selesai, kamu akan menerima 2 email: ID
+                  pengguna yang harus disimpan untuk akses OFII online
+                  kedepannya dan dokumen konfirmasi validasi visa kamu
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Setelah simulasi, pilih faire une demande dan kamu akan
+                  <span className="font-bold">membuat akun CAF baru</span>{" "}
+                  dengan memasukan nama, email, alamat dan identitas diri
+                  lainnyaÏ
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Kamu akan mendapatkan email konfirmasi pembuatan akun, dan CAF
+                  akan{" "}
+                  <span className="font-bold">
+                    mengirim lewat pos ke alamat rumahmu
+                  </span>{" "}
+                  satu surat berisi
+                  <span className="font-bold italic">
+                    numéro allocataire
+                  </span>{" "}
+                  dan satu surat lainnya berisi password untuk login akunmu.
+                  Seperti pembuatan akun bank, proses ini bisa memakan waktu{" "}
+                  <span className="font-bold">sampai dua bulan</span>
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Setelah kedua suratnya tiba, kamu bisa login dan ikuti
+                  instruksi akunmu, seperti mengisi{" "}
+                  <span className="font-bold">
+                    formulir perpajakan Prancis tahun sebelumnya
+                  </span>
+                  , di mana kamu masukkan 0 bila tidak ada penghasilan di
+                  Prancis
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Langkah terakhir adalah mengajukan semua dokumen yang diminta
+                  dan menunggu konfirmasi dari CAF (dossier à traiter). Proses
+                  ini juga bisa memakan waktu lebih dari satu bulan
+                </p>
+                <div>
+                  <Image src={arrow} />
+                </div>
+                <p>
+                  Setelah diverifikasi dan tidak ada kebutuhan lainnya,{" "}
+                  <span className="font-bold">
+                    CAF akan memulai transfer ke propriétaire setiap bulannya
+                  </span>
+                </p>
+              </div>
+            </Glassmorphism>
+          </div>
+          <div>
+            <p className="text-justify py-7">
+              Penting diketahui bahwa subsidi loyer yang sudah kamu bayarkan
+              penuh di bulan-bulan sebelumnya{" "}
+              <span className="font-bold">
+                akan dikembalikan (remboursement)
+              </span>
+              oleh CAF ke propriétaire. Kalau jumlahnya menumpuk, mungkin kamu
+              tidak perlu membayar loyer sama sekali di bulan berikutnya.
+              Pastikan kamu{" "}
+              <span className="font-bold">
+                pantau transfer oleh CAF lewat attestation di akunmu
+              </span>
+              . Ini bisa kamu tunjukan ke propriétaire sebagai bukti CAF sudah
+              mengirimkan sejumlah dana sebagai remboursement.
+              <br /> <br />
+              Jangan lupa untuk{" "}
+              <span className="font-bold">
+                deklarasi kepergian kamu dari apartemen ketika kamu pindah
+                tempat tinggal dan kontraknya sudah habis!
+              </span>{" "}
+              Kalau kamu lupa, CAF akan terus mengirimkan dana ke{" "}
+              <span className="italic">propriétaire</span> sampai dia yang akan
+              deklarasi kepergianmu, dan kamu akan ditagih oleh CAF untuk
+              membayar apa yang sudah dibayarkan ke{" "}
+              <span className="italic">propriétaire</span>!
+            </p>
+          </div>
+        </section>
+        <section className="max-w-4xl mx-auto py-10">
+          <h2 className="text-center">Melapor Diri: KBRI Paris</h2>
+          <div className="text-justify mt-7">
+            <p>
+              Melapor diri ke pemerintah Indonesia adalah langkah{" "}
+              <span className="font-bold">penting</span> yang
+              <span className="font-bold">
+                menjamin perlindungan kamu di bawah pemerintah Indonesia
+              </span>{" "}
+              ketika kamu berkedudukan di negara lain. Untuk penduduk Lyon, kamu
+              harus melapor diri ke Kedutaan Besar Republik Indonesia (KBRI) di
+              Paris lewat website Kemenlu:
+            </p>
+            <div className="p-5 text-center">
+              <a
+                href="https://kemlu.go.id/paris/id/pages/lapor_diri_/633/etc-menu"
+                target={"_blank"}
+                className="font-bold underline text-blue-700"
+              >
+                kemlu.go.id
+              </a>
+            </div>
+            <p>
+              Kamu bisa ikuti video instruksi di mana kamu akan memasukan
+              identitas diri, nomor paspor dan nomor visa. Proses lapor diri
+              online langsung selesai dan data diri kamu akan <span className="font-bold">tercatat</span> di KBRI
+              Paris. Kedepannya, proses lapor diri ini <span className="font-bold">dibutuhkan untuk memulai
+              semua permintaan administrasi ke KBRI Paris seperti perpanjangan
+              paspor, penggantian paspor dan permintaan layanan lainnya.</span>
+              <br /> <br />
+              Perlu diingat juga bahwa semua perubahan informasi yang
+              bersangkutan dengan <span className="font-bold">domisili</span> seperti pindah tempat tinggal atau
+              pulang ke Indonesia untuk liburan musim panas harus dilaporkan ke
+              KBRI lewat akun online kamu <span className="font-bold">agar data mereka tetap akurat.</span>
+            </p>
+          </div>
         </section>
       </div>
     </>
