@@ -1119,7 +1119,7 @@ const TibadiLyon = () => {
               Melapor diri ke pemerintah Indonesia adalah langkah{" "}
               <span className="font-bold">penting</span> yang
               <span className="font-bold">
-                menjamin perlindungan kamu di bawah pemerintah Indonesia
+              {" "} menjamin perlindungan kamu di bawah pemerintah Indonesia
               </span>{" "}
               ketika kamu berkedudukan di negara lain. Untuk penduduk Lyon, kamu
               harus melapor diri ke Kedutaan Besar Republik Indonesia (KBRI) di
@@ -1137,15 +1137,23 @@ const TibadiLyon = () => {
             <p>
               Kamu bisa ikuti video instruksi di mana kamu akan memasukan
               identitas diri, nomor paspor dan nomor visa. Proses lapor diri
-              online langsung selesai dan data diri kamu akan <span className="font-bold">tercatat</span> di KBRI
-              Paris. Kedepannya, proses lapor diri ini <span className="font-bold">dibutuhkan untuk memulai
-              semua permintaan administrasi ke KBRI Paris seperti perpanjangan
-              paspor, penggantian paspor dan permintaan layanan lainnya.</span>
+              online langsung selesai dan data diri kamu akan{" "}
+              <span className="font-bold">tercatat</span> di KBRI Paris.
+              Kedepannya, proses lapor diri ini{" "}
+              <span className="font-bold">
+                dibutuhkan untuk memulai semua permintaan administrasi ke KBRI
+                Paris seperti perpanjangan paspor, penggantian paspor dan
+                permintaan layanan lainnya.
+              </span>
               <br /> <br />
               Perlu diingat juga bahwa semua perubahan informasi yang
-              bersangkutan dengan <span className="font-bold">domisili</span> seperti pindah tempat tinggal atau
-              pulang ke Indonesia untuk liburan musim panas harus dilaporkan ke
-              KBRI lewat akun online kamu <span className="font-bold">agar data mereka tetap akurat.</span>
+              bersangkutan dengan <span className="font-bold">
+                domisili
+              </span>{" "}
+              seperti pindah tempat tinggal atau pulang ke Indonesia untuk
+              liburan musim panas harus dilaporkan ke KBRI lewat akun online
+              kamu{" "}
+              <span className="font-bold">agar data mereka tetap akurat.</span>
             </p>
           </div>
         </section>
