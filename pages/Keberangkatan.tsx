@@ -23,7 +23,7 @@ import blur1 from "../images/blur1.png";
 const Keberangkatan = () => {
   return (
     <>
-      <Hero img={k} />
+      <Hero img={k} title={"Keberangkatan"} />
       <div className="layout">
         <section className="text-primary p-20 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">

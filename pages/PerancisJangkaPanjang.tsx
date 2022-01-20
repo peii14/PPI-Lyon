@@ -11,7 +11,7 @@ import loc from "../images/icon/location_outline.png";
 const PerancisJangkaPanjang = () => {
   return (
     <>
-      <Hero img={k} />
+      <Hero img={k} title={"Perancis Jangka Panjang"} />
       <div className="layout text-justify">
         <section className="text-primary pt-20 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">

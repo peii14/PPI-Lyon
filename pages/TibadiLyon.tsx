@@ -28,7 +28,7 @@ import bukti from "../images/icon/bukti.png";
 const TibadiLyon = () => {
   return (
     <>
-      <Hero img={k} />
+      <Hero img={k} title={"Tiba di Lyon"} />
       <div className="layout">
         <section className="text-primary pt-20 ">
           <h2 className="text-center">Membuat Rekening Bank Prancis</h2>
@@ -1119,7 +1119,8 @@ const TibadiLyon = () => {
               Melapor diri ke pemerintah Indonesia adalah langkah{" "}
               <span className="font-bold">penting</span> yang
               <span className="font-bold">
-              {" "} menjamin perlindungan kamu di bawah pemerintah Indonesia
+                {" "}
+                menjamin perlindungan kamu di bawah pemerintah Indonesia
               </span>{" "}
               ketika kamu berkedudukan di negara lain. Untuk penduduk Lyon, kamu
               harus melapor diri ke Kedutaan Besar Republik Indonesia (KBRI) di

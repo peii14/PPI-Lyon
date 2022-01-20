@@ -4,8 +4,7 @@ import hero from "../images/home/hero1.png";
 const Budgeting = () => {
   return (
     <>
-      <Navbar />
-      <Hero img={hero} />
+      <Hero img={hero} title={"Budgeting"} />
     </>
   );
 };

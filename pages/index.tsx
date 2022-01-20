@@ -11,7 +11,6 @@ import ProkerSwiper from "../components/ProkerSwiper";
 import qt from "../images/double-quotes-l.png";
 import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
-// photo full team aja buat cover nya
 const Home: NextPage = () => {
   const [isHover, setHover] = useState(false);
   return (
@@ -21,7 +20,7 @@ const Home: NextPage = () => {
         <meta name="keywords" content="Perhimpunan Pelajar Indonesia"></meta>
       </Head>
       <div className="w-screen overflow-y-hidden">
-        <Hero img={bg1} />
+        <Hero img={bg1} isHome={0} />
       </div>
 
       <section className=" p-14 max-w-6xl mx-auto ">
