@@ -23,13 +23,15 @@ const Keberangkatan = () => {
   return (
     <>
       <Hero img={k} title={"Keberangkatan"} />
-      <div className="layout">
-        <section className="text-primary p-20 mx-auto">
+      <div className="layout md:p-0 p-10">
+        <section className="text-primary md:p-20 p-0 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">
             Mengajukan visa VLS-TS
           </h2>
-          <div className="flex flex-row justify-around py-10">
-            <Image src={ifi} alt="" layout="fixed" />
+          <div className="flex md:flex-row flex-col justify-around py-10 md:gap-0 gap-5 text-justify">
+            <div className="mx-auto">
+              <Image src={ifi} alt="" layout="fixed" />
+            </div>
             <p className="max-w-xl">
               Hal pertama yang harus dilakukan settelah mendapat pengumuna
               penerimaan di Lyon adalah{" "}
@@ -67,8 +69,8 @@ const Keberangkatan = () => {
           </div>
           <div className="flex flex-col gap-10 relative  ">
             <h3 className="text-center">Tipe-tipe tempat tinggal</h3>
-            <div className="z-10 grid grid-cols-2 gap-10 w-7/12 justify-items-center mx-auto justify-center ">
-              <div className="col-span-2 min-w-full ">
+            <div className="z-10 grid md:grid-cols-2 grid-cols-1 gap-10 md:w-7/12 w-full justify-items-center mx-auto justify-center ">
+              <div className="md:col-span-2 min-w-full ">
                 <RoomType type="Studio" />
               </div>
               <RoomType type="T1" />
@@ -77,19 +79,19 @@ const Keberangkatan = () => {
               <RoomType type="T4" />
               <RoomType type="T5" />
               <RoomType type="BIS" />
-              <div className="col-span-2 min-w-full self-stretch">
+              <div className="md:col-span-2  min-w-full self-stretch">
                 <RoomType type="Chamber" />
               </div>
             </div>
-            <div className="absolute z-0 left-2/4 w-2/4"> 
-              <Image src={blur1} layout="intrinsic"/>
+            <div className="absolute z-0 left-2/4 w-2/4">
+              <Image src={blur1} layout="intrinsic" />
             </div>
             <div className="w-3/4 -left-2/4 bottom-0 absolute align-bottom ">
-            <Image src={blur1} layout="intrinsic"/>
+              <Image src={blur1} layout="intrinsic" />
             </div>
           </div>
           <div className="max-w-4xl mx-auto flex flex-col gap-5 py-10">
-            <h3 className="text-center">Kontrak</h3>
+            <h2 className="text-center">Kontrak</h2>
             <p className="text-justify">
               Apartemen dapat disewakan dalam bentuk Properti perseorangan
               (prpriete privee) atau khusus pelajar (residences etudiantes).
@@ -221,7 +223,7 @@ const Keberangkatan = () => {
           <div className="absolute w-11/12 -top-1/2 -right-2/4 ">
             <Image src={blur1} />
           </div>
-          <div className="grid grid-cols-3 gap-10 mx-auto max-w-4xl py-10 ">
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-10 mx-auto max-w-4xl py-10 ">
             <div className="flex flex-col items-center gap-3">
               <Image src={uang} layout="fixed" />
               <h4>Harga Murah</h4>
@@ -272,7 +274,7 @@ const Keberangkatan = () => {
           <h2 className="text-center max-w-3xl mx-auto">
             Istilah-Istilah Penting Saat Proses Administrasi Menyewa Apartemen
           </h2>
-          
+
           <div className="py-10 flex flex-col gap-10 max-w-4xl mx-auto ">
             <Glassmorphism>
               <h3 className="text-third text-center">
@@ -310,7 +312,7 @@ const Keberangkatan = () => {
             </Glassmorphism>
             <Glassmorphism>
               <h3 className="text-third text-center">
-                ATTESTATION D’HÉBERGEMENT/JUSTIFICATIF DE DOMICILE
+                ATTESTATION D’HÉBERGEMENT / JUSTIFICATIF DE DOMICILE
               </h3>
               <p className="mt-5 text-justify">
                 Surat sebagai bukti bahwa kamu benar-benar tinggal di
@@ -378,7 +380,7 @@ const Keberangkatan = () => {
             </Glassmorphism>
           </div>
           <div className="absolute bottom-0 left-3/4 w-3/4">
-            <Image src={blur1}/>
+            <Image src={blur1} />
           </div>
         </section>
         <section className="mx-auto text-primary py-5">
@@ -394,7 +396,7 @@ const Keberangkatan = () => {
             dana pengeluaran untuk beberapa bulan pertama setelah tiba,
             contohnya 3 bulan pertama.
           </p>
-          <div className="py-16 grid grid-cols-3 gap-10 text-center">
+          <div className="py-16 grid md:grid-cols-3 gap-10 text-center">
             <div>
               <Image src={cc1} layout="fixed" />
               <div className="flex flex-col gap-5 mt-2 ">
@@ -505,11 +507,13 @@ const Keberangkatan = () => {
             kebutuhan pribadi lainnya, kamu bisa ikuti tips di bawah ini:
           </p>
           <div className="flex flex-col gap-10 p-5">
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={hangat} width={100} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={hangat} width={100} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Pakaian Musim Dingin</h4>
-                <p>
+                <p className="text-justify">
                   kami menyarankan lebih baik agar tidak membawa terlalu banyak
                   dan tidak terlalu tebal karena berat sehingga memakan banyak
                   bagasi. Kamu bisa mendapatkan jaket tebal di Prancis dengan
@@ -517,11 +521,13 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={baju} width={100} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={baju} width={100} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Pakaian Sehari-hari</h4>
-                <p>
+                <p className="text-justify">
                   Lebih baik membawa banyak pakaian dalam, termasuk kaus kaki
                   untuk digunakan sehari-hari karena kemungkinan besar kamu akan
                   membeli beberapa pakaian di Prancis, jadi lebih baik tidak
@@ -529,11 +535,13 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={cooker} width={85} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={cooker} width={85} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Pemasak Nasi</h4>
-                <p>
+                <p className="text-justify">
                   Alat pemasak nasi memakan banyak tempat di bagasi dan
                   sebenarnya ada banyak pilihan pemasak nasi dengan harga murah
                   di toko elektronik Prancis. Pilihan yang lebih hemat adalah
@@ -542,11 +550,13 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={photo} width={85} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={photo} width={85} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Pas Photo</h4>
-                <p>
+                <p className="text-justify">
                   Tidak perlu bawa banyak kopi dan tipe pas foto untuk dibawa ke
                   Prancis (secukupnya saja), karena proses administrasi seperti
                   OFII pun mengharuskan kamu untuk membuat pas foto di Prancis
@@ -554,11 +564,13 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={mi} width={85} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={mi} width={85} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Mie Instan</h4>
-                <p>
+                <p className="text-justify">
                   Tidak perlu bawa banyak mie instan karena beberapa tempat di
                   Lyon menjualnya, seperti toko-toko Asia dengan harga sekitar
                   50 sen per bungkus. Lebih baik membawa bumbu-bumbu instan
@@ -566,11 +578,13 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={batik} width={85} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={batik} width={85} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Batik</h4>
-                <p>
+                <p className="text-justify">
                   Jangan lupa untuk bawa pakaian daerah seperti Batik untuk
                   dipakai di acara-acara kultural yang melibatkan PPI Lyon.
                   Pakaian yang mudah digunakan dan simpel seperti kemeja Batik
@@ -579,11 +593,13 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={obat} width={100} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={obat} width={100} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Obat- Obatan</h4>
-                <p>
+                <p className="text-justify">
                   Jangan lupa untuk mencatat dan mempersiapkan semua kebutuhan
                   medis pribadi kamu dari Indonesia seperti obat penyakit
                   spesifik, pereda alergi, paracetamol, lensa kontak dsb.
@@ -592,11 +608,13 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row gap-5 mx-auto">
-              <Image src={books} width={100} height={100} alt="" />
+            <div className="flex md:flex-row flex-col gap-5 mx-auto">
+              <div className="mx-auto">
+                <Image src={books} width={100} height={100} alt="" />
+              </div>
               <div className="max-w-3xl">
                 <h4>Buku</h4>
-                <p>
+                <p >
                   Kalau memungkinkan, tidak perlu membawa banyak buku berat
                   seperti kamus atau buku kelas Prancis karena versi
                   elektroniknya dapat didownload dan disimpan di handphone atau
