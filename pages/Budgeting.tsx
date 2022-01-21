@@ -21,23 +21,23 @@ const Budgeting = () => {
           <h2 className="text-center">Biaya Pengeluaran</h2>
           <div className="p-5">
             <Glassmorphism>
-              <div className="grid grid-cols-2 ">
+              <div className="grid grid-cols-2 items-center ">
                 <h3 className="text-danger">Pengeluaran Tahunan</h3>
                 <h3>Jumlah</h3>
-                <div className="grid grid-cols-2 col-span-2 my-5">
+                <div className="grid grid-cols-2 col-span-2 md:my-5 my-3 md:gap-0 gap-3">
                   <p>Timbre Fiscal untuk OFII</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>60 €</p>
-                    <p className="col-span-4">
+                    <p className="md:col-span-4 col-span-3">
                       | 85€ untuk titre de séjour di tahun kedua
                     </p>
                   </div>
                   <p>CVEC</p>
                   <p>90 €</p>
                   <p>Assurance d’habitation</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>50 €</p>
-                    <p className="col-span-4">
+                    <p className="md:col-span-4 col-span-3">
                       | bisa berkurang berdasarkan pilihan
                     </p>
                   </div>
@@ -47,42 +47,42 @@ const Budgeting = () => {
                 <h3 className="text-danger col-span-2">
                   Pengeluaran Bulanan Essensial
                 </h3>
-                <div className="grid grid-cols-2 col-span-2 my-5">
+                <div className="grid grid-cols-2 col-span-2 md:my-5 my-3 md:gap-0 gap-3">
                   <p>Loyer Apartemen</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>400 €</p>
-                    <p className="col-span-4"> | sebelum dipotong CAF</p>
+                    <p className="md:col-span-4 col-span-3"> | sebelum dipotong CAF</p>
                   </div>
                   <p>Charges (Listrik, Gas, Air)</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>30 € </p>
-                    <p className="col-span-4"> | bisa termasuk Loyer</p>
+                    <p className="md:col-span-4 col-span-3"> | bisa termasuk Loyer</p>
                   </div>
                   <p>Abonnement TCL</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>32 € </p>
-                    <p className="col-span-4">
+                    <p className="md:col-span-4 col-span-3">
                       {" "}
                       | bisa diganti dengan carnet 10
                     </p>
                   </div>
                   <p>Kartu SIM</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>15 € </p>
-                    <p className="col-span-4"> | bisa dikurangi sampai 10 €</p>
+                    <p className="md:col-span-4 col-span-3"> | bisa dikurangi sampai 10 €</p>
                   </div>
                   <p>Belanja Bahan Pangan</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>100 € </p>
-                    <p className="col-span-4">
+                    <p className="md:col-span-4 col-span-3">
                       {" "}
                       | bisa dikurangi berdasarkan pola makan
                     </p>
                   </div>
                   <p>Belanja Kebutuhan (Pribadi)</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>20 € </p>
-                    <p className="col-span-4">
+                    <p className="md:col-span-4 col-span-3">
                       {" "}
                       | kebutuhan non pangan (kebersihan, dll)
                     </p>
@@ -93,7 +93,7 @@ const Budgeting = () => {
                 <h3 className="text-danger col-span-2">
                   Pengeluaran Bulanan Tambahan Opsional
                 </h3>
-                <div className="grid grid-cols-2 col-span-2 my-5">
+                <div className="grid grid-cols-2 col-span-2 md:my-5 my-3 md:gap-0 gap-3">
                   <p>Mutuelle de Santé</p>
                   <p>15 €</p>
                   <p>Internet Apartemen</p>
@@ -110,15 +110,15 @@ const Budgeting = () => {
                 <h3 className="text-danger col-span-2">
                   Pengeluaran Sesekali Lainnya
                 </h3>
-                <div className="grid grid-cols-2 col-span-2 my-5">
+                <div className="grid grid-cols-2 col-span-2 md:my-5 my-3 md:gap-0 gap-3">
                   <p>Membeli perlatan dapur</p>
                   <p>50 €</p>
                   <p>Membeli bantal, selimut, dll</p>
                   <p>50 €</p>
                   <p>Uang saku liburan</p>
-                  <div className="grid grid-cols-5">
+                  <div className="grid md:grid-cols-5 grid-cols-4 ">
                     <p>200 €</p>
-                    <p className="col-span-4">
+                    <p className="md:col-span-4 col-span-3">
                       | liburan di dalam zona Schengen
                     </p>
                   </div>
@@ -127,24 +127,24 @@ const Budgeting = () => {
                 </div>
                 <h3 className="text-danger">Pemasukan Di Prancis</h3>
                 <h3 className="">Harga</h3>
-                <div className="grid grid-cols-2 col-span-2 my-5">
-                </div>
+                <div className="grid grid-cols-2 col-span-2 md:my-5 my-3 md:gap-0 gap-3">
                 <p>APL dari CAF</p>
-                <div className="grid grid-cols-5">
+                <div className="grid md:grid-cols-5 grid-cols-4 ">
                   <p>85 €</p>
-                  <p className="col-span-4">
+                  <p className="md:col-span-4 col-span-3">
                     | bisa lebih tinggi berdasarkan loyer
                   </p>
                 </div>
                 <p>Pekerjaan temps partiel lama</p>
-                <div className="grid grid-cols-5">
+                <div className="grid md:grid-cols-5 grid-cols-4 ">
                   <p>750 €</p>
-                  <p className="col-span-4">
+                  <p className="md:col-span-4 col-span-3 ">
                     | rata-rata pendapatan temps partiel
                   </p>
                 </div>
                 <p className="font-bold">Total</p>
                 <p className="font-bold">835 €</p>
+                </div>
               </div>
             </Glassmorphism>
           </div>
