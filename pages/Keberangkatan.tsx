@@ -19,7 +19,6 @@ import batik from "../images/icon/shirt.png";
 import obat from "../images/icon/fontisto_pills.png";
 import books from "../images/icon/books.png";
 import blur1 from "../images/blur1.png";
-// GANTI PHOTO JADI RAME2
 const Keberangkatan = () => {
   return (
     <>
