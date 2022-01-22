@@ -11,6 +11,7 @@ import ProkerSwiper from "../components/ProkerSwiper";
 import qt from "../images/double-quotes-l.png";
 import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
+import Idham from "../images/member/idham.jpg";
 const Home: NextPage = () => {
   const [isHover, setHover] = useState(false);
   return (
@@ -111,13 +112,25 @@ const Home: NextPage = () => {
           <Image src={blur1} alt="" width={600} height={700} />
         </div>
       </section>
-      <section className=" flex justify-center p-10">
+      <section className=" flex justify-center pb-10 max-w-4xl mx-auto">
         {/* tolong mintain ke mas idham */}
         <Glassmorphism>
-          <div className="flex flex-col gap-10 items-center justify-center">
-            <Image src={qt} />
+          <div className="flex flex-col gap-5 items-center justify-center">
+            <Image src={qt} height={50} width={50} />
             <div className="flex flex-row gap-5 text-primary">
-              <h3 className="italic font-normal">Idham Habibie</h3>
+              <div className="w-11/12">
+                <Image src={Idham} className="rounded-xl" />
+              </div>
+              <div className="max-w-4xl ">
+                <h3 className="italic font-normal">Idham Habibie</h3>
+                <p>
+                  Kami ingin PPI Lyon bisa menjadi wadah untuk memaksimalkan
+                  potensi dan aspirasi pelajar Indonesia di Lyon, juga membangun
+                  ekosistem pelajar yang bersahabat dan berkeluargaan. Goal yang
+                  ingin kita capai yaitu PPI Lyon sebagai Role Model bagi
+                  perhimpunan pelajar yang lain.
+                </p>
+              </div>
             </div>
           </div>
         </Glassmorphism>
