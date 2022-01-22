@@ -13,9 +13,7 @@ body {
   overflow-x: hidden;
   background: #f0f0f0;
 }
-.hero {
-    filter: brightness(50%);
-}
+
 
 @layer base {
   /* Write your own custom base styles here */
@@ -50,6 +48,7 @@ body {
     max-width: 68.75rem;
     @apply mx-auto;
   }
+  
   @layer utilities {
     .text-gradient {
       background-clip: text;

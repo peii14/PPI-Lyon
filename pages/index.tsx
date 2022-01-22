@@ -4,15 +4,13 @@ import Head from "next/head";
 import Image from "next/image";
 import blur1 from "../images/blur1.png";
 import Hero from "../components/Hero";
-import bg1 from "../images/home/hero1.png";
+import bg1 from "../images/home/hero1.jpg";
 import Glassmorphism from "../components/Glassmorphism";
 import s from "../styles/Home.module.css";
 import ProkerSwiper from "../components/ProkerSwiper";
 import qt from "../images/double-quotes-l.png";
-import Footer from "../components/Footer";
 import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
-// photo full team aja buat cover nya
 const Home: NextPage = () => {
   const [isHover, setHover] = useState(false);
   return (
@@ -22,10 +20,10 @@ const Home: NextPage = () => {
         <meta name="keywords" content="Perhimpunan Pelajar Indonesia"></meta>
       </Head>
       <div className="w-screen overflow-y-hidden">
-        <Hero img={bg1} />
+        <Hero img={bg1} isHome={0} />
       </div>
 
-      <section className="p-20  max-w-6xl mx-auto ">
+      <section className=" p-14 max-w-6xl mx-auto ">
         <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
           <Image src={blur1} />
         </div>
@@ -38,7 +36,7 @@ const Home: NextPage = () => {
                 dengan tujuan menghubungkan semua pelajar Indonesia yang sedang
                 menempuh pendidikan di kota Lyon.
               </p>
-              <div className="grid grid-flow-col gap-20">
+              <div className="grid md:grid-flow-col grid-flow-row gap-20">
                 <div className="">
                   <h3 className="text-center">Visi</h3>
                   <ul className={s.listed}>
@@ -85,9 +83,9 @@ const Home: NextPage = () => {
           <ProkerSwiper />
         </div>
       </section>
-      <section className="flex flex-col gap-10 p-20 overflow-hidden  mx-auto">
+      <section className="flex flex-col gap-10 p-20 overflow-hidden mx-auto">
         <h1 className="text-center text-primary">Guideline</h1>
-        <div className="grid  grid-cols-2 max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
+        <div className="grid md:grid-cols-2  max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
           <Link href="/Keberangkatan">
             <a>
               <GuidelineSection status="1" />
@@ -124,7 +122,6 @@ const Home: NextPage = () => {
           </div>
         </Glassmorphism>
       </section>
-      <Footer />
     </>
   );
 };

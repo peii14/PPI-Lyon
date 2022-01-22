@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Glassmorphism from "../components/Glassmorphism";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 import k from "../images/home/hero1.png";
 import td from "../images/icon/TD.png";
 import tp from "../images/icon/TP.png";
@@ -19,8 +18,7 @@ import Neuromorphism from "../components/Neuromorphism";
 const PerancisJangkaPanjang = () => {
   return (
     <>
-      <Navbar />
-      <Hero img={k} />
+      <Hero img={k} title={"Perancis Jangka Panjang"} />
       <div className="layout text-justify">
         <section className="text-primary pt-20 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">
@@ -61,7 +59,7 @@ const PerancisJangkaPanjang = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-xl flex flex-row gap-5 p-5">
+            <div className="bg-white rounded-lg shadow-2xl  flex flex-row gap-5 p-5">
               <div className="basis-1/4 m-auto">
                 <Image src={cm} layout="fixed" />
               </div>

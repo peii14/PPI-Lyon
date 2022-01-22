@@ -6,7 +6,7 @@ import Neuromorphism from "./Neuromorphism";
 const RoomType = (props) => {
   // const [selectedId, setSelectedId] = useState(null)
   return (
-    <div className='w-10/12 mx-auto'>
+    <div className='md:w-10/12 w-full mx-auto'>
       <Neuromorphism>
         <div className="flex flex-col gap-10 justify-center items-center">
           <h1 >{props.type}</h1>
