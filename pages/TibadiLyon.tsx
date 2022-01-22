@@ -29,10 +29,10 @@ const TibadiLyon = () => {
   return (
     <>
       <Hero img={k} title={"Tiba di Lyon"} />
-      <div className="layout">
-        <section className="text-primary pt-20 ">
+      <div className="layout md:p-0 p-10">
+        <section className="text-primary md:pt-20 pt-0 ">
           <h2 className="text-center">Membuat Rekening Bank Prancis</h2>
-          <div className="flex flex-row justify-around gap-10 py-10 max-w-4xl mx-auto">
+          <div className="flex md:flex-row flex-col justify-around gap-10 py-10 max-w-4xl mx-auto">
             <Image src={bank} width={1200} height={800} />
             <p className="text-justify justify-center my-auto">
               Ketika sudah di bank, langsung menuju resepsionis untuk meminta
@@ -57,7 +57,7 @@ const TibadiLyon = () => {
               <div className="my-auto">
                 <Image src={check} width={55} height={55} />
               </div>
-              <p>
+              <p className="w-full">
                 <span className="font-bold">Nomor IBAN</span>
                 <br />
                 (International Bank Account Number)
@@ -66,10 +66,10 @@ const TibadiLyon = () => {
               </p>
             </div>
             <div className="flex flex-row gap-5">
-              <div className="my-auto">
+              <div className="my-auto w-14">
                 <Image src={check} width={55} height={55} />
               </div>
-              <p>
+              <p className="w-full">
                 <span className="font-bold">Nomor BIC </span>
                 <br />
                 (Bank Identifier Code)
@@ -82,12 +82,12 @@ const TibadiLyon = () => {
               <div className="my-auto">
                 <Image src={check} width={55} height={55} />
               </div>
-              <p className="my-auto">
+              <p className="my-auto w-full">
                 <span className="font-bold">Nama dan Alamat Pemilik Akun </span>
               </p>
             </div>
           </div>
-          <div className="p-10 ">
+          <div className="md:p-10 py-10 ">
             <p className="text-center mx-auto max-w-3xl">
               Agar dapat melakukan transaksi secara online, jangan lupa untuk
               meminta <span className="font-bold">aktivasi akun online</span>{" "}
@@ -101,7 +101,7 @@ const TibadiLyon = () => {
               <p className="">Membuka akun</p>
               <div className=" row-span-16 col-start-2 ">
                 <div className="py-5">
-                  <Image src={arrow2} />
+                  <Image src={arrow2} height={1200} />
                 </div>
               </div>
               <p className="row-span-16 col-start-3 -mt-10 ">
@@ -137,21 +137,25 @@ const TibadiLyon = () => {
               </p>
             </div>
           </Glassmorphism>
-          <div className="p-10">
+          <div className="md:p-10 py-5">
             <p className="text-center">
               Dokumen yang dibutuhkan tergantung bank, namun biasanya{" "}
               <span className="font-bold">setidaknya</span>:
             </p>
-            <div className="flex flex-col gap-10 p-10">
-              <div className="flex flex-row gap-10">
-                <Image src={passport} layout="fixed" />
-                <p className="font-bold my-auto text-2xl">
+            <div className="flex flex-col gap-10 md:p-10 py-5">
+              <div className="flex md:flex-row flex-col md:gap-10 gap-3">
+                <div className="mx-auto">
+                  <Image src={passport} layout="fixed" />
+                </div>
+                <p className="font-bold md:text-left text-center my-auto text-2xl">
                   Paspor dan Fotokopi Paspor
                 </p>
               </div>
-              <div className="flex flex-row gap-10">
-                <Image src={id} layout="fixed" />
-                <div>
+              <div className="flex md:flex-row flex-col md:gap-10 gap-3">
+                <div className="mx-auto">
+                  <Image src={id} layout="fixed" />
+                </div>
+                <div className="md:text-left text-center">
                   <p className="font-bold my-auto text-2xl">
                     Kartu Pelajar dan Fotokopi Kartu Pelajar{" "}
                   </p>
@@ -162,7 +166,7 @@ const TibadiLyon = () => {
                 </div>
               </div>
             </div>
-            <div className="text-center p-5">
+            <div className="text-center md:p-5 py-5">
               <p>
                 Karena proses dari pembuatan akun sampai dapat kartu memakan
                 waktu lama, kami menyarankan membawa kartu kredit/debit
@@ -275,7 +279,7 @@ const TibadiLyon = () => {
           <h2 className="text-center max-w-3xl mx-auto ">
             Penilaian SIM Berdasarkan Pengalaman Mahasiswa di Prancis
           </h2>
-          <div className="flex flex-row gap-20 py-10 ">
+          <div className="flex md:flex-row flex-col md:gap-20 gap-10 py-10 ">
             <div className="">
               <Glassmorphism>
                 <h3 className="text-center">Sosh</h3>
@@ -294,8 +298,8 @@ const TibadiLyon = () => {
                     sedikit yaitu 12€/bulan 40GB
                   </p>
                 </div>
-                <div className="w-max mx-auto py-2">
-                  <Image src={sosh} layout="fixed" />
+                <div className="md:w-max w-11/12 mx-auto py-2">
+                  <Image src={sosh} />
                 </div>
               </Glassmorphism>
             </div>
@@ -319,15 +323,17 @@ const TibadiLyon = () => {
                   kuota internet lebih banyak: 12€/bulan 60GB
                 </p>
               </div>
-              <div className="flex flex-row justify-around">
-                <div className="my-auto">
-                  <Image src={byou} layout="fixed" width={150} height={50} />
+              <div className="flex flex-row justify-around md:w-full w-11/12 mx-auto">
+                <div className="m-auto md:w-full w-7/12">
+                  <Image src={byou} width={150} height={50} />
                 </div>
-                <Image src={red} layout="fixed" width={150} height={130} />
+                <div className="md:w-full w-7/12">
+                  <Image src={red} width={150} height={130} />
+                </div>
               </div>
             </Glassmorphism>
           </div>
-          <div className="w-2/5 mx-auto">
+          <div className="md:w-2/5 mx-auto">
             <Glassmorphism>
               <h3 className="text-center">Free</h3>
               <div className="p-5">
@@ -351,8 +357,8 @@ const TibadiLyon = () => {
           <h2 className="mx-auto text-center max-w-xl">
             Membuat Kartu Transportasi Di Lyon:TCL
           </h2>
-          <div className="flex flex-row py-5 gap-16 max-w-4xl mx-auto">
-            <div>
+          <div className="flex md:flex-row flex-col py-5 md:gap-16 gap-5 max-w-4xl mx-auto">
+            <div className="md:w-full w-7/12 mx-auto">
               <Image src={tcl} width={500} height={400} />
             </div>
             <p className="m-auto text-justify">
@@ -416,13 +422,13 @@ const TibadiLyon = () => {
               </p>
             </div>
           </div>
-          <div className="mx-auto w-max p-10">
-            <Image src={tcl2} layout="fixed" />
+          <div className="mx-auto md:w-max w-full md:p-10 p-5">
+            <Image src={tcl2} layout="intrinsic" />
           </div>
         </section>
         <section className="max-w-4xl mx-auto">
           <h2 className="text-center">Saran Dari PPI</h2>
-          <div className="p-10">
+          <div className="md:p-10 p-0 md:mt-0 mt-5">
             <Glassmorphism>
               <p>
                 Membuat kartu TCL dengan abonnement agar kamu bisa dengan{" "}
@@ -538,13 +544,13 @@ const TibadiLyon = () => {
               .
             </p>
           </div>
-          <div className="p-10 text-center">
+          <div className="md:p-10 p-0 md:mt-0 mt-5 text-center">
             <p>
               Jangan lupa hal-hal lain yang kamu bisa tanyakan dengan lebih
               jelas di administrasi seperti:
             </p>
             <ul
-              className={`grid grid-cols-2 grid-flow-row p-5 text-left mx-auto max-w-3xl justify-around ${s.listed}`}
+              className={`grid md:grid-cols-2 grid-cols-1  grid-flow-row p-5 text-left mx-auto max-w-3xl justify-around md:gap-0 gap-3 ${s.listed}`}
             >
               <li>Orientasi mahasiswa internasional baru</li>
               <li>Daftar kelas dan jadwalnya masing-masing</li>
@@ -661,7 +667,7 @@ const TibadiLyon = () => {
           <h2 className="max-w-3xl mx-auto text-center">
             Untuk Memulai Pengurusan Ameli Pertama Kali Tiba di Prancis:
           </h2>
-          <div className="grid grid-cols-2 gap-10 py-10 text-justify">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-10 py-10 text-justify">
             <Glassmorphism>
               <h1 className="text-center">1</h1>
               <p className="mt-5">
@@ -785,7 +791,7 @@ const TibadiLyon = () => {
               Proses dari pertama kali membuat akun di situs Ameli untuk
               mahasiswa internasional sampai mendapatkan carte vitale bisa
               memakan waktu sampai 10 bulan, jadi lebih baik dilaksanakan
-              <span className="font-bold">secepat mungkin!</span>
+              <span className="font-bold"> secepat mungkin!</span>
             </p>
           </div>
         </section>
@@ -793,10 +799,10 @@ const TibadiLyon = () => {
           <h2 className="text-center">
             Contoh Proporsi Reimbursement Kesehatan Lewat Ameli.fr
           </h2>
-          <div className="p-10">
+          <div className="md:p-10 p-0 md:mt-0 mt-5">
             <Image src={reimbursment} layout="responsive" />
           </div>
-          <div className="flex flex-row justify-around text-center">
+          <div className="flex md:flex-row flex-col md:gap-0 gap-5 justify-around text-center md:mt-0 mt-5">
             <div className="max-w-sm">
               <h3>Carte Vitale</h3>
               <Image src={cv} layout="intrinsic" />
@@ -891,7 +897,7 @@ const TibadiLyon = () => {
           <h2 className="text-center max-w-4xl mx-auto">
             Dokumen Yang Harus Diupload Keakun OFII Onlinemu Antara Lain :
           </h2>
-          <div className="grid grid-cols-3 gap-10 p-5 items-center justify-center text-center ">
+          <div className="grid md:grid-cols-3 grid-cols-1 md:gap-0 max-w-4xl mx-auto gap-5 p-5 items-center justify-center text-center ">
             <div className="flex flex-col">
               <div className="mx-auto">
                 <Image src={passport} width={100} height={120} />
@@ -918,7 +924,7 @@ const TibadiLyon = () => {
                 <span className="italic">Photomaton</span>
               </p>
             </div>
-            <div className="col-span-3 flex flex-row justify-around">
+            <div className="md:col-span-3 col-span-1 flex md:flex-row flex-col md:gap-0 gap-5 justify-around">
               <div className="flex flex-col">
                 <div className="mx-auto">
                   <Image

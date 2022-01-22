@@ -506,7 +506,7 @@ const Keberangkatan = () => {
             Selain kebutuhan utama seperti pakaian, dokumen penting dan
             kebutuhan pribadi lainnya, kamu bisa ikuti tips di bawah ini:
           </p>
-          <div className="flex flex-col gap-10 p-5">
+          <div className="flex flex-col gap-10 md:p-5 p-0">
             <div className="flex md:flex-row flex-col gap-5 mx-auto">
               <div className="mx-auto">
                 <Image src={hangat} width={100} height={100} alt="" />
