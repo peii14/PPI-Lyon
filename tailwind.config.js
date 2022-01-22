@@ -15,7 +15,7 @@ module.exports = {
       textColor: {
         primary: "#282828",
         secondary: "#ffed4a",
-        danger: "#e3342f",
+        danger: "#771011",
         textSecond:"#777777"
       },
       dropShadow: {
