@@ -14,7 +14,7 @@ const Footer = () => {
     <section className="absolute w-screen bg-primary text-sec md:p-20 py-14 px-16">
       <div className="flex max-w-4xl md:flex-row flex-col justify-between mx-auto">
         <div className="flex flex-col md:mt-0 -mt-5 md:w-1/4 w-full md:mx-0 mx-auto md:px-0 px-5 ">
-          <Image src={logo} width={250} height={120} />
+          <Image src={logo} width={250} height={120} priority />
         </div>
         <div className=" flex flex-col gap-3">
           <h4 className="tracking-widest">Contact Us</h4>

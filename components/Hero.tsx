@@ -7,7 +7,7 @@ const Hero = (props: any): JSX.Element => {
     return (
       <section className="relative w-screen md:h-screen">
         <div className="z-0 md:absolute">
-          <Image src={props.img} alt="" className={`${g.hero}`} />
+          <Image src={props.img} alt="" className={`${g.hero}`} priority />
         </div>
         <div
           className={`${g.glassHeader} z-10 absolute  bottom-10 left-1/2 transform -translate-x-1/2 backdrop-blur-2xl bg-white p-5 mx-auto max-w-2xl`}
@@ -20,7 +20,7 @@ const Hero = (props: any): JSX.Element => {
     return (
       <section className="relative w-screen md:h-screen">
         <div className="z-0 md:static md:h-full h-60 ">
-          <Image src={props.img} alt="" className={`${g.hero}`} layout="fill" />
+          <Image src={props.img} alt="" className={`${g.hero}`} layout="fill" priority />
         </div>
         <div className="left-1/2 transform -translate-x-1/2 absolute md:w-1/5 w-1/4 md:top-20 top-5">
           <Image src={logo} alt="" />

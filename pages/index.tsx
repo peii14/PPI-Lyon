@@ -25,8 +25,8 @@ const Home: NextPage = () => {
       <div className="w-screen overflow-y-hidden">
         <Hero img={bg1} isHome={0} />
       </div>
-
-      <section className=" p-14 max-w-6xl mx-auto ">
+      
+      <section className=" md:p-14 p-10 max-w-6xl mx-auto ">
         <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
           <Image src={blur1} />
         </div>
@@ -114,16 +114,15 @@ const Home: NextPage = () => {
           <Image src={blur1} alt="" width={600} height={700} />
         </div>
       </section>
-      <section className=" flex justify-center pb-10 max-w-4xl mx-auto">
-        {/* tolong mintain ke mas idham */}
+      <section className=" md:p-0 p-10 flex justify-center pb-10 max-w-4xl mx-auto">
         <Glassmorphism>
           <div className="flex flex-col gap-5 items-center justify-center">
             <Image src={qt} height={53} width={60} />
-            <div className="flex flex-row gap-10 text-primary">
-              <div className="w-11/12">
+            <div className="flex md:flex-row flex-col gap-10 text-primary">
+              <div className="w-11/12 mx-auto">
                 <Image src={Idham} className="rounded-xl" width={500} height={700}/>
               </div>
-              <div className="max-w4xl mt-5">
+              <div className="max-w4xl md:mt-5 mt--">
                 <h3 className="italic font-medium">Idham Habibie</h3>
                 <h4 className="italic font-normal">Ketua PPI Lyon</h4>
                 <p className="mt-5 text-justify">
