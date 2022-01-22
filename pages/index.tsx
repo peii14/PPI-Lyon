@@ -12,6 +12,8 @@ import qt from "../images/double-quotes-l.png";
 import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
 import Idham from "../images/member/idham.jpg";
+import idham2 from "../images/member/idham2.png"
+
 const Home: NextPage = () => {
   const [isHover, setHover] = useState(false);
   return (
@@ -116,19 +118,20 @@ const Home: NextPage = () => {
         {/* tolong mintain ke mas idham */}
         <Glassmorphism>
           <div className="flex flex-col gap-5 items-center justify-center">
-            <Image src={qt} height={50} width={50} />
-            <div className="flex flex-row gap-5 text-primary">
+            <Image src={qt} height={53} width={60} />
+            <div className="flex flex-row gap-10 text-primary">
               <div className="w-11/12">
-                <Image src={Idham} className="rounded-xl" />
+                <Image src={Idham} className="rounded-xl" width={500} height={700}/>
               </div>
-              <div className="max-w-4xl ">
-                <h3 className="italic font-normal">Idham Habibie</h3>
-                <p>
-                  Kami ingin PPI Lyon bisa menjadi wadah untuk memaksimalkan
+              <div className="max-w4xl mt-5">
+                <h3 className="italic font-medium">Idham Habibie</h3>
+                <h4 className="italic font-normal">Ketua PPI Lyon</h4>
+                <p className="mt-5 text-justify">
+                  "Kami ingin PPI Lyon bisa menjadi wadah untuk memaksimalkan
                   potensi dan aspirasi pelajar Indonesia di Lyon, juga membangun
                   ekosistem pelajar yang bersahabat dan berkeluargaan. Goal yang
                   ingin kita capai yaitu PPI Lyon sebagai Role Model bagi
-                  perhimpunan pelajar yang lain.
+                  perhimpunan pelajar yang lain."
                 </p>
               </div>
             </div>

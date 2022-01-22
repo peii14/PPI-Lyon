@@ -13,6 +13,9 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import piknik from "../images/home/pikinik.png";
 import leJour from "../images/home/leJour.png";
+import penyambutan from "../images/home/penyambutan.png";
+import hobby from "../images/home/hobby.png";
+import festival from "../images/home/festival.png";
 import "../styles/Home.module.css";
 import ProkerContent from "./ProkerContent";
 
@@ -49,6 +52,30 @@ const ProkerSwiper = () => {
             content="Mengajak pelajar PPI Lyon untuk turut aktif berbicara terkait dengan issue di Indonesia dengan menggunakan Bahasa Prancis."
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <ProkerContent
+            img={penyambutan}
+            t1="Penyambutan"
+            t2="Mahasiswa Baru"
+            content="Pengenalan kota Lyon, administrasi Lyon, dan perkuliahan-perkuliahan Lyon agar kita bisa survive di Lyon Bersama-sama."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProkerContent
+            img={hobby}
+            t1="Penyaluran"
+            t2="Hobby"
+            content="Bermain bulu tangkis, basket, tennis, dan futsal bersama anggota lainnya untuk melepas penat."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ProkerContent
+            img={festival}
+            t1="Festival Budaya"
+            t2="Indonesia"
+            content="Memperkenalkan warisan leluhur budaya Indonesia ke warga Lyon (1 tahun sekali)"
+          />
+        </SwiperSlide>
       </Swiper>
       <style>{`
         .swiper-container {
@@ -56,7 +83,7 @@ const ProkerSwiper = () => {
           height: 100%;
           
         }
-
+        
         .swiper-slide {
           text-align: center;
           
