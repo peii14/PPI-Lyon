@@ -19,8 +19,8 @@ const Hero = (props: any): JSX.Element => {
   } else {
     return (
       <section className="relative w-screen md:h-screen">
-        <div className="z-0 md:absolute">
-          <Image src={props.img} alt="" className={`${g.hero}`} />
+        <div className="z-0 md:static md:h-full h-60 ">
+          <Image src={props.img} alt="" className={`${g.hero}`} layout="fill" />
         </div>
         <div className="left-1/2 transform -translate-x-1/2 absolute md:w-1/5 w-1/4 md:top-20 top-5">
           <Image src={logo} alt="" />

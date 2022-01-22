@@ -99,6 +99,11 @@ const Navbar = () => {
               <a>Gallery</a>
             </li>
           </Link>
+          <Link href="/Organization">
+            <li className="transition-all duration-300 hover:bg-white hover:text-black p-5 cursor-pointer h-full">
+              <a>Organization</a>
+            </li>
+          </Link>
         </ul>
       </nav>
       <nav className="md:hidden visible fixed z-50">
@@ -127,7 +132,11 @@ const Navbar = () => {
                   <Disclosure.Panel>
                     {({ close }) => (
                       <>
-                        <div className={`bg-black  bg-fixed h-2s transition-all duration-1000 ${open ? 'w-2s bg-opacity-70':' bg-opacity-0 w-0'}`}>
+                        <div
+                          className={`bg-black  bg-fixed h-2s transition-all duration-1000 ${
+                            open ? "w-2s bg-opacity-70" : " bg-opacity-0 w-0"
+                          }`}
+                        >
                           <div className="h-2s bg-primary py-20 px-10 z-40 overflow-hidden w-max opacity-100 ">
                             <ul className="flex flex-col gap-5 text-sec text-2xl cursor-pointer ">
                               <button

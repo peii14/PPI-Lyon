@@ -32,7 +32,7 @@ const Keberangkatan = () => {
             <div className="mx-auto">
               <Image src={ifi} alt="" layout="fixed" />
             </div>
-            <p className="max-w-xl">
+            <p className="max-w-xl m-auto">
               Hal pertama yang harus dilakukan settelah mendapat pengumuna
               penerimaan di Lyon adalah{" "}
               <span className="font-bold">

@@ -1,5 +1,4 @@
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 import k from "../images/keberangkatan/keberangkatanHero.png";
 import Image from "next/image";
 import bank from "../images/tiba/gambar.png";

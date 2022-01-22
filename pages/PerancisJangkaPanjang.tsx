@@ -81,7 +81,7 @@ const PerancisJangkaPanjang = () => {
             Sistem Pembagian Kredit
           </h2>
           <div className="grid gap-8 items-start justify-center max-w-3xl mx-auto py-10">
-            <p className={`${h.indent}`}>
+            <p className="">
               Dari tingkat bac +1 sampai bac +5
               (master), setiap
               <b>
