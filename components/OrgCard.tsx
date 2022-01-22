@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Line from "./Line";
-import idham from "../images/member/idham.jpg";
 import Neuromorphism from "./Neuromorphism";
 
 const OrgCard = (props: any): JSX.Element=> {
