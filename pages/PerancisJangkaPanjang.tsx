@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Glassmorphism from "../components/Glassmorphism";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Hero from "../components/Hero";
 import k from "../images/home/hero1.jpg";
 import td from "../images/icon/TD.png";
@@ -15,12 +17,92 @@ import ktp_back from "../images/PerancisJangkaPanjang/image-30.webp";
 import magang from "../images/PerancisJangkaPanjang/cari-kerja.webp";
 import Neuromorphism from "../components/Neuromorphism";
 import h from "../styles/Home.module.css";
+import Modal from "../components/Modal";
+import LyonSlider from "../components/LyonSlider";
+import plane from "../images/icon/plane.png";
+import bus from "../images/icon/bus.png";
+import train from "../images/icon/train.png";
+import home from "../images/icon/home.png";
+
+const récépissé = `Biasanya setiap universitas memiliki bagian administrasi
+                    untuk mahasiswa internasional seperti maison internationale
+                    atau service scolarité pour les étudiants internationaux
+                    yang akan membantu kamu. Melalui mereka, kamu tidak perlu
+                    pergi ke prefektur dan semua dokumen yang harus dikumpulkan
+                    kamu berikan ke mereka.`;
+const recep2 = `Apabila tidak ada bagian administrasi seperti di atas adalah langsung membuat janji di prefektur lewat situs rhone.gouv.fr.`;
+
+const titre1 = `Melalui Student Welcome Desk, kantor sementara dari prefektur Rhône yang menawarkan layanan pembuatan TDS pertama kalinya untuk semua mahasiswa internasional di Lyon, maupun perpanjangan TDS. Student Welcome Desk biasanya buka dari awal September sampai November. Kamu hanya perlu datang pada saat jam buka, mengambil antrian nomor dan menunggu antrian untuk menyerahkan dokumen. Untuk lokasi dan jam buka yang lebih detil bisa dilihat di situs:universite-lyon.fr/international/venir-a-lyon- et-saint-etienne/pour-vos-etudes/students-welcome- desk/students-welcome-desk-7503.kjsp dan facebook.com/studentswelcomedesk/.`;
+const titre2 = `Langsung pergi ke prefektur dengan membuat janji temu première demande de titre de séjour di rhone.gouv.fr apabila perpanjangan visamu tidak mungkin dilakukan antara September sampai November.`;
+const pesaswat = `maskapai
+budget seperti EasyJet dan Ryan Air
+menawarkan tiket murah tanpa bagasi
+di sekitar Eropa. Pemesanan bila
+langsung lewat situs masing-masing,
+namun hati-hati dengan maskapai
+budget karena terkadang pesawat
+tiba di bandara yang lumayan jauh dari pusat kota. Contohnya RyanAir
+berbasis di Bandara Paris Beauvais
+yang letaknya 1 jam dari pusat Paris
+menggunakan bus, bukan Paris
+Charles de Gaulle
+untuk
+mencari tiket pesawat murah lainnya
+dapat dilakukan di situs seperti
+kayak.fr dan skyscanner.com`;
+
+const kereta = `kereta cepat budget Ouigo
+adalah alternatif murah kereta cepat
+namun rutenya hanya di dalam
+Prancis. Untuk kereta internasional
+menuju Italia, Jerman, Swiss, Spanyol, Belgium ataupun Belanda, terdapat
+kereta cepat reguler TGV yang dapat
+direservasi di situs SNCF.
+Kemungkinan besar tidak akan ada
+pemeriksaan paspor dan OFII di batas
+antarnegara, namun PPI Lyon
+mengharuskan kamu untuk selalu
+membawa paspor beserta bukti OFII ketika bepergian ke luar Prancis,
+karena kalau dokumen tidak lengkap
+ketika pemeriksaan, kamu mungkin
+tertangkap dan tidak diperbolehkan
+masuk ke negara tersebut.`
+
+const bis = `InterFlix dari Flixbus yang
+menawarkan 5 tiket perjalanan
+langsung (trajet direct) seharga apapun
+dengan membayar 100€ untuk 5 tiket
+tersebut, artinya seberapa mahal
+harga tiket biasa yang kamu ingin beli,
+kamu hanya perlu membayar 20€.
+Pesan lewat link: interflix.flixbus.com
+Kemungkinan besar tidak akan ada
+pemeriksaan paspor dan OFII di batas
+antarnegara, namun PPI Lyon
+mengharuskan kamu untuk selalu
+membawa paspor beserta bukti OFII ketika bepergian ke luar Prancis,
+karena kalau dokumen tidak lengkap
+ketika pemeriksaan, kamu mungkin
+tertangkap dan tidak diperbolehkan
+masuk ke negara tersebut.`
+
+const penginapan = `Penginapan budget untuk pelajar di
+sekitar Eropa bisa dicek di situs
+kamarpelajar.com, organisasi pelajar
+Indonesia di seluruh dunia yang
+menyewakan kamar mereka dengan harga murah untuk penginapan singkat
+seperti ketika liburan
+Jangan lupa juga untuk menghubungi
+PPI setempat, apabila ada, untuk
+menanyakan pelajar yang mungkin mau menyewakan kamarnya untuk menginap
+dengan harga murah!`
+
 const PerancisJangkaPanjang = () => {
   return (
     <>
       <Hero img={k} title={"Perancis Jangka Panjang"} />
-      <div className="layout text-justify">
-        <section className="text-primary pt-20 mx-auto">
+      <div className="layout md:p-0 p-10 text-justify">
+        <section className="text-primary md:pt-20 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">
             Kehidupan Mahasiswa Perancis
           </h2>
@@ -107,8 +189,8 @@ const PerancisJangkaPanjang = () => {
             </p>
           </div>
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
-          <div className="flex flex-row gap-10">
+        <section className="text-primary md:p-10 max-w-4xl mx-auto">
+          <div className="flex md:flex-row flex-col gap-10">
             <div>
               <h2>Sistem Nilai</h2>
               <p className="my-3">
@@ -134,9 +216,9 @@ const PerancisJangkaPanjang = () => {
             </div>
           </div>
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
+        <section className="text-primary md:p-10 md:mt-0 mt-10 max-w-4xl mx-auto">
           <h2 className="text-center max-w-xl mx-auto">Kesehatan</h2>
-          <div className="py-10">
+          <div className="md:py-10 py-5">
             <Glassmorphism>
               <p className={`${h.indent}`}>
                 Setelah kamu memiliki nomor sécurité sociale Prancis, kamu sudah
@@ -177,7 +259,7 @@ const PerancisJangkaPanjang = () => {
                 datang langsung ke kantor CPAM Rhône terdekat, contohnya seperti
                 di:
               </p>
-              <div className="grid grid-cols-2 gap-y-4 my-10">
+              <div className="md:grid md:grid-cols-2  gap-y-4 my-10">
                 <div className="flex flex-row col-start-1">
                   <Image src={loc} layout="fixed" />
                   <p className="mt-1">5 bis Place Jean Macé, 69007 Lyon</p>
@@ -251,7 +333,7 @@ const PerancisJangkaPanjang = () => {
                 bisa dilakukan kalau kamu <b>sudah punya</b> carte vitale dan
                 nomor yang fiks
               </p>
-              <div className="flex flex-row gap-10 my-12">
+              <div className="flex md:flex-row flex-col gap-10 my-12">
                 <div className="bg-tip_box text-center text-gray-800 rounded-xl outline-black">
                   <div className="mt-3">
                     <Image src={tip} layout="fixed" />
@@ -304,9 +386,9 @@ const PerancisJangkaPanjang = () => {
             </Glassmorphism>
           </div>
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
+        <section className="text-primary md:py-10 mt-10 max-w-4xl mx-auto">
           <h2 className="text-center">TITRE DE SÉJOUR - CARTE DE SÉJOUR</h2>
-          <div className="grid grid-cols-2 py-10 gap-10">
+          <div className="grid md:grid-cols-2 grid-cols-1 py-10 gap-10">
             <div>
               <p className={`${h.indent}`}>
                 Setelah tahun pertama tinggal di Prancis dengan VLS-TS, izin
@@ -359,14 +441,10 @@ const PerancisJangkaPanjang = () => {
             masing- masing di masa liburan, dan tetap mempunyai wewenang untuk
             kembali ke Prancis untuk tahun ajaran baru.
           </p>
-          <div className="grid grid-cols-2 py-10 gap-x-20">
-            <Neuromorphism>
-              <h3 className="text-center text-red_pallet">Option 1</h3>
-            </Neuromorphism>
+          <div className="grid md:grid-cols-2  py-10 md:gap-20 gap-10">
+            <Modal btn={"Option 1"} content={récépissé} />
             <div>
-              <Neuromorphism>
-                <h3 className="text-center text-red_pallet">Option 2</h3>
-              </Neuromorphism>
+              <Modal btn={"Option 2"} content={recep2} />
             </div>
           </div>
           <p>
@@ -431,16 +509,12 @@ const PerancisJangkaPanjang = () => {
             visa yang habis Juni - September, untuk periode lainnya bisa
             langsung ke langkah ini.
           </p>
-          <div className="grid grid-cols-2 py-10 gap-x-20">
+          <div className="grid md:grid-cols-2 py-10 md:gap-20 gap-10">
             <button id="modal">
-              <Glassmorphism>
-                <h3 className="text-center text-red_pallet">Option 1</h3>
-              </Glassmorphism>
+              <Modal btn={"Option 1"} content={titre1} />
             </button>
             <div>
-              <Glassmorphism>
-                <h3 className="text-center text-red_pallet">Option 2</h3>
-              </Glassmorphism>
+              <Modal btn={"Option 2"} content={titre2} />
             </div>
           </div>
           <p className={`${h.indent}`}>
@@ -526,7 +600,7 @@ const PerancisJangkaPanjang = () => {
               </p>
             </li>
           </ul>
-          <div className="flex flex-row gap-x-10 pt-10">
+          <div className="flex md:flex-row flex-col gap-x-10 pt-10">
             <div>
               <p className={`${h.indent}`}>
                 Ketika dokumen sudah lengkap dan sudah diperiksa oleh pihak
@@ -548,7 +622,7 @@ const PerancisJangkaPanjang = () => {
               <Image src={ktp_front} layout="fixed" width={300} height={200} />
             </div>
           </div>
-          <div className="flex flex-row py-10 gap-x-10">
+          <div className="flex md:flex-row flex-col py-10 gap-x-10">
             <div>
               <p className={`${h.indent}`}>
                 Setelah 1 bulan, bisa lebih, kamu akan menerima SMS dari
@@ -568,21 +642,21 @@ const PerancisJangkaPanjang = () => {
                 konfirmasi jadinya TDSmu.
               </p>
             </div>
-            <div>
+            <div className="md:mt-0 mt-10">
               <Image src={ktp_back} layout="fixed" width={300} height={200} />
             </div>
           </div>
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
+        <section className="text-primary mt-10 max-w-4xl mx-auto">
           <h2 className="text-center">STAGES & JOBS ÉTUDIANTS</h2>
-          <div className="flex flex-row gap-x-10 my-10">
+          <div className="flex md:flex-row flex-col gap-x-10 my-10">
             <div>
-              <p className="text-9xl">
+              <p className="md:text-9xl text-6xl">
                 <b>60%</b>
               </p>
             </div>
             <div className="h-full my-auto">
-              <p className="text-2xl ">
+              <p className="md:text-2xl text-xl ">
                 Jumlah <b>Jam kerja</b> Legal di Prancis <br /> (Visa VLS-TS
                 atau Titre de séjour type étudiant aktif)
               </p>
@@ -595,7 +669,7 @@ const PerancisJangkaPanjang = () => {
             Pilihan pekerjaan sesuai dengan batas 60% yang bisa dilakukan
             adalah:
           </p>
-          <div className="my-5 ml-8">
+          <div className="my-5 md:ml-8">
             <ul className="list-disc list-inside">
               <li>
                 <b>Part-time job atau job à temps partiel</b>
@@ -688,8 +762,8 @@ const PerancisJangkaPanjang = () => {
             <b>Situs untuk CV, surat motivasi dan wawancara Prancis:</b>
           </p>
           <br />
-          <div className="pb-10">
-            <ul className="list-disc list-inside">
+          <div className="mb-10">
+            <ul className="list-disc md:list-inside">
               <li>
                 <a
                   className="underline cursor-pointer text-blue-600 hover:text-blue-800 visited:text-purple-600"
@@ -738,16 +812,17 @@ const PerancisJangkaPanjang = () => {
             </ul>
           </div>
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
+        <section className="text-primary max-w-4xl mx-auto">
           <h2 className="text-center">Hidup Di Lyon : PROFITEZ DE LA VILLE</h2>
           <p className="text-center py-10">
             Berikut ini adalah 15 tempat-tempat khas Lyon yang harus kamu
             kunjungi. Setiap tempat menawarkan pemandangan dan aktivias yang
             berbeda!
           </p>
-          <div className="bg-black w-full h-80">p</div>
+
+          <LyonSlider />
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
+        <section className="text-primary  max-w-4xl mx-auto">
           <h2 className="text-center">
             Travelling : PROFITEZ DE L’ESPACE SCHENGEN
           </h2>
@@ -773,30 +848,22 @@ const PerancisJangkaPanjang = () => {
             Travelling dapat dilakukan dengan pesawat a kereta, atau bus untuk
             opsi yang lebih murah:
           </p>
-          <div className="grid grid-cols-2 grid-row-2 gap-10 max-w-lg mx-auto py-10">
+          <div className="grid grid-cols-2 grid-row-2 gap-10 max-w-lg mx-auto md:py-10 md:mb-0 mb-10">
             <div className="w-full">
-              <Neuromorphism>
-                <h3 className="text-center text-red_pallet">Option 1</h3>
-              </Neuromorphism>
+              <Modal whichMods={1} icon={plane} btn={"Pesawat"} content={pesaswat} />
             </div>
             <div className="w-full">
-              <Neuromorphism>
-                <h3 className="text-center text-red_pallet">Option 1</h3>
-              </Neuromorphism>
+            <Modal whichMods={1} icon={train} btn={"Kereta"} content={kereta} />
             </div>
             <div className="w-full">
-              <Neuromorphism>
-                <h3 className="text-center text-red_pallet">Option 1</h3>
-              </Neuromorphism>
+            <Modal whichMods={1} icon={bus} btn={"Bus"} content={kereta} />
             </div>
             <div className="w-full">
-              <Neuromorphism>
-                <h3 className="text-center text-red_pallet">Option 1</h3>
-              </Neuromorphism>
+            <Modal whichMods={1} icon={home} btn={"Penginapan"} content={penginapan} />
             </div>
           </div>
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
+        <section className="text-primary max-w-4xl mx-auto">
           <h2 className="text-center">Perpanjang Paspor</h2>
           <p className={`${h.indent} py-10`}>
             Apabila masa berlaku paspormu habis ketika sedang tinggal di
@@ -814,7 +881,7 @@ const PerancisJangkaPanjang = () => {
               target={"_blank"}
               href="https://kemlu.go.id/paris/id/pages/paspor_/630/etc-menu"
             >
-              kemlu.go.id/paris/id/pages/ paspor_/630/etc-menu
+              kemlu.go.id/paris/id/pages/paspor_/630/etc-menu
             </a>
           </div>
           <p className={`${h.indent} pt-10`}>
@@ -867,13 +934,13 @@ const PerancisJangkaPanjang = () => {
             </b>
           </p>
         </section>
-        <section className="text-primary p-10 max-w-4xl mx-auto">
+        <section className="text-primary py-10 max-w-4xl mx-auto">
           <h2 className="text-center">EN CAS D'URGENCE</h2>
           <p className="text-center py-10">
             Dalam situasi darurat, di Prancis maupun di negara Uni Eropa,
             pastikan kamu catat dan hubungi nomor-nomor di bawah ini:
           </p>
-          <div className="flex flex-row gap-x-10 mb-10 ml-7">
+          <div className="flex md:flex-row flex-col gap-x-20 mb-10 ">
             <div>
               <p className="text-8xl">
                 <b>15</b>
@@ -886,7 +953,7 @@ const PerancisJangkaPanjang = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row gap-x-10 my-10 ml-7">
+          <div className="flex md:flex-row flex-col gap-x-20 my-10 ">
             <div>
               <p className="text-8xl">
                 <b>17</b>
@@ -899,7 +966,7 @@ const PerancisJangkaPanjang = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row gap-x-10 my-10 ml-7">
+          <div className="flex md:flex-row flex-col gap-x-20 my-10 ">
             <div>
               <p className="text-8xl">
                 <b>18</b>
@@ -912,7 +979,7 @@ const PerancisJangkaPanjang = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row gap-x-10 my-10">
+          <div className="flex md:flex-row md:-ml-1 flex-col gap-x-10 ">
             <div>
               <p className="text-8xl">
                 <b>112</b>
@@ -925,7 +992,7 @@ const PerancisJangkaPanjang = () => {
               </p>
             </div>
           </div>
-          <p className="text-center">
+          <p className="text-center md:mt-10 mt-10">
             Kalau tidak pasti dengan nomor yang harus dihubungi, segara hubungi
             15 atau 112 dan jelaskan situasi daruratmu, setelah itu mereka akan
             memberikan instruksi apa yang akan dilakukan
