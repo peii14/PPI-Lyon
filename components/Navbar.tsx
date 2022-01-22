@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-screen bg-primary opacity-80 max-h-16 fixed z-50 md:visible invisible">
+      <nav className="w-screen bg-primary  max-h-16 fixed z-50 md:visible invisible">
         <ul className="flex flex-row text-white justify-between max-w-md mx-auto text-center transition-all duration-300">
           <Link href="/">
             <li className="transition-all duration-300 hover:bg-gray-300 hover:text-black p-5 cursor-pointer h-full">
@@ -40,7 +40,7 @@ const Navbar = () => {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="space-x-3 p-5 hover:bg-gray-300 hover:text-black">
+                  <Disclosure.Button className="space-x-5 p-5 hover:bg-gray-300 hover:text-black">
                     <span>Guideline</span>
                     <FontAwesomeIcon
                       className={`transform duration-500 
@@ -56,7 +56,7 @@ const Navbar = () => {
                     leaveFrom="transform scale-100 translate-0 opacity-100"
                     leaveTo="transform scale-95 -translate-20 opacity-0"
                   >
-                    <Disclosure.Panel className="w-11/12 mx-auto bg-primary">
+                    <Disclosure.Panel className="mx-auto bg-primary">
                       {({ close }) => (
                         <button
                           onClick={async () => {
@@ -66,22 +66,22 @@ const Navbar = () => {
                         >
                           <ul className="flex flex-col text-left gap-3">
                             <Link href="/Keberangkatan">
-                              <li className="transition-all duration-100 px-5 py-1 cursor-pointer hover:bg-gray-300 hover:text-black ">
+                              <li className="transition-all duration-100 px-3 py-1 cursor-pointer hover:bg-gray-300 hover:text-black ">
                                 <a>Keberangkatan</a>
                               </li>
                             </Link>
                             <Link href="/TibadiLyon">
-                              <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-gray-300 hover:text-black">
+                              <li className="transition-all duration-100 px-3 py-1 cursor-pointer hover:bg-gray-300 hover:text-black">
                                 <a>Tiba di Lyon</a>
                               </li>
                             </Link>
                             <Link href="/PerancisJangkaPanjang">
-                              <li className="transition-all duration-100 py-1 px-5 cursor-pointer hover:bg-gray-300 hover:text-black">
+                              <li className="transition-all duration-100 py-1 px-3  cursor-pointer hover:bg-gray-300 hover:text-black">
                                 <a>Perancis Jangka Panjang</a>
                               </li>
                             </Link>
                             <Link href="/Budgeting">
-                              <li className="transition-all duration-100 px-5 pt-1 pb-2 cursor-pointer hover:bg-gray-300 hover:text-black">
+                              <li className="transition-all duration-100 pt-1 px-3  pb-2 cursor-pointer hover:bg-gray-300 hover:text-black">
                                 <a>Budgeting</a>
                               </li>
                             </Link>
@@ -212,6 +212,7 @@ const Navbar = () => {
                                 </Disclosure>
                               </li>
                               <button
+                              className="gap-5 flex flex-col "
                                 onClick={async () => {
                                   await fetch("/accept-terms", {
                                     method: "POST",
@@ -222,6 +223,11 @@ const Navbar = () => {
                                 <Link href="/Gallery">
                                   <li className="cursor-pointer text-left ">
                                     <a>Gallery</a>
+                                  </li>
+                                </Link>
+                                <Link href="/Organization">
+                                  <li className="cursor-pointer text-left">
+                                    <a>Organization</a>
                                   </li>
                                 </Link>
                               </button>

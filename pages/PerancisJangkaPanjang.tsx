@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Glassmorphism from "../components/Glassmorphism";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Hero from "../components/Hero";
 import k from "../images/home/hero1.jpg";
 import td from "../images/icon/TD.png";
@@ -819,7 +817,6 @@ const PerancisJangkaPanjang = () => {
             kunjungi. Setiap tempat menawarkan pemandangan dan aktivias yang
             berbeda!
           </p>
-
           <LyonSlider />
         </section>
         <section className="text-primary  max-w-4xl mx-auto">

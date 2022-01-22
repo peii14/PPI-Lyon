@@ -4,7 +4,7 @@ import Neuromorphism from "./Neuromorphism";
 
 const OrgCard = (props: any): JSX.Element=> {
   return (
-    <section className="p-5 max-w-sm">
+    <section className="md:p-5 max-w-sm">
       <Neuromorphism isMember = {1} >
         <div className="w-8/12 mx-auto rounded-full">
           <Image src={props.image} alt='' className="rounded-xl" />
