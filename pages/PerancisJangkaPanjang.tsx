@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Glassmorphism from "../components/Glassmorphism";
 import Hero from "../components/Hero";
-import k from "../images/home/hero1.png";
+import k from "../images/home/hero1.jpg";
 import td from "../images/icon/TD.png";
 import tp from "../images/icon/TP.png";
 import cm from "../images/icon/CM.png";
@@ -14,7 +14,7 @@ import ktp_front from "../images/PerancisJangkaPanjang/image-29.webp";
 import ktp_back from "../images/PerancisJangkaPanjang/image-30.webp";
 import magang from "../images/PerancisJangkaPanjang/cari-kerja.webp";
 import Neuromorphism from "../components/Neuromorphism";
-
+import h from "../styles/Home.module.css"
 const PerancisJangkaPanjang = () => {
   return (
     <>
@@ -81,8 +81,8 @@ const PerancisJangkaPanjang = () => {
             Sistem Pembagian Kredit
           </h2>
           <div className="grid gap-8 items-start justify-center max-w-3xl mx-auto py-10">
-            <p>
-              &emsp;&emsp;&emsp;&emsp;Dari tingkat bac +1 sampai bac +5
+            <p className={`${h.indent}`}>
+              Dari tingkat bac +1 sampai bac +5
               (master), setiap
               <b>
                 {" "}
@@ -329,15 +329,20 @@ const PerancisJangkaPanjang = () => {
               </p>
               <br />
               <p>
-                &emsp;&emsp;&emsp;&emsp;Proses pengajuan pembuatan TDS untuk
-                pertama kalianya dibagi menjadi dua langkah besar, dengan urutan
-                berikut:
-                <br />
-                &emsp;&emsp;&emsp;&emsp;1. Mengajukan pembuatan{" "}
-                <b>récépissé d'été</b>
-                <br />
-                &emsp;&emsp;&emsp;&emsp;2. Mengajukan pembuatan titre de séjour
+                Proses pengajuan pembuatan TDS untuk pertama kalianya dibagi
+                menjadi dua langkah besar, dengan urutan berikut:{" "}
               </p>
+              <ul className="ml-5 list-decimal">
+                <li>
+                  <p>
+                    Mengajukan pembuatan <b>récépissé d'été</b>
+                  </p>
+                </li>
+                <li>
+                  <p>Mengajukan pembuatan titre de séjour</p>
+                </li>
+              </ul>
+      
             </div>
             <div className="text-center">
               <Image src={diagram} />
@@ -369,43 +374,58 @@ const PerancisJangkaPanjang = () => {
             </div>
           </div>
           <p>
-            &emsp;&emsp;&emsp;&emsp;Ketika datang ke administrasi atau
-            prefektur, kamu harus membawa dokumen berikut ini dalam bentuk
-            <b> fotokopi dan asli:</b> <br />{" "}
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1. Paspor aktif dan
-            fotokopi halaman identitas, halaman visa dan halaman dengan cap
-            masuk <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;wilayah
-            Prancis <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2. Visa yang masa
-            berlakunya akan habis <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3. Akta kelahiran
-            dan terjemahan Prancisnya <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4. Certificat de
-            scolarité tahun ajaran sebelumnya <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5. Bukti tempat
-            tinggal di Prancis selama 6 bulan terakhir, bisa dalam bentuk:{" "}
-            <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a.
-            Faktur listrik atau gas apabila atas namamu <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;b.
-            Attestation d'hébergement <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;6. 2 foto identitas
-            yang diambil dengan Photomaton <br />
-            <br />
-            &emsp;&emsp;&emsp;&emsp;Setelah memberikan dokumen-dokumen di atas,
-            kamu akan mendapat konfirmasi berupa email atau SMS dari
-            prefektur/administrasi sekolah yang menyatakan récépissé d'étému
-            sudah jadi dan dapat diambil, biasanya setelah 1 bulan.
+            Ketika datang ke administrasi atau prefektur, kamu harus membawa
+            dokumen berikut ini dalam bentuk <b> fotokopi dan asli:</b>
           </p>
+          <ul className="list-decimal max-w-3xl mx-auto">
+            <li>
+              <p>
+                Paspor aktif dan fotokopi halaman identitas, halaman visa dan
+                halaman dengan cap masuk wilayah Prancis
+              </p>
+            </li>
+            <li>
+              <p>Visa yang masa berlakunya akan habis</p>
+            </li>
+            <li>
+              <p>Akta kelahiran dan terjemahan Prancisnya</p>
+            </li>
+            <li>Certificat de scolarité tahun ajaran sebelumnya</li>
+            <li>
+              <p>
+                Bukti tempat tinggal di Prancis selama 6 bulan terakhir, bisa
+                dalam bentuk:
+              </p>
+              <ul className="list-disc ml-5">
+                <li>
+                  <p>Faktur listrik atau gas apabila atas namamu</p>
+                </li>
+                <li>
+                  <p>Attestation d'hébergement</p>
+                </li>
+                <li>
+                  <p>2 foto identitas yang diambil dengan Photomaton</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>
+                Setelah memberikan dokumen-dokumen di atas, kamu akan mendapat
+                konfirmasi berupa email atau SMS dari prefektur/administrasi
+                sekolah yang menyatakan récépissé d'étému sudah jadi dan dapat
+                diambil, biasanya setelah 1 bulan.
+              </p>
+            </li>
+          </ul>
+
           <h3 className="text-center py-10">
             2. MENGAJUKAN PEMBUATAN TITRE DE SÉJOUR
           </h3>
           <p>
-            &emsp;&emsp;&emsp;&emsp;Setelah récépissé d'été mendekati masa
-            habis, kamu akan melanjutkan pembuatan TDS. Penting dicatat bahwa
-            langkah 1 hanya berlaku untuk visa yang habis Juni - September,
-            untuk periode lainnya bisa langsung ke langkah ini.
+            Setelah récépissé d'été mendekati masa habis, kamu akan melanjutkan
+            pembuatan TDS. Penting dicatat bahwa langkah 1 hanya berlaku untuk
+            visa yang habis Juni - September, untuk periode lainnya bisa
+            langsung ke langkah ini.
           </p>
           <div className="grid grid-cols-2 py-10 gap-x-20">
             <button id="modal">
@@ -420,43 +440,43 @@ const PerancisJangkaPanjang = () => {
             </div>
           </div>
           <p>
-            &emsp;&emsp;&emsp;&emsp;Sebelum melakukan persiapan dokumen apapun,
+            Sebelum melakukan persiapan dokumen apapun,
             termasuk membuat janji temu di prefektur, pastikan lagi untuk
             <b> menanyakan detil terbaru dari pihak universitas.</b> Mereka akan
             membantu dengan kelengkapan dokumen dan instruksi tambahan.
             <br /> <br />
-            &emsp;&emsp;&emsp;&emsp;Dokumen yang diperlukan dalam bentuk{" "}
+            Dokumen yang diperlukan dalam bentuk{" "}
             <b>asli dan fotokopi</b> adalah:
             <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1. Paspor aktif dan
+            1. Paspor aktif dan
             fotokopi halaman identitas, halaman visa dan halaman dengan cap
             masuk
             <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;wilayah
+            &emsp;&emsp;&emsp;wilayah
             Perancis <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2. Visa atau
+            2. Visa atau
             récépissé d'été yang masa berlakunya akan habis <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3. Akta kelahiran
+            3. Akta kelahiran
             dan terjemahan Prancisnya <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4. Certificat de
+            4. Certificat de
             scolarité tahun ajaran sebelumnya <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5. Bukti tempat
+            5. Bukti tempat
             tinggal di Prancis selama 6 bulan terakhir, bisa dalam bentuk:{" "}
             <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a.
+            a.
             Faktur listrik atau gas apabila atas namamu <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;b.
+            b.
             Attestation d'hébergement <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;6. 3 foto identitas
+            6. 3 foto identitas
             yang diambil dengan Photomaton <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;7. Nilai tahun
+            7. Nilai tahun
             sebelumnya atau relevé de notes <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;8. Attestation
+            8. Attestation
             d'assiduité aux cours et de présentation aux examens dari
             universitas <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;9. Bukti pendanaan
+            9. Bukti pendanaan
             tahun ajaran berikutnya <b>dengan minimum 615€ per bulan:</b> <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;a.
+            a.
             <b>
               {" "}
               Apabila didanai oleh orang luar Perancis, seperti keluarga di
@@ -464,31 +484,31 @@ const PerancisJangkaPanjang = () => {
             </b>{" "}
             dalam bentuk surat
             <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;pernyataan
+            pernyataan
             dari bank adanya transfer dana sebesar 615€ setiap bulan,
             diterjemahkan dalam
             <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;bahasa
+            bahasa
             perancis. <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;b.
+            b.
             <b> Apabila penerima beasiswa,</b> dalam bentuk attestation de
             bourse yang menyatakan jumlah
             <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;dan
+            dan
             durasi beasiswa-nya <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;c.
+            c.
             <b> Apabila kerja di Prancis,</b> dalam bentuk 3 bulletins de paie
             terakhir <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;d.
+            d.
             <b>Apabila mempunyai akun Prancis,</b> dalam bentuk attestation
             bancaire dengan saldo <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;setidaknya
+            &emsp;&emsp;&emsp;setidaknya
             3 x 615€ = 1845€ dan menyatakan bahwa kamu adalah klien bank dengan
             kemampuan finansial yang cukup.
           </p>
           <div className="flex flex-row gap-x-10 pt-10">
             <div>
-              &emsp;&emsp;&emsp;&emsp;Ketika dokumen sudah lengkap dan sudah
+              Ketika dokumen sudah lengkap dan sudah
               diperiksa oleh pihak universitas kalau ada, pastikan kamu hadir
               jauh lebih awal dari jam buka Student Welcome Desk, atau jauh
               lebih awal dari jam janji temu apabila di prefektur. Pastikan
