@@ -27,7 +27,7 @@ module.exports = {
         title: "#595959",
         secondHover: "#b32a00",
         tip_box: "#D4DADE",
-        tip_box_outline: "radial-gradient"
+        red_pallet: "#771011"
       },
       backgroundImage: (theme) => ({
         bghero: "url('/images/home/hero1.png')",
