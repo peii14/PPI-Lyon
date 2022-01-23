@@ -19,6 +19,31 @@ import batik from "../images/icon/shirt.png";
 import obat from "../images/icon/fontisto_pills.png";
 import books from "../images/icon/books.png";
 import blur1 from "../images/blur1.png";
+
+const studio = `1 kamar tidur dan dapur dalam satu
+ruangan. Kamar mandi dan toilet
+terpisah`
+const t1 = `1 kamar tidur. Dapur, kamar mandi
+dan toilet terpisah`
+const t2 = `1 kamar tidur & 1 ruang tengah.
+Dapur, kamar mandi dan toilet
+terpisah`
+const t3 = `2 kamar tidur & 1 ruang tengah.
+Dapur, kamar mandi dan toilet
+terpisah`
+const t4 = `3 kamar tidur & 1 ruang tengah.
+Dapur, kamar mandi dan toilet
+terpisah`
+const t5 = `T4 dan seterusnya ditambah kamar
+tidur yang lebih banyak`
+const bis =`T1Bis, T2Bis, T3Bis artinya ada
+ruangan yang cukup besar sehingga
+bisa dibagi dua. Contoh seperti T1Bis mempunyai satu ruangan terpisah
+yang bisa menjadi kamar tidur kedua`
+const chamber = `Biasanya untuk CROUS, artinya
+hanya ada kamar tidur. Dapur, kamar
+mandi dan toilet di luar kamar tidur
+dan berbagi dengan penghuni lain`
 const Keberangkatan = () => {
   return (
     <>
@@ -71,16 +96,16 @@ const Keberangkatan = () => {
             <h3 className="text-center">Tipe-tipe tempat tinggal</h3>
             <div className="z-10 grid md:grid-cols-2 grid-cols-1 gap-10 md:w-7/12 w-full justify-items-center mx-auto justify-center ">
               <div className="md:col-span-2 min-w-full ">
-                <RoomType type="Studio" />
+                <RoomType type="Studio" content={studio} />
               </div>
-              <RoomType type="T1" />
-              <RoomType type="T2" />
-              <RoomType type="T3" />
-              <RoomType type="T4" />
-              <RoomType type="T5" />
-              <RoomType type="BIS" />
+              <RoomType type="T1" content={t1} />
+              <RoomType type="T2" content={t2} />
+              <RoomType type="T3" content={t3}/>
+              <RoomType type="T4"  content={t4}/>
+              <RoomType type="T5" content= {t5}/>
+              <RoomType type="BIS" content= {bis} status={true}/>
               <div className="md:col-span-2  min-w-full self-stretch">
-                <RoomType type="Chamber" />
+                <RoomType type="Chamber" content={chamber}/>
               </div>
             </div>
             <div className="absolute z-0 left-2/4 w-2/4">

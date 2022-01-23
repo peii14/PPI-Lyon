@@ -5,6 +5,15 @@ import { Disclosure, Transition } from "@headlessui/react";
 import Neuromorphism from "./Neuromorphism";
 const RoomType = (props) => {
   // const [selectedId, setSelectedId] = useState(null)
+  var space;
+  if(props.status){
+    space = (
+      <>
+      <br />
+
+      </>
+    );
+  }
   return (
     <div className='md:w-10/12 w-full mx-auto'>
       <Neuromorphism>
@@ -18,7 +27,7 @@ const RoomType = (props) => {
                     <FontAwesomeIcon
                     size="3x"
                       className={`transform duration-500  
-                    ${open ? " rotate-180 " : " rotate-0 "} `}
+                    ${open ? props.status? "rotate-180 translate-y-36":"rotate-180 translate-y-14" : " rotate-0 "} `}
                       icon={faChevronDown}
                     />
                   </div>
@@ -32,7 +41,8 @@ const RoomType = (props) => {
                   leaveTo="transform scale-95 -translate-20 opacity-0"
                 >
                   <Disclosure.Panel>
-                    <p>{props.content}</p>
+                    <p className="-mt-28">{props.content}</p>
+                    {space}
                   </Disclosure.Panel>
                 </Transition>
               </>

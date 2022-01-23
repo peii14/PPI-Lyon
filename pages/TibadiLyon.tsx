@@ -100,7 +100,7 @@ const TibadiLyon = () => {
               <p className="">Membuka akun</p>
               <div className=" row-span-16 col-start-2 ">
                 <div className="py-5">
-                  <Image src={arrow2} height={1200} />
+                  <Image src={arrow2}/>
                 </div>
               </div>
               <p className="row-span-16 col-start-3 -mt-10 ">

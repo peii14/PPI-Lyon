@@ -12,7 +12,6 @@ import qt from "../images/double-quotes-l.png";
 import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
 import Idham from "../images/member/idham.jpg";
-import idham2 from "../images/member/idham2.png"
 
 const Home: NextPage = () => {
   const [isHover, setHover] = useState(false);
@@ -114,7 +113,7 @@ const Home: NextPage = () => {
           <Image src={blur1} alt="" width={600} height={700} />
         </div>
       </section>
-      <section className=" md:p-0 p-10 flex justify-center pb-10 max-w-4xl mx-auto">
+      <section className="p-10 flex justify-center pb-10 max-w-4xl mx-auto">
         <Glassmorphism>
           <div className="flex flex-col gap-5 items-center justify-center">
             <Image src={qt} height={53} width={60} />

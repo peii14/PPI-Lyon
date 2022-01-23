@@ -45,7 +45,7 @@ const Organization = () => {
           />
         </section>
         <section className="py-5">
-          <h2 className="text-c:enter">Social Media</h2>
+          <h2 className="text-center">Social Media</h2>
           <div className="grid md:grid-cols-3 grid-cols-1 mx-auto gap-y-10 mt-10">
             <OrgCard
               name={"Naresha Pragyata Fuady"}
@@ -85,7 +85,7 @@ const Organization = () => {
               title={"Event Organizer"}
               image={bari}
             />
-            <div className="md?-mt-10">
+            <div className="md:-mt-10">
             <OrgCard
               name={"Colleta Oneida Nathania"}
               title={"Event Organizer"}

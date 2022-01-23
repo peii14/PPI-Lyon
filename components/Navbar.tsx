@@ -46,6 +46,7 @@ const Navbar = () => {
                       className={`transform duration-500 
                     ${open ? " rotate-180 " : " rotate-0 "} `}
                       icon={faChevronDown}
+                      
                     />
                   </Disclosure.Button>
                   <Transition
