@@ -22,7 +22,9 @@ import fahri from "../images/member/fahri.jpg"
 const Organization = () => {
   return (
     <>
+    <div className="w-screen overflow-y-hidden">
       <Hero img={sem} title={"Organization"} />
+    </div>
       <div className="layout md:p-0 p-10">
         <section className="grid md:grid-cols-3 grid-cols-1 mx-auto gap-y-10 mt-10 ">
           <div className="md:col-span-3">

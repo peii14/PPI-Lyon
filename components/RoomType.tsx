@@ -9,8 +9,7 @@ const RoomType = (props) => {
   if(props.status){
     space = (
       <>
-      <br />
-
+        <br />
       </>
     );
   }

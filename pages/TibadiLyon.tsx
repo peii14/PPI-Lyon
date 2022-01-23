@@ -27,7 +27,9 @@ import bukti from "../images/icon/bukti.png";
 const TibadiLyon = () => {
   return (
     <>
+    <div className="w-screen overflow-y-hidden">
       <Hero img={k} title={"Tiba di Lyon"} />
+    </div>
       <div className="layout md:p-0 p-10">
         <section className="text-primary md:pt-20 pt-0 ">
           <h2 className="text-center">Membuat Rekening Bank Prancis</h2>

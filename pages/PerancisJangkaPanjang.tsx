@@ -64,7 +64,7 @@ membawa paspor beserta bukti OFII ketika bepergian ke luar Prancis,
 karena kalau dokumen tidak lengkap
 ketika pemeriksaan, kamu mungkin
 tertangkap dan tidak diperbolehkan
-masuk ke negara tersebut.`
+masuk ke negara tersebut.`;
 
 const bis = `InterFlix dari Flixbus yang
 menawarkan 5 tiket perjalanan
@@ -82,7 +82,7 @@ membawa paspor beserta bukti OFII ketika bepergian ke luar Prancis,
 karena kalau dokumen tidak lengkap
 ketika pemeriksaan, kamu mungkin
 tertangkap dan tidak diperbolehkan
-masuk ke negara tersebut.`
+masuk ke negara tersebut.`;
 
 const penginapan = `Penginapan budget untuk pelajar di
 sekitar Eropa bisa dicek di situs
@@ -93,13 +93,15 @@ seperti ketika liburan
 Jangan lupa juga untuk menghubungi
 PPI setempat, apabila ada, untuk
 menanyakan pelajar yang mungkin mau menyewakan kamarnya untuk menginap
-dengan harga murah!`
+dengan harga murah!`;
 
 const PerancisJangkaPanjang = () => {
   return (
     <>
+    <div className="w-screen overflow-y-hidden">
       <Hero img={k} title={"Perancis Jangka Panjang"} />
-      <div className="layout md:p-0 p-10 text-justify">
+    </div>
+      <div className="layout md:p-0 p-10 text-justify scroll-smooth">
         <section className="text-primary md:pt-20 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">
             Kehidupan Mahasiswa Perancis
@@ -817,7 +819,9 @@ const PerancisJangkaPanjang = () => {
             kunjungi. Setiap tempat menawarkan pemandangan dan aktivias yang
             berbeda!
           </p>
-          <LyonSlider />
+          <section className="max-h-screen">
+            <LyonSlider />
+          </section>
         </section>
         <section className="text-primary  max-w-4xl mx-auto">
           <h2 className="text-center">
@@ -847,16 +851,31 @@ const PerancisJangkaPanjang = () => {
           </p>
           <div className="grid grid-cols-2 grid-row-2 gap-10 max-w-lg mx-auto md:py-10 md:mb-0 mb-10">
             <div className="w-full">
-              <Modal whichMods={1} icon={plane} btn={"Pesawat"} content={pesaswat} />
+              <Modal
+                whichMods={1}
+                icon={plane}
+                btn={"Pesawat"}
+                content={pesaswat}
+              />
             </div>
             <div className="w-full">
-            <Modal whichMods={1} icon={train} btn={"Kereta"} content={kereta} />
+              <Modal
+                whichMods={1}
+                icon={train}
+                btn={"Kereta"}
+                content={kereta}
+              />
             </div>
             <div className="w-full">
-            <Modal whichMods={1} icon={bus} btn={"Bus"} content={kereta} />
+              <Modal whichMods={1} icon={bus} btn={"Bus"} content={kereta} />
             </div>
             <div className="w-full">
-            <Modal whichMods={1} icon={home} btn={"Penginapan"} content={penginapan} />
+              <Modal
+                whichMods={1}
+                icon={home}
+                btn={"Penginapan"}
+                content={penginapan}
+              />
             </div>
           </div>
         </section>

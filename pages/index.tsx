@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import blur1 from "../images/blur1.png";
@@ -13,18 +12,19 @@ import Link from "next/link";
 import GuidelineSection from "../components/GuidelineSection";
 import Idham from "../images/member/idham.jpg";
 
+
 const Home: NextPage = () => {
-  const [isHover, setHover] = useState(false);
+
   return (
     <>
       <Head>
         <title>PPI-Lyon</title>
         <meta name="keywords" content="Perhimpunan Pelajar Indonesia"></meta>
       </Head>
+   
       <div className="w-screen overflow-y-hidden">
         <Hero img={bg1} isHome={0} />
       </div>
-      
       <section className=" md:p-14 p-10 max-w-6xl mx-auto ">
         <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
           <Image src={blur1} />
@@ -79,6 +79,7 @@ const Home: NextPage = () => {
           </Glassmorphism>
         </div>
       </section>
+
       <section className=" text-primary z-0">
         <h1 className="text-center">Program Kerja</h1>
         <div className="">
@@ -119,7 +120,12 @@ const Home: NextPage = () => {
             <Image src={qt} height={53} width={60} />
             <div className="flex md:flex-row flex-col gap-10 text-primary">
               <div className="w-11/12 mx-auto">
-                <Image src={Idham} className="rounded-xl" width={500} height={700}/>
+                <Image
+                  src={Idham}
+                  className="rounded-xl"
+                  width={500}
+                  height={700}
+                />
               </div>
               <div className="max-w4xl md:mt-5 mt--">
                 <h3 className="italic font-medium">Idham Habibie</h3>

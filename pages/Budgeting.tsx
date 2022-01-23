@@ -4,7 +4,9 @@ import hero from "../images/home/hero.png";
 const Budgeting = () => {
   return (
     <>
+    <div className="w-screen overflow-y-hidden">
       <Hero img={hero} title={"Budgeting"} isHome={1} />
+    </div>
       <div className="layout">
         <section className="text-center md:-mt-10 mt-0 p-7 ">
           <h2>Budgeting</h2>

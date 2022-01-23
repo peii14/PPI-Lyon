@@ -1,12 +1,32 @@
 import Image from "next/image";
 import logo from "../images/logo.png";
 import g from "../styles/Glassmorphism.module.css";
+import React, { useState, useEffect } from "react";
 
 const Hero = (props: any): JSX.Element => {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setOffset(window.pageYOffset);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [offset]);
+
   if (props.isHome == 0) {
     return (
       <section className="relative w-screen md:h-screen">
-        <div className="z-0 md:absolute">
+        <div
+          className="z-0 md:absolute"
+          style={{
+            transform: `translateY(${offset * 0.5}px)`,
+          }}
+        >
           <Image src={props.img} alt="" className={`${g.hero}`} priority />
         </div>
         <div
@@ -19,8 +39,19 @@ const Hero = (props: any): JSX.Element => {
   } else {
     return (
       <section className="relative w-screen md:h-screen">
-        <div className="z-0 md:static md:h-full h-60 ">
-          <Image src={props.img} alt="" className={`${g.hero}`} layout="fill" priority />
+        <div
+          className="z-0 md:static md:h-full h-60 "
+          style={{
+            transform: `translateY(${offset * 0.5}px)`,
+          }}
+        >
+          <Image
+            src={props.img}
+            alt=""
+            className={`${g.hero}`}
+            layout="fill"
+            priority
+          />
         </div>
         <div className="left-1/2 transform -translate-x-1/2 absolute md:w-1/5 w-1/4 md:top-20 top-5">
           <Image src={logo} alt="" />

@@ -22,32 +22,35 @@ import blur1 from "../images/blur1.png";
 
 const studio = `1 kamar tidur dan dapur dalam satu
 ruangan. Kamar mandi dan toilet
-terpisah`
+terpisah`;
 const t1 = `1 kamar tidur. Dapur, kamar mandi
-dan toilet terpisah`
+dan toilet terpisah`;
 const t2 = `1 kamar tidur & 1 ruang tengah.
 Dapur, kamar mandi dan toilet
-terpisah`
+terpisah`;
 const t3 = `2 kamar tidur & 1 ruang tengah.
 Dapur, kamar mandi dan toilet
-terpisah`
+terpisah`;
 const t4 = `3 kamar tidur & 1 ruang tengah.
 Dapur, kamar mandi dan toilet
-terpisah`
+terpisah`;
 const t5 = `T4 dan seterusnya ditambah kamar
-tidur yang lebih banyak`
-const bis =`T1Bis, T2Bis, T3Bis artinya ada
+tidur yang lebih banyak`;
+const bis = `T1Bis, T2Bis, T3Bis artinya ada
 ruangan yang cukup besar sehingga
 bisa dibagi dua. Contoh seperti T1Bis mempunyai satu ruangan terpisah
-yang bisa menjadi kamar tidur kedua`
+yang bisa menjadi kamar tidur kedua`;
 const chamber = `Biasanya untuk CROUS, artinya
 hanya ada kamar tidur. Dapur, kamar
 mandi dan toilet di luar kamar tidur
-dan berbagi dengan penghuni lain`
+dan berbagi dengan penghuni lain`;
+
 const Keberangkatan = () => {
   return (
     <>
-      <Hero img={k} title={"Keberangkatan"} />
+      <div className="w-screen overflow-y-hidden">
+        <Hero img={k} title={"Keberangkatan"} />
+      </div>
       <div className="layout md:p-0 p-10">
         <section className="text-primary md:p-20 p-0 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">
@@ -100,12 +103,12 @@ const Keberangkatan = () => {
               </div>
               <RoomType type="T1" content={t1} />
               <RoomType type="T2" content={t2} />
-              <RoomType type="T3" content={t3}/>
-              <RoomType type="T4"  content={t4}/>
-              <RoomType type="T5" content= {t5}/>
-              <RoomType type="BIS" content= {bis} status={true}/>
+              <RoomType type="T3" content={t3} />
+              <RoomType type="T4" content={t4} />
+              <RoomType type="T5" content={t5} />
+              <RoomType type="BIS" content={bis} status={true} />
               <div className="md:col-span-2  min-w-full self-stretch">
-                <RoomType type="Chamber" content={chamber}/>
+                <RoomType type="Chamber" content={chamber} />
               </div>
             </div>
             <div className="absolute z-0 left-2/4 w-2/4">
@@ -313,6 +316,7 @@ const Keberangkatan = () => {
                 propriétairemu.
               </p>
             </Glassmorphism>
+
             <Glassmorphism>
               <h3 className="text-third text-center">
                 DÉPÔTDE GARANTIE/CAUTION
@@ -324,6 +328,7 @@ const Keberangkatan = () => {
                 Biasanya disetujui di kontrak berupa 1 bulan loyer.
               </p>
             </Glassmorphism>
+
             <Glassmorphism>
               <h3 className="text-third text-center">ÉTATS DES LIEUX</h3>
               <p className="mt-5 text-justify">
@@ -335,6 +340,7 @@ const Keberangkatan = () => {
                 sama ketika kamu pergi.
               </p>
             </Glassmorphism>
+
             <Glassmorphism>
               <h3 className="text-third text-center">
                 ATTESTATION D’HÉBERGEMENT / JUSTIFICATIF DE DOMICILE
@@ -353,6 +359,7 @@ const Keberangkatan = () => {
                 coloc-mu.
               </p>
             </Glassmorphism>
+
             <Glassmorphism>
               <h3 className="text-third text-center">ASSURANCE D’HABITATION</h3>
               <p className="mt-5 text-justify">
@@ -363,6 +370,7 @@ const Keberangkatan = () => {
                 agen-agen asuransi dan bank dengan biaya 20- 60€ per tahun.
               </p>
             </Glassmorphism>
+
             <Glassmorphism>
               <h3 className="text-third text-center">
                 AGARANT/CAUTION SOLIDAIRE
@@ -639,7 +647,7 @@ const Keberangkatan = () => {
               </div>
               <div className="max-w-3xl">
                 <h4>Buku</h4>
-                <p >
+                <p>
                   Kalau memungkinkan, tidak perlu membawa banyak buku berat
                   seperti kamus atau buku kelas Prancis karena versi
                   elektroniknya dapat didownload dan disimpan di handphone atau

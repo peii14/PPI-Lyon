@@ -16,7 +16,7 @@ const LyonSlider = () => {
   return (
     <>
       <Swiper
-        direction={"vertical"}
+        // direction={"vertical"}
         pagination={{
           clickable: true,
         }}
@@ -27,6 +27,9 @@ const LyonSlider = () => {
         keyboard={true}
         className="mySwiper"
       >
+          <SwiperSlide>
+              <h1>dor</h1>
+          </SwiperSlide>
           <SwiperSlide>
               <h1>dor</h1>
           </SwiperSlide>
