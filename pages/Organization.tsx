@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import OrgCard from "../components/OrgCard";
-import sem from "../images/keberangkatan/keberangkatanHero.png";
+import sem from "../images/hero/hero2.png";
 import idham from "../images/member/idham.jpg";
 import aaf from "../images/member/aaf.jpg";
 import perli from "../images/member/perli.jpg";

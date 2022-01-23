@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import k from "../images/keberangkatan/keberangkatanHero.png";
+import k from "../images/hero/hero5.png";
 import Image from "next/image";
 import bank from "../images/tiba/gambar.png";
 import check from "../images/icon/check.png";
@@ -145,7 +145,7 @@ const TibadiLyon = () => {
             </p>
             <div className="flex flex-col gap-10 md:p-10 py-5">
               <div className="flex md:flex-row flex-col md:gap-10 gap-3">
-                <div className="mx-auto">
+                <div className="md:m-0 mx-auto">
                   <Image src={passport} layout="fixed" />
                 </div>
                 <p className="font-bold md:text-left text-center my-auto text-2xl">
@@ -153,7 +153,7 @@ const TibadiLyon = () => {
                 </p>
               </div>
               <div className="flex md:flex-row flex-col md:gap-10 gap-3">
-                <div className="mx-auto">
+                <div className="md:m-0  mx-auto">
                   <Image src={id} layout="fixed" />
                 </div>
                 <div className="md:text-left text-center">

@@ -30,9 +30,7 @@ const LyonSlider = () => {
           <SwiperSlide>
               <h1>dor</h1>
           </SwiperSlide>
-          <SwiperSlide>
-              <h1>dor</h1>
-          </SwiperSlide>
+
       </Swiper>
       <style>{`
           .swiper-container {

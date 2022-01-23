@@ -1,6 +1,6 @@
 import Glassmorphism from "../components/Glassmorphism";
 import Hero from "../components/Hero";
-import hero from "../images/home/hero.png";
+import hero from "../images/hero/hero.png";
 const Budgeting = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const Budgeting = () => {
       <Hero img={hero} title={"Budgeting"} isHome={1} />
     </div>
       <div className="layout">
-        <section className="text-center md:-mt-10 mt-0 p-7 ">
+        <section className="text-center md:mt-10 mt-0 p-7 ">
           <h2>Budgeting</h2>
           <p className="mt-5 max-w-4xl mx-auto">
             Bagian ini dapat membantu kamu membuat budgeting pengeluaran selama

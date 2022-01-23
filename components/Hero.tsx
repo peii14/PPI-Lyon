@@ -2,7 +2,7 @@ import Image from "next/image";
 import logo from "../images/logo.png";
 import g from "../styles/Glassmorphism.module.css";
 import React, { useState, useEffect } from "react";
-
+import Link from "next/link";
 const Hero = (props: any): JSX.Element => {
   const [offset, setOffset] = useState(0);
 
@@ -10,9 +10,7 @@ const Hero = (props: any): JSX.Element => {
     function handleScroll() {
       setOffset(window.pageYOffset);
     }
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -53,8 +51,12 @@ const Hero = (props: any): JSX.Element => {
             priority
           />
         </div>
-        <div className="left-1/2 transform -translate-x-1/2 absolute md:w-1/5 w-1/4 md:top-20 top-5">
+        <div className="left-1/2 transform -translate-x-1/2 absolute md:w-1/5 w-1/4 md:top-20 cursor-pointer top-5">
+          <Link href={'/'}>
+          
           <Image src={logo} alt="" />
+        
+          </Link>
         </div>
         <div className="z-10 absolute md:bottom-32 bottom-10 left-1/2 transform -translate-x-1/2 max-w-2xl">
           <h1 className="text-sec font-light text-center">{props.title}</h1>

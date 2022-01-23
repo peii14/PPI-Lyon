@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Glassmorphism from "../components/Glassmorphism";
 import Hero from "../components/Hero";
-import k from "../images/home/hero1.jpg";
+import k from "../images/hero/hero3.png";
 import td from "../images/icon/TD.png";
 import tp from "../images/icon/TP.png";
 import cm from "../images/icon/CM.png";
@@ -819,7 +819,7 @@ const PerancisJangkaPanjang = () => {
             kunjungi. Setiap tempat menawarkan pemandangan dan aktivias yang
             berbeda!
           </p>
-          <section className="max-h-screen">
+          <section className="max-h-screen md:my-10 my-5">
             <LyonSlider />
           </section>
         </section>

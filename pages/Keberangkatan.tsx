@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import k from "../images/keberangkatan/keberangkatanHero.png";
+import k from "../images/hero/hero6.png";
 import Image from "next/image";
 import ifi from "../images/keberangkatan/IFI.png";
 import RoomType from "../components/RoomType";
