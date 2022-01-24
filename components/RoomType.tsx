@@ -26,7 +26,7 @@ const RoomType = (props) => {
                     <FontAwesomeIcon
                     size="3x"
                       className={`transform duration-500  
-                    ${open ? props.status? "rotate-180 translate-y-36":"rotate-180 translate-y-14" : " rotate-0 "} `}
+                    ${open ? props.status? "rotate-180 md:translate-y-36 translate-y-20":"rotate-180 translate-y-14" : " rotate-0 "} `}
                       icon={faChevronDown}
                     />
                   </div>
