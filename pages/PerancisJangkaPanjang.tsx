@@ -618,7 +618,7 @@ const PerancisJangkaPanjang = () => {
                 bersamaan dengan visa yang sudah habis masa berlakunya.
               </p>
             </div>
-            <div className="mt-10">
+            <div className="m-auto h-full">
               <Image src={ktp_front} layout="fixed" width={300} height={200} />
             </div>
           </div>
@@ -814,7 +814,7 @@ const PerancisJangkaPanjang = () => {
         </section>
         <section className="text-primary max-w-4xl mx-auto">
           <h2 className="text-center">Hidup Di Lyon : PROFITEZ DE LA VILLE</h2>
-          <p className="text-center py-10">
+          <p className="text-center mt-10">
             Berikut ini adalah 15 tempat-tempat khas Lyon yang harus kamu
             kunjungi. Setiap tempat menawarkan pemandangan dan aktivias yang
             berbeda!
@@ -849,8 +849,8 @@ const PerancisJangkaPanjang = () => {
             Travelling dapat dilakukan dengan pesawat a kereta, atau bus untuk
             opsi yang lebih murah:
           </p>
-          <div className="grid grid-cols-2 grid-row-2 gap-10 max-w-lg mx-auto md:py-10 md:mb-0 mb-10">
-            <div className="w-full">
+          <div className="grid md:grid-cols-2 gap-10 max-w-lg mx-auto md:py-10 md:mb-0 mb-10">
+            <div className="md:w-full w-2/3 mx-auto">
               <Modal
                 whichMods={1}
                 icon={plane}
@@ -858,7 +858,7 @@ const PerancisJangkaPanjang = () => {
                 content={pesaswat}
               />
             </div>
-            <div className="w-full">
+            <div className="md:w-full w-2/3 mx-auto">
               <Modal
                 whichMods={1}
                 icon={train}
@@ -866,10 +866,10 @@ const PerancisJangkaPanjang = () => {
                 content={kereta}
               />
             </div>
-            <div className="w-full">
+            <div className="md:w-full w-2/3 mx-auto">
               <Modal whichMods={1} icon={bus} btn={"Bus"} content={kereta} />
             </div>
-            <div className="w-full">
+            <div className="md:w-full w-2/3 mx-auto">
               <Modal
                 whichMods={1}
                 icon={home}

@@ -19,7 +19,7 @@ const Modal = (props) => {
     whichModal = (
       <Neuromorphism>
         <div className="w-1/2 mx-auto">
-          <Image src={props.icon} />
+          <Image src={props.icon} height={160} />
         </div>
         <h3>{props.btn}</h3>
       </Neuromorphism>

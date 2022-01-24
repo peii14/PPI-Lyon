@@ -25,16 +25,13 @@ const ProkerSwiper = () => {
   return (
     <>
       <Swiper
-        // pagination={{
-        //   type: "progressbar",
-        // }}
         draggable={true}
         cssMode={true}
         navigation={true}
         loop={false}
         mousewheel={true}
         keyboard={true}
-        className="mySwiper "
+        className="mySwiper"
       >
         <SwiperSlide>
           <ProkerContent
