@@ -61,7 +61,7 @@ const Keberangkatan = () => {
               <Image src={ifi} alt="" layout="fixed" />
             </div>
             <p className="max-w-xl m-auto">
-              Hal pertama yang harus dilakukan settelah mendapat pengumuna
+              Hal pertama yang harus dilakukan setelah mendapat pengumuna
               penerimaan di Lyon adalah{" "}
               <span className="font-bold">
                 menghubungi Campus France terdekat di kotamu.
@@ -122,12 +122,10 @@ const Keberangkatan = () => {
             <h2 className="text-center">Kontrak</h2>
             <p className="text-justify">
               Apartemen dapat disewakan dalam bentuk Properti perseorangan
-              (prpriete privee) atau khusus pelajar (residences etudiantes).
+              (<span className="italic">propriete privee</span>) atau khusus pelajar (<span className="italic">résidences é tudiantes</span>).
               Appartements prives berarti kamu menyewakan apartemen dari pemilik
               pribadi, di mana kontrak tempat tinggal, tagihan bulanan, laporan
-              kerusakan atau perbaikan dan kebutuhan lainya adlaah antara kamu
-              dan si pemilik atau kamu dengan agen yang bertanggung jawab
-              mengurus apartemen tersebut. Untuk mencari apartemen tipe ini,
+              kerusakan atau perbaikan dan kebutuhan lainnya adalaah antara kamu  
               kamu bisa coba di link berikut:
             </p>
             <ul className="grid grid-cols-2 list-disc list-inside gap-3 ">
@@ -185,7 +183,7 @@ const Keberangkatan = () => {
             </ul>
             <div>
               <p>
-                Untuk pilihan résidences étudiantes berarti kamu menyewakan
+                Untuk pilihan <span className="italic">résidences étudiantes</span>  berarti kamu menyewakan
                 apartemen khusus pelajar yang biasanya merupakan:{" "}
               </p>
             </div>
@@ -230,7 +228,7 @@ const Keberangkatan = () => {
               </li>
             </ul>
             <p>
-              Website yang disusun oleh Mairie de Lyon juga mempunyai banyak
+              Website yang disusun oleh <span className="italic">Mairie de Lyon</span> juga mempunyai banyak
               pilihan yang dapat kamu pilih:
             </p>
             <div className="text-center">
@@ -323,9 +321,9 @@ const Keberangkatan = () => {
               </h3>
               <p className="mt-5 text-justify">
                 Deposit dalam bentuk uang yang akan dikembalikan ketika kontrak
-                selesai dan kamu meninggalkan apartemen. Deposit ini digunakan
+                sudah selesai dan sudah meninggalkan apartemen. Deposit ini digunakan
                 untuk membayar kerusakan selama kamu di apartemen apabila ada.
-                Biasanya disetujui di kontrak berupa 1 bulan loyer.
+                Biasanya disetujui di kontrak berupa 1-2 bulan loyer.
               </p>
             </Glassmorphism>
 
@@ -335,9 +333,9 @@ const Keberangkatan = () => {
                 Tahap ketika kamu dan pemilik memverifikasi kondisi fisik
                 apartemen untuk pertama kali kamu masuk apartemen dan tahap
                 ketika kamu keluar dari apartemen. Ini dilakukan untuk
-                memastikankerusakan yang sudah ada sebelum kamu masuk bukan
+                memastikan kerusakan yang sudah ada sebelum kamu masuk bukan
                 tanggung jawab kamu dan keadaan apartemen ketika kamu datang
-                sama ketika kamu pergi.
+                dan ketika kamu pergi.
               </p>
             </Glassmorphism>
 
@@ -347,16 +345,16 @@ const Keberangkatan = () => {
               </h3>
               <p className="mt-5 text-justify">
                 Surat sebagai bukti bahwa kamu benar-benar tinggal di
-                apartemenmu, berdasarkan dan dilindungi oleh pemerintah Prancis
-                di bawah bail yang sudah ditandatangani oleh pemilik dan kamu.
+                apartemenmu, dilindungi oleh pemerintah Prancis
+                di bawah <span className="italic"> bail </span> yang sudah ditandatangani oleh pemilik dan kamu.
                 Dokumen ini penting untuk semua proses administrasi prancis
                 seperti OFII, membuka akun bank dan mengurus asuransi kesehatan.
-                Apabila kamu tinggal bersama colocataire namun namamu tidak
-                tercantum di bail, kamu bisa meminta colocmu untuk membuatkan
+                Apabila kamu tinggal bersama <span className="italic"> colocataire </span> namun namamu tidak
+                tercantum di <span className="italic"> bail</span> kamu bisa meminta teman <span className="italic">coloc</span>-mu untuk membuatkan
                 justificatif de domicile yang menyatakan bahwa kamu benar
                 tinggal bersama dia, dan setiap kali dibutuhkan bawa
                 justificatif ini bersama dengan bail yang mencantumkan nama
-                coloc-mu.
+                <span className="italic"> coloc</span>-mu.
               </p>
             </Glassmorphism>
 
