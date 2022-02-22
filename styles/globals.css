@@ -12,8 +12,8 @@ body {
   width: 100%;
   overflow-x: hidden;
   background: #f0f0f0;
+  scroll-behavior: smooth;
 }
-
 
 @layer base {
   /* Write your own custom base styles here */
@@ -32,8 +32,8 @@ body {
   h4 {
     @apply text-lg font-bold font-primary;
   }
-  p{
-    @apply font-light
+  p {
+    @apply font-light;
   }
 
   body {
@@ -48,7 +48,7 @@ body {
     max-width: 68.75rem;
     @apply mx-auto;
   }
-  
+
   @layer utilities {
     .text-gradient {
       background-clip: text;

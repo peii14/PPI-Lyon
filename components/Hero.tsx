@@ -15,7 +15,6 @@ const Hero = (props: any): JSX.Element => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [offset]);
-
   if (props.isHome == 0) {
     return (
       <section className="relative w-screen md:h-screen">
@@ -52,10 +51,8 @@ const Hero = (props: any): JSX.Element => {
           />
         </div>
         <div className="left-1/2 transform -translate-x-1/2 absolute md:w-1/5 w-1/4 md:top-20 cursor-pointer top-5">
-          <Link href={'/'}>
-          
-          <Image src={logo} alt="" />
-        
+          <Link href={"/"}>
+            <Image src={logo} alt="" />
           </Link>
         </div>
         <div className="z-10 absolute md:bottom-32 bottom-10 left-1/2 transform -translate-x-1/2 max-w-2xl">
