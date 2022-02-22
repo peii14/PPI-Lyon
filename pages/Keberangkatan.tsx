@@ -61,7 +61,7 @@ const Keberangkatan = () => {
               <Image src={ifi} alt="" layout="fixed" />
             </div>
             <p className="max-w-xl m-auto">
-              Hal pertama yang harus dilakukan setelah mendapat pengumuna
+              Hal pertama yang harus dilakukan setelah mendapat pengumuman
               penerimaan di Lyon adalah{" "}
               <span className="font-bold">
                 menghubungi Campus France terdekat di kotamu.
@@ -69,7 +69,7 @@ const Keberangkatan = () => {
               Mereka akan mendampingi kamu agar mendapat izin tinggal di Prancis
               bernama{" "}
               <span className="font-bold">
-                Via TLS-TS atau Visa long sejour.
+                Via TLS-TS atau <span className="font-bold italic">Visa long sejour</span>.
               </span>
               <br />
               <br />
@@ -84,15 +84,15 @@ const Keberangkatan = () => {
         </section>
         <section className="text-primary mx-auto flex flex-col gap-10 relative">
           <h2 className="text-center max-w-3xl mx-auto">
-            Mencari Tempat Tinggal Dari Indonesia
+          Tempat Tinggal
           </h2>
           <div>
             <p className="max-w-4xl mx-auto text-justify">
               Di Prancis, pada umumnya para pelajar tinggal di tempat tinggal
-              (logement) berupa apartemen di mana kamu membayar tagihan bulanan
-              (loyer) yang terkadang bisa termasuk biaya listrik, air, gas dan
+              <span className="italic">(logement)</span> berupa apartemen di mana kamu membayar tagihan bulanan
+              <span className="italic">(loyer)</span> yang terkadang bisa termasuk biaya listrik, air, gas dan
               internet. Di dalam apartemen, kamu disebut locataire, dan kamu
-              bisa tinggal sendiri atau bersama penghuni lain (colocataire).
+              bisa tinggal sendiri atau bersama penghuni lain <span className="italic">(colocataire)</span>.
             </p>
           </div>
           <div className="flex flex-col gap-10 relative  ">
@@ -108,7 +108,7 @@ const Keberangkatan = () => {
               <RoomType type="T5" content={t5} />
               <RoomType type="BIS" content={bis} status={true} />
               <div className="md:col-span-2  min-w-full self-stretch">
-                <RoomType type="Chamber" content={chamber} />
+                <RoomType type="Chambre" content={chamber} />
               </div>
             </div>
             <div className="absolute z-0 left-2/4 w-2/4">
@@ -123,7 +123,7 @@ const Keberangkatan = () => {
             <p className="text-justify">
               Apartemen dapat disewakan dalam bentuk Properti perseorangan
               (<span className="italic">propriete privee</span>) atau khusus pelajar (<span className="italic">résidences é tudiantes</span>).
-              Appartements prives berarti kamu menyewakan apartemen dari pemilik
+              <span className="italic">Appartements prives</span> berarti kamu menyewa apartemen dari pemilik
               pribadi, di mana kontrak tempat tinggal, tagihan bulanan, laporan
               kerusakan atau perbaikan dan kebutuhan lainnya adalaah antara kamu  
               kamu bisa coba di link berikut:
@@ -156,7 +156,7 @@ const Keberangkatan = () => {
                   appartager.com
                 </a>
                 <p className="text-sm">
-                  (KHUSUS UNTUK PILIHAN DENGAN COLOCATAIRE)
+                  (KHUSUS UNTUK PILIHAN DENGAN <span className="italic">COLOCATAIRE</span>)
                 </p>
               </li>
               <li>
@@ -183,7 +183,7 @@ const Keberangkatan = () => {
             </ul>
             <div>
               <p>
-                Untuk pilihan <span className="italic">résidences étudiantes</span>  berarti kamu menyewakan
+                Untuk pilihan <span className="italic">résidences étudiantes</span>  berarti kamu menyewa
                 apartemen khusus pelajar yang biasanya merupakan:{" "}
               </p>
             </div>
@@ -244,7 +244,7 @@ const Keberangkatan = () => {
         </section>
         <section className="py-10 text-primary mx-auto relative ">
           <h2 className="text-center max-w-3xl mx-auto ">
-            Poin Penting Pada Saat Memilih Tempat Tinggal
+            Poin Penting Memilih Tempat Tinggal
           </h2>
           <div className="absolute w-11/12 -top-1/2 -right-2/4 ">
             <Image src={blur1} />
@@ -288,7 +288,7 @@ const Keberangkatan = () => {
                 telfon video seperti lewat Skype. Jangan pernah mengirim uang
                 sebelum menandatangani kontrak untuk mencegah penipuan. Mengenai
                 bantuan pengeluaran apartemen CAF, verifikasi dengan penyewa
-                apabila apartemen tersebut berhak mendapatkan CAF
+                apabila apartemen tersebut berhak mendapatkan CAF.
               </p>
             </Glassmorphism>
           </div>
@@ -298,7 +298,7 @@ const Keberangkatan = () => {
         </section>
         <section className="text-primary mx-auto py-5 relative z-10">
           <h2 className="text-center max-w-3xl mx-auto">
-            Istilah-Istilah Penting Saat Proses Administrasi Menyewa Apartemen
+            Istilah-Istilah Penting Administrasi Apartemen
           </h2>
 
           <div className="py-10 flex flex-col gap-10 max-w-4xl mx-auto ">
@@ -416,13 +416,13 @@ const Keberangkatan = () => {
         </section>
         <section className="mx-auto text-primary py-5">
           <h2 className="text-center">
-            Mempersiapkan Dana Untuk Bulan Pertama
+            Dana Untuk Bulan Pertama
           </h2>
           <p className="mt-5 text-justify">
             Setiba di Prancis, kamu akan langsung mengeluarkan sejumlah biaya
             untuk kebutuhanmu. Apabila kamu ingin melakukan transfer uang
             bulananmu dari Indonesia ke Prancis, proses ini dapat memakan waktu
-            sampai be berapa bulan karena membuka akun bank di Prancis cukup
+            sampai beberapa bulan karena membuka akun bank di Prancis cukup
             lama. Oleh karena itu, PPI Lyon menyarankan agar kamu menyiapkan
             dana pengeluaran untuk beberapa bulan pertama setelah tiba,
             contohnya 3 bulan pertama.
@@ -472,7 +472,7 @@ const Keberangkatan = () => {
           </div>
           <div className="flex flex-col gap-10">
             <h2 className="text-center">
-              Mempersiapkan Data Internet Di Prancis
+              Data Internet Di Prancis
             </h2>
             <p className="text-left">
               PPI Lyon menyarankan kamu untuk membeli paket internet
@@ -486,7 +486,7 @@ const Keberangkatan = () => {
           </div>
         </section>
         <section className="text-primary mx-auto">
-          <h2 className="text-center">Memilih Moda Transportasi ke Lyon</h2>
+          <h2 className="text-center">Transportasi ke Lyon</h2>
           <div className="py-5">
             <h3 className="italic">Langsung Ke Lyon</h3>
             <p className="mt-3">
