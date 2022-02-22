@@ -14,7 +14,6 @@ import peng1 from "../images/gallery/peng1.jpg";
 import k2019 from "../images/gallery/2019.jpg";
 import k20192 from "../images/gallery/2019-2.jpg";
 import tetedor from "../images/gallery/tetedor.jpg";
-import tetedor2 from "../images/gallery/tetedor3.jpg";
 import win4 from "../images/gallery/win4.jpg";
 import acc6 from "../images/gallery/acc6.jpg";
 import acc8 from "../images/gallery/acc8.jpg";
