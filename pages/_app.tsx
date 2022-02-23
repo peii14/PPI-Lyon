@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
+    <Layout data-scroll-container>
       <GlobalStyles />
       <Component {...pageProps} />
     </Layout>

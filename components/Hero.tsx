@@ -11,9 +11,13 @@ const Hero = (props: any): JSX.Element => {
       setOffset(window.pageYOffset);
     }
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (offset < 2000) {
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    } else {
+      return;
+    }
   }, [offset]);
   if (props.isHome == 0) {
     return (

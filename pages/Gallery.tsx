@@ -48,8 +48,8 @@ const Gallery = () => {
         <Hero img={hero} title={"Gallery"} isHome={1} />
       </div>
       <div></div>
-      <div className="layout grid grid-cols-3 py-20 overflow-y-hidden items-center gap-5 ">
-        <div className="col-span-2 row-span-2">
+      <div className="layout grid md:grid-cols-3 grid-cols-1 py-20 px-10 md:px-0 overflow-y-hidden items-center gap-5 ">
+        <div className="md:col-span-2 md:row-span-2">
           <Image src={sum1} />
         </div>
         <Image src={sum2} />
@@ -59,14 +59,14 @@ const Gallery = () => {
         <Image src={win2} />
         <Image src={acc2} />
 
-        <div className="col-span-2 row-span-2">
+        <div className="md:col-span-2 md:row-span-2">
           <Image src={acc1} />
         </div>
         <Image src={k20192} />
 
         <Image src={acc3} />
         <Image src={acc4} />
-        <div className="col-span-2 row-span-2">
+        <div className="md:col-span-2 md:row-span-2">
           <Image src={k2019} />
         </div>
         <Image src={tetedor} />
@@ -74,7 +74,7 @@ const Gallery = () => {
         <Image src={acc8} />
         <Image src={acc9} />
 
-        <div className="row-span-4 col-span-2">
+        <div className="md:row-span-4 md:col-span-2">
           <Image src={winn2} />
         </div>
         <div className="row-span-2">
@@ -87,10 +87,10 @@ const Gallery = () => {
         <Image src={acc7} />
         <Image src={ski} />
 
-        <div className=" col-span-2 row-span-2">
+        <div className="md:col-span-2 md:row-span-2">
           <Image src={win4} />
         </div>
-        <div className="row-span-1">
+        <div className="md:row-span-1">
           <Image src={nar} />
         </div>
         <Image src={gilang} />

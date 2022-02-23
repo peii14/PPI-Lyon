@@ -19,6 +19,9 @@ import batik from "../images/icon/shirt.png";
 import obat from "../images/icon/fontisto_pills.png";
 import books from "../images/icon/books.png";
 import blur1 from "../images/blur1.png";
+import Disclose from "../components/Disclosure";
+
+
 
 const studio = `1 kamar tidur dan dapur dalam satu
 ruangan. Kamar mandi dan toilet
@@ -69,7 +72,8 @@ const Keberangkatan = () => {
               Mereka akan mendampingi kamu agar mendapat izin tinggal di Prancis
               bernama{" "}
               <span className="font-bold">
-                Via TLS-TS atau <span className="font-bold italic">Visa long sejour</span>.
+                Via TLS-TS atau{" "}
+                <span className="font-bold italic">Visa long sejour</span>.
               </span>
               <br />
               <br />
@@ -83,16 +87,16 @@ const Keberangkatan = () => {
           </div>
         </section>
         <section className="text-primary mx-auto flex flex-col gap-10 relative">
-          <h2 className="text-center max-w-3xl mx-auto">
-          Tempat Tinggal
-          </h2>
+          <h2 className="text-center max-w-3xl mx-auto">Tempat Tinggal</h2>
           <div>
             <p className="max-w-4xl mx-auto text-justify">
               Di Prancis, pada umumnya para pelajar tinggal di tempat tinggal
-              <span className="italic">(logement)</span> berupa apartemen di mana kamu membayar tagihan bulanan
-              <span className="italic">(loyer)</span> yang terkadang bisa termasuk biaya listrik, air, gas dan
-              internet. Di dalam apartemen, kamu disebut locataire, dan kamu
-              bisa tinggal sendiri atau bersama penghuni lain <span className="italic">(colocataire)</span>.
+              <span className="italic">(logement)</span> berupa apartemen di
+              mana kamu membayar tagihan bulanan
+              <span className="italic">(loyer)</span> yang terkadang bisa
+              termasuk biaya listrik, air, gas dan internet. Di dalam apartemen,
+              kamu disebut locataire, dan kamu bisa tinggal sendiri atau bersama
+              penghuni lain <span className="italic">(colocataire)</span>.
             </p>
           </div>
           <div className="flex flex-col gap-10 relative  ">
@@ -121,12 +125,14 @@ const Keberangkatan = () => {
           <div className="max-w-4xl mx-auto flex flex-col gap-5 py-10">
             <h2 className="text-center">Kontrak</h2>
             <p className="text-justify">
-              Apartemen dapat disewakan dalam bentuk Properti perseorangan
-              (<span className="italic">propriete privee</span>) atau khusus pelajar (<span className="italic">résidences é tudiantes</span>).
-              <span className="italic">Appartements prives</span> berarti kamu menyewa apartemen dari pemilik
-              pribadi, di mana kontrak tempat tinggal, tagihan bulanan, laporan
-              kerusakan atau perbaikan dan kebutuhan lainnya adalaah antara kamu  
-              kamu bisa coba di link berikut:
+              Apartemen dapat disewakan dalam bentuk Properti perseorangan (
+              <span className="italic">propriete privee</span>) atau khusus
+              pelajar (<span className="italic">résidences é tudiantes</span>).
+              <span className="italic">Appartements prives</span> berarti kamu
+              menyewa apartemen dari pemilik pribadi, di mana kontrak tempat
+              tinggal, tagihan bulanan, laporan kerusakan atau perbaikan dan
+              kebutuhan lainnya adalaah antara kamu kamu bisa coba di link
+              berikut:
             </p>
             <ul className="grid grid-cols-2 list-disc list-inside gap-3 ">
               <li>
@@ -156,7 +162,8 @@ const Keberangkatan = () => {
                   appartager.com
                 </a>
                 <p className="text-sm">
-                  (KHUSUS UNTUK PILIHAN DENGAN <span className="italic">COLOCATAIRE</span>)
+                  (KHUSUS UNTUK PILIHAN DENGAN{" "}
+                  <span className="italic">COLOCATAIRE</span>)
                 </p>
               </li>
               <li>
@@ -183,8 +190,9 @@ const Keberangkatan = () => {
             </ul>
             <div>
               <p>
-                Untuk pilihan <span className="italic">résidences étudiantes</span>  berarti kamu menyewa
-                apartemen khusus pelajar yang biasanya merupakan:{" "}
+                Untuk pilihan{" "}
+                <span className="italic">résidences étudiantes</span> berarti
+                kamu menyewa apartemen khusus pelajar yang biasanya merupakan:{" "}
               </p>
             </div>
             <ul className={s.listed}>
@@ -228,8 +236,9 @@ const Keberangkatan = () => {
               </li>
             </ul>
             <p>
-              Website yang disusun oleh <span className="italic">Mairie de Lyon</span> juga mempunyai banyak
-              pilihan yang dapat kamu pilih:
+              Website yang disusun oleh{" "}
+              <span className="italic">Mairie de Lyon</span> juga mempunyai
+              banyak pilihan yang dapat kamu pilih:
             </p>
             <div className="text-center">
               <a
@@ -298,9 +307,11 @@ const Keberangkatan = () => {
         </section>
         <section className="text-primary mx-auto py-5 relative z-10">
           <h2 className="text-center max-w-3xl mx-auto">
-            Istilah-Istilah Penting Administrasi Apartemen
+            Istilah Penting Administrasi Apartemen
           </h2>
-
+          <div className="">
+            <Disclose />
+          </div>
           <div className="py-10 flex flex-col gap-10 max-w-4xl mx-auto ">
             <Glassmorphism>
               <h3 className="text-third text-center">
@@ -321,9 +332,10 @@ const Keberangkatan = () => {
               </h3>
               <p className="mt-5 text-justify">
                 Deposit dalam bentuk uang yang akan dikembalikan ketika kontrak
-                sudah selesai dan sudah meninggalkan apartemen. Deposit ini digunakan
-                untuk membayar kerusakan selama kamu di apartemen apabila ada.
-                Biasanya disetujui di kontrak berupa 1-2 bulan loyer.
+                sudah selesai dan sudah meninggalkan apartemen. Deposit ini
+                digunakan untuk membayar kerusakan selama kamu di apartemen
+                apabila ada. Biasanya disetujui di kontrak berupa 1-2 bulan
+                loyer.
               </p>
             </Glassmorphism>
 
@@ -334,8 +346,8 @@ const Keberangkatan = () => {
                 apartemen untuk pertama kali kamu masuk apartemen dan tahap
                 ketika kamu keluar dari apartemen. Ini dilakukan untuk
                 memastikan kerusakan yang sudah ada sebelum kamu masuk bukan
-                tanggung jawab kamu dan keadaan apartemen ketika kamu datang
-                dan ketika kamu pergi.
+                tanggung jawab kamu dan keadaan apartemen ketika kamu datang dan
+                ketika kamu pergi.
               </p>
             </Glassmorphism>
 
@@ -345,14 +357,16 @@ const Keberangkatan = () => {
               </h3>
               <p className="mt-5 text-justify">
                 Surat sebagai bukti bahwa kamu benar-benar tinggal di
-                apartemenmu, dilindungi oleh pemerintah Prancis
-                di bawah <span className="italic"> bail </span> yang sudah ditandatangani oleh pemilik dan kamu.
-                Dokumen ini penting untuk semua proses administrasi prancis
-                seperti OFII, membuka akun bank dan mengurus asuransi kesehatan.
-                Apabila kamu tinggal bersama <span className="italic"> colocataire </span> namun namamu tidak
-                tercantum di <span className="italic"> bail</span> kamu bisa meminta teman <span className="italic">coloc</span>-mu untuk membuatkan
-                justificatif de domicile yang menyatakan bahwa kamu benar
-                tinggal bersama dia, dan setiap kali dibutuhkan bawa
+                apartemenmu, dilindungi oleh pemerintah Prancis di bawah{" "}
+                <span className="italic"> bail </span> yang sudah ditandatangani
+                oleh pemilik dan kamu. Dokumen ini penting untuk semua proses
+                administrasi prancis seperti OFII, membuka akun bank dan
+                mengurus asuransi kesehatan. Apabila kamu tinggal bersama{" "}
+                <span className="italic"> colocataire </span> namun namamu tidak
+                tercantum di <span className="italic"> bail</span> kamu bisa
+                meminta teman <span className="italic">coloc</span>-mu untuk
+                membuatkan justificatif de domicile yang menyatakan bahwa kamu
+                benar tinggal bersama dia, dan setiap kali dibutuhkan bawa
                 justificatif ini bersama dengan bail yang mencantumkan nama
                 <span className="italic"> coloc</span>-mu.
               </p>
@@ -410,14 +424,12 @@ const Keberangkatan = () => {
               </ul>
             </Glassmorphism>
           </div>
-          <div className="absolute bottom-0 left-3/4 w-3/4">
+          <div className="absolute bottom-0 left-3/4 w-3/4 z-0">
             <Image src={blur1} />
           </div>
         </section>
         <section className="mx-auto text-primary py-5">
-          <h2 className="text-center">
-            Dana Untuk Bulan Pertama
-          </h2>
+          <h2 className="text-center">Dana Untuk Bulan Pertama</h2>
           <p className="mt-5 text-justify">
             Setiba di Prancis, kamu akan langsung mengeluarkan sejumlah biaya
             untuk kebutuhanmu. Apabila kamu ingin melakukan transfer uang
@@ -471,9 +483,7 @@ const Keberangkatan = () => {
             </div>
           </div>
           <div className="flex flex-col gap-10">
-            <h2 className="text-center">
-              Data Internet Di Prancis
-            </h2>
+            <h2 className="text-center">Data Internet Di Prancis</h2>
             <p className="text-left">
               PPI Lyon menyarankan kamu untuk membeli paket internet
               internasional dari Indonesia agar dapat roaming (setidaknya untuk
