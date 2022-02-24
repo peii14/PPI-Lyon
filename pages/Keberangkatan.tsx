@@ -101,8 +101,8 @@ const Keberangkatan = () => {
             </div>
             <div className="flex flex-col gap-10 relative  ">
               <h3 className="text-center">Tipe-tipe tempat tinggal</h3>
-              <div className="z-10 grid md:grid-cols-2 grid-cols-1 gap-10 md:w-7/12 w-full justify-items-center mx-auto justify-center ">
-                <div className="md:col-span-2 min-w-full ">
+              <div className="z-10 grid md:grid-cols-2 grid-cols-1 gap-10 md:w-7/12 w-full mx-auto grow-0">
+                <div className="md:col-span-2 min-w-full max-w-xl ">
                   <RoomType type="Studio" content={studio} />
                 </div>
                 <RoomType type="T1" content={t1} />

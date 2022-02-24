@@ -6,7 +6,7 @@ import Neuromorphism from "./Neuromorphism";
 const RoomType = (props) => {
   // const [selectedId, setSelectedId] = useState(null)
   var space;
-  if(props.status){
+  if (props.status) {
     space = (
       <>
         <br />
@@ -14,41 +14,51 @@ const RoomType = (props) => {
     );
   }
   return (
-    <div className='md:w-10/12 w-full mx-auto'>
-      <Neuromorphism>
-        <div className="flex flex-col gap-10 justify-center items-center">
-          <h1 >{props.type}</h1>
-          <Disclosure>
-            {({ open }) => (
-              <>
-                <Disclosure.Button>
-                  <div>
+    <div className="max-w-sm mx-auto">
+      <Disclosure>
+        {({ open }) => (
+          <Neuromorphism>
+            <>
+              <Disclosure.Button>
+                <div
+                  className={`grid md:grid-cols-6 grid-cols-8 transform duration-200 justify-around px-4 py-2 items-center`}
+                >
+                  <h2>{props.type}</h2>
+                  <div className="md:col-span-5 col-span-7  ml-auto">
                     <FontAwesomeIcon
-                    size="3x"
-                      className={`transform duration-500  
-                    ${open ? props.status? "rotate-180 md:translate-y-36 translate-y-16":"rotate-180 translate-y-14" : " rotate-0 "} `}
+                      size="2x"
+                      className={`transform duration-500 m-auto w-full
+                    ${open ? "rotate-180 " : " rotate-0 "} `}
                       icon={faChevronDown}
                     />
                   </div>
-                </Disclosure.Button>
-                <Transition
-                  enter="transition duration-300 ease-out"
-                  enterFrom="transform scale-95 translate-10 opacity-0"
-                  enterTo="transform scale-100 translate-0 opacity-100"
-                  leave="transition duration-100 ease-out delay-150"
-                  leaveFrom="transform scale-100 translate-0 opacity-100"
-                  leaveTo="transform scale-95 -translate-20 opacity-0"
-                >
-                  <Disclosure.Panel>
-                    <p className="-mt-28">{props.content}</p>
-                    {space}
-                  </Disclosure.Panel>
-                </Transition>
-              </>
-            )}
-          </Disclosure>
-        </div>
-      </Neuromorphism>
+                </div>
+              </Disclosure.Button>
+
+              <Transition
+                show={open}
+                enter="transition duration-300 ease-out "
+                enterFrom="transform scale-95 translate-10 opacity-0"
+                enterTo="transform scale-100 translate-0 opacity-100"
+                leave="transition duration-100 ease-out delay-150"
+                leaveFrom="transform scale-100 translate-0 opacity-100"
+                leaveTo="transform scale-95 -translate-20 opacity-0"
+              >
+                <Disclosure.Panel>
+                  <p
+                    className={`transition-all ml-5 ${
+                      open ? "visible" : "hidden"
+                    }`}
+                  >
+                    {props.content}
+                  </p>
+                  {space}
+                </Disclosure.Panel>
+              </Transition>
+            </>
+          </Neuromorphism>
+        )}
+      </Disclosure>
     </div>
   );
 };

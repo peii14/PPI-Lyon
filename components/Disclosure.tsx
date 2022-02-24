@@ -42,7 +42,7 @@ const Disclose = () => {
             </Neuromorphism>
           )}
         </Disclosure>
-        <Disclosure as={"div"} className="mt-3">
+        <Disclosure as={"div"} className="mt-5">
           {({ open }) => (
             <Neuromorphism isMember="3">
               <>
