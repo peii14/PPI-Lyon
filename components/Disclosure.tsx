@@ -7,11 +7,11 @@ const Disclose = () => {
   return (
     <>
       <div className="px-4 pt-16 max-w-4xl mx-auto">
-        <Neuromorphism isMember="1">
-          <Disclosure>
-            {({ open }) => (
+        <Disclosure>
+          {({ open }) => (
+            <Neuromorphism isMember="3">
               <>
-                <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary bg-red-100 rounded-lg hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <Disclosure.Button className="flex transform duration-200 justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary  rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                   <span>CONTRAT DE LOCATION/BAIL</span>
                   <FontAwesomeIcon
                     size="1x"
@@ -39,12 +39,14 @@ const Disclose = () => {
                   </Disclosure.Panel>
                 </Transition>
               </>
-            )}
-          </Disclosure>
-          <Disclosure as={"div"} className="mt-3">
-            {({ open }) => (
+            </Neuromorphism>
+          )}
+        </Disclosure>
+        <Disclosure as={"div"} className="mt-3">
+          {({ open }) => (
+            <Neuromorphism isMember="3">
               <>
-                <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary bg-red-100 rounded-lg hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <Disclosure.Button className="flex transform duration-200 justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary  rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                   <span>DÉPÔTDE GARANTIE/CAUTION</span>
                   <FontAwesomeIcon
                     size="1x"
@@ -72,12 +74,14 @@ const Disclose = () => {
                   </Disclosure.Panel>
                 </Transition>
               </>
-            )}
-          </Disclosure>
-          <Disclosure as={"div"} className="mt-3">
-            {({ open }) => (
+            </Neuromorphism>
+          )}
+        </Disclosure>
+        <Disclosure as={"div"} className="mt-5">
+          {({ open }) => (
+            <Neuromorphism isMember="3">
               <>
-                <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary bg-red-100 rounded-lg hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <Disclosure.Button className="flex transform duration-200 justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary  rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                   <span>ÉTATS DES LIEUX</span>
                   <FontAwesomeIcon
                     size="1x"
@@ -106,12 +110,14 @@ const Disclose = () => {
                   </Disclosure.Panel>
                 </Transition>
               </>
-            )}
-          </Disclosure>
-          <Disclosure as={"div"} className="mt-3">
-            {({ open }) => (
+            </Neuromorphism>
+          )}
+        </Disclosure>
+        <Disclosure as={"div"} className="mt-5">
+          {({ open }) => (
+            <Neuromorphism isMember="3">
               <>
-                <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary bg-red-100 rounded-lg hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary transform duration-200  rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                   <span>
                     ATTESTATION D’HÉBERGEMENT / JUSTIFICATIF DE DOMICILE
                   </span>
@@ -147,12 +153,14 @@ const Disclose = () => {
                   </Disclosure.Panel>
                 </Transition>
               </>
-            )}
-          </Disclosure>
-          <Disclosure as={"div"} className="mt-3">
-            {({ open }) => (
+            </Neuromorphism>
+          )}
+        </Disclosure>
+        <Disclosure as={"div"} className="mt-5">
+          {({ open }) => (
+            <Neuromorphism isMember="3">
               <>
-                <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary bg-red-100 rounded-lg hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <Disclosure.Button className="flex transform duration-200 justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary  rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                   <span>ASSURANCE D’HABITATION</span>
                   <FontAwesomeIcon
                     size="1x"
@@ -181,12 +189,14 @@ const Disclose = () => {
                   </Disclosure.Panel>
                 </Transition>
               </>
-            )}
-          </Disclosure>
-          <Disclosure as={"div"} className="mt-3">
-            {({ open }) => (
+            </Neuromorphism>
+          )}
+        </Disclosure>
+        <Disclosure as={"div"} className="mt-5">
+          {({ open }) => (
+            <Neuromorphism isMember="3">
               <>
-                <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary bg-red-100 rounded-lg hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                <Disclosure.Button className="flex transform duration-200 justify-between w-full px-4 py-2 text-sm font-medium text-left text-primary  rounded-lg  focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
                   <span>AGARANT/CAUTION SOLIDAIRE</span>
                   <FontAwesomeIcon
                     size="1x"
@@ -245,9 +255,9 @@ const Disclose = () => {
                   </Disclosure.Panel>
                 </Transition>
               </>
-            )}
-          </Disclosure>
-        </Neuromorphism>
+            </Neuromorphism>
+          )}
+        </Disclosure>
       </div>
     </>
   );

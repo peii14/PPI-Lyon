@@ -16,8 +16,28 @@ import {
   SmoothScrollContext,
   SmoothScrollProvider,
 } from "../components/SmoothScroll";
+import { useRef, useEffect } from "react";
 const Home: NextPage = () => {
-  const { scroll } = useContext(SmoothScrollContext);
+  const scrollRef = useRef();
+
+  useEffect(() => {
+    let scroll;
+    if (typeof window === "undefined") {
+      return;
+    }
+    import("locomotive-scroll").then((LocomotiveScroll) => {
+      scroll = new LocomotiveScroll.default({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smoothMobile: false,
+        resetNativeScroll: true,
+      });
+    });
+    return () => {
+      scroll.destroy();
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -29,24 +49,20 @@ const Home: NextPage = () => {
                     yang sedang menempuh pendidikan di kota Lyon."
         ></meta>
       </Head>
-      <SmoothScrollProvider options={{ smooth: true }}>
-        <div data-scroll-section>
-          <div
-            className="w-screen overflow-y-hidden"
-            data-scroll
-            data-scroll-speed="-1"
-          >
+      <div>
+        <main data-scroll-container>
+          <div className="w-screen overflow-y-hidden">
             <Hero img={bg1} isHome={0} />
           </div>
           <section className=" md:p-14 p-10 max-w-6xl mx-auto">
             <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
               <Image src={blur1} />
             </div>
-            <div className=" z-10 ">
+            <div className=" z-10 " data-scroll data-scroll-speed="2">
               <Glassmorphism>
                 <div className="flex flex-col gap-10 text-primary">
                   <h1 className="text-center ">About Us</h1>
-                  <p className="text-center" data-scroll data-scroll-speed="1">
+                  <p className="text-center">
                     PPI Lyon adalah sebuah platform yang didirikan pada tahun
                     2007 dengan tujuan menghubungkan semua pelajar Indonesia
                     yang sedang menempuh pendidikan di kota Lyon.
@@ -155,8 +171,8 @@ const Home: NextPage = () => {
               </div>
             </Glassmorphism>
           </section>
-        </div>
-      </SmoothScrollProvider>
+        </main>
+      </div>
     </>
   );
 };

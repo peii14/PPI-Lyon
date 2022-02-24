@@ -7,18 +7,34 @@ const Hero = (props: any): JSX.Element => {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    function handleScroll() {
-      setOffset(window.pageYOffset);
-    }
-    window.addEventListener("scroll", handleScroll);
-    if (offset < 2000) {
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    } else {
-      return;
-    }
-  }, [offset]);
+      function handleScroll() {
+        setOffset(window.pageYOffset);
+      }
+      window.addEventListener("scroll", handleScroll);
+      if (offset < 2000) {
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      } else {
+        return;
+      }
+    }, [offset]);
+  //   let scroll;
+  //   if (typeof window === "undefined") {
+  //     return;
+  //   }
+  //   import("locomotive-scroll").then((LocomotiveScroll) => {
+  //     scroll = new LocomotiveScroll.default({
+  //       el: document.querySelector("[data-scroll-container]"),
+  //       smooth: true,
+  //       smoothMobile: false,
+  //       resetNativeScroll: true,
+  //     });
+  //   });
+  //   return () => {
+  //     scroll.destroy();
+  //   };
+  // }, []);
   if (props.isHome == 0) {
     return (
       <section className="relative w-screen md:h-screen">
@@ -27,6 +43,8 @@ const Hero = (props: any): JSX.Element => {
           style={{
             transform: `translateY(${offset * 0.5}px)`,
           }}
+          data-scroll
+          data-scroll-speed="1"
         >
           <Image src={props.img} alt="" className={`${g.hero}`} priority />
         </div>
