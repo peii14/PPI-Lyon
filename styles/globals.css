@@ -63,7 +63,6 @@ html.has-scroll-dragging {
   margin: 2px;
 }
 
-
 @layer base {
   /* Write your own custom base styles here */
   h1 {
@@ -87,6 +86,9 @@ html.has-scroll-dragging {
 
   body {
     @apply text-sm font-primary md:text-base;
+  }
+  b {
+    @apply font-bold;
   }
 
   .layout {

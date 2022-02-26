@@ -27,7 +27,7 @@ const Home: NextPage = () => {
         <div className="w-screen overflow-y-hidden">
           <Hero img={bg1} isHome={0} />
         </div>
-        <section className=" md:p-14 p-10 max-w-6xl mx-auto">
+        <section className=" md:p-14 p-10 max-w-6xl mx-auto" >
           <div className=" absolute -left-5 z-0  max-w-xl 2xl:left-52 2xl:max-w-3xl">
             <Image src={blur1} />
           </div>
@@ -84,13 +84,13 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className=" text-primary z-0">
+        <section className=" text-primary z-0" >
           <h1 className="text-center">Program Kerja</h1>
           <div className="">
             <ProkerSwiper />
           </div>
         </section>
-        <section className="flex flex-col gap-10 p-20 overflow-hidden mx-auto">
+        <section className="flex flex-col gap-10 p-20 overflow-hidden mx-auto" >
           <h1 className="text-center text-primary">Guideline</h1>
           <div className="grid md:grid-cols-2  max-w-3xl mx-auto gap-20 self-center text-center z-10 ">
             <Link href="/Keberangkatan">
@@ -118,7 +118,7 @@ const Home: NextPage = () => {
             <Image src={blur1} alt="" width={600} height={700} />
           </div>
         </section>
-        <section className="p-10 flex justify-center pb-10 max-w-4xl mx-auto">
+        <section className="p-10 flex justify-center pb-10 max-w-4xl mx-auto" >
           <Glassmorphism>
             <div className="flex flex-col gap-5 items-center justify-center">
               <Image src={qt} height={53} width={60} />

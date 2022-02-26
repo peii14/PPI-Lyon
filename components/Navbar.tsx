@@ -46,7 +46,6 @@ const Navbar = () => {
                       className={`transform duration-500 
                     ${open ? " rotate-180 " : " rotate-0 "} `}
                       icon={faChevronDown}
-                      
                     />
                   </Disclosure.Button>
                   <Transition
@@ -66,22 +65,22 @@ const Navbar = () => {
                           }}
                         >
                           <ul className="flex flex-col text-left gap-3">
-                            <Link href="/Keberangkatan">
+                            <Link href="Keberangkatan">
                               <li className="transition-all duration-100 px-3 py-1 cursor-pointer hover:bg-gray-300 hover:text-black ">
                                 <a>Keberangkatan</a>
                               </li>
                             </Link>
-                            <Link href="/TibadiLyon">
+                            <Link href="TibadiLyon">
                               <li className="transition-all duration-100 px-3 py-1 cursor-pointer hover:bg-gray-300 hover:text-black">
                                 <a>Tiba di Lyon</a>
                               </li>
                             </Link>
-                            <Link href="/PerancisJangkaPanjang">
+                            <Link href="PerancisJangkaPanjang">
                               <li className="transition-all duration-100 py-1 px-3  cursor-pointer hover:bg-gray-300 hover:text-black">
                                 <a>Perancis Jangka Panjang</a>
                               </li>
                             </Link>
-                            <Link href="/Budgeting">
+                            <Link href="Budgeting">
                               <li className="transition-all duration-100 pt-1 px-3  pb-2 cursor-pointer hover:bg-gray-300 hover:text-black">
                                 <a>Budgeting</a>
                               </li>
@@ -95,13 +94,13 @@ const Navbar = () => {
               )}
             </Disclosure>
           </li>
-          <Link href="/Gallery">
-            <li className="transition-all duration-300 hover:bg-white hover:text-black p-5 cursor-pointer h-full">
+          <Link href="Gallery">
+            <li className="transition-all duration-300 hover:bg-gray-300 hover:text-black p-5 cursor-pointer h-full">
               <a>Gallery</a>
             </li>
           </Link>
-          <Link href="/Organization">
-            <li className="transition-all duration-300 hover:bg-white hover:text-black p-5 cursor-pointer h-full">
+          <Link href="Organization">
+            <li className="transition-all duration-300 hover:bg-gray-300 hover:text-black p-5 cursor-pointer h-full">
               <a>Organization</a>
             </li>
           </Link>
@@ -138,7 +137,7 @@ const Navbar = () => {
                             open ? "w-2s bg-opacity-70" : " bg-opacity-0 w-0"
                           }`}
                         >
-                          <div className="h-2s bg-primary py-20 px-10 z-40 overflow-hidden w-max opacity-100 ">
+                          <div className="h-2 bg-primary py-20 px-10 z-40 overflow-hidden w-max opacity-100 ">
                             <ul className="flex flex-col gap-5 text-sec text-2xl cursor-pointer ">
                               <button
                                 onClick={async () => {
@@ -184,22 +183,22 @@ const Navbar = () => {
                                             }}
                                           >
                                             <ul className="flex flex-col text-left gap-5 ml-5">
-                                              <Link href="/Keberangkatan">
+                                              <Link href="Keberangkatan">
                                                 <li className="">
                                                   <a>Keberangkatan</a>
                                                 </li>
                                               </Link>
-                                              <Link href="/TibadiLyon">
+                                              <Link href="TibadiLyon">
                                                 <li className="">
                                                   <a>Tiba di Lyon</a>
                                                 </li>
                                               </Link>
-                                              <Link href="/PerancisJangkaPanjang">
+                                              <Link href="PerancisJangkaPanjang">
                                                 <li className="">
                                                   <a>Perancis Jangka Panjang</a>
                                                 </li>
                                               </Link>
-                                              <Link href="/Budgeting">
+                                              <Link href="Budgeting">
                                                 <li className="">
                                                   <a>Budgeting</a>
                                                 </li>
@@ -213,7 +212,7 @@ const Navbar = () => {
                                 </Disclosure>
                               </li>
                               <button
-                              className="gap-5 flex flex-col "
+                                className="gap-5 flex flex-col "
                                 onClick={async () => {
                                   await fetch("/accept-terms", {
                                     method: "POST",
@@ -221,12 +220,12 @@ const Navbar = () => {
                                   close();
                                 }}
                               >
-                                <Link href="/Gallery">
+                                <Link href="Gallery">
                                   <li className="cursor-pointer text-left ">
                                     <a>Gallery</a>
                                   </li>
                                 </Link>
-                                <Link href="/Organization">
+                                <Link href="Organization">
                                   <li className="cursor-pointer text-left">
                                     <a>Organization</a>
                                   </li>

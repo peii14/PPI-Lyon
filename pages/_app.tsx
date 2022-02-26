@@ -15,27 +15,32 @@ function MyApp({ Component, pageProps }: AppProps) {
     console.log("UPDATE");
     window.dispatchEvent(new Event("resize"));
   }, [Component]);
+
   useEffect(() => {
     let scroll;
     if (typeof window === "undefined") {
       return;
     }
     import("locomotive-scroll").then((LocomotiveScroll) => {
-      scroll = new LocomotiveScroll.default({
-        el: document.querySelector("[data-scroll-container]"),
-        smooth: true,
-        smoothMobile: false,
-      },2000);
+      scroll = new LocomotiveScroll.default(
+        {
+          el: document.querySelector("[data-scroll-container]"),
+          smooth: true,
+          smoothMobile: false,
+          inertia: 0.65,
+        },
+        2000
+      );
     });
     return () => scroll.destroy();
   }, []);
   return (
-    <Layout>
-      <main data-scroll-container>
+    <main data-scroll-container>
+      <Layout>
         <GlobalStyles />
         <Component {...pageProps} />
-      </main>
-    </Layout>
+      </Layout>
+    </main>
   );
 }
 
