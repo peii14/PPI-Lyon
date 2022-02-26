@@ -21,6 +21,7 @@ import plane from "../images/icon/plane.png";
 import bus from "../images/icon/bus.png";
 import train from "../images/icon/train.png";
 import home from "../images/icon/home.png";
+import RoomType from "../components/RoomType";
 
 const récépissé = `Biasanya setiap universitas memiliki bagian administrasi
                     untuk mahasiswa internasional seperti maison internationale
@@ -98,11 +99,11 @@ dengan harga murah!`;
 const PerancisJangkaPanjang = () => {
   return (
     <>
-    <div className="w-screen overflow-y-hidden">
-      <Hero img={k} title={"Perancis Jangka Panjang"} />
-    </div>
+      <div className="w-screen overflow-y-hidden">
+        <Hero img={k} title={"Perancis Jangka Panjang"} />
+      </div>
       <div className="layout md:p-0 p-10 text-justify scroll-smooth">
-        <section className="text-primary md:pt-20 mx-auto">
+        <section className="text-primary mt-5 mx-auto">
           <h2 className="text-center max-w-xl mx-auto">
             Kehidupan Mahasiswa Perancis
           </h2>
@@ -317,7 +318,7 @@ const PerancisJangkaPanjang = () => {
                 dokter/farmasi beserta layanan yang mereka sudah lakukan. Kamu
                 harus <b>mengisi identitasmu</b> dan nomor sécurité sociale,
                 lalu surat ini dapat
-                <b>dikirim lewat pos ke CPAM Rhône</b> atau kamu datang ke
+                <b> dikirim lewat pos ke CPAM Rhône</b> atau kamu datang ke
                 kantor CPAM Rhône langsung dan{" "}
                 <b>masukkan surat tersebut ke dalam kotak pos</b> di luar
                 bangunan yang bertuliskan feuilles de soins/remboursements.
@@ -331,7 +332,7 @@ const PerancisJangkaPanjang = () => {
                 membayar, dan reimbursementnya akan <b>otomatis diproses</b>{" "}
                 tanpa kamu harus melakukan apapun. Tentunya pilihan ini hanya
                 bisa dilakukan kalau kamu <b>sudah punya</b> carte vitale dan
-                nomor yang fiks
+                nomor yang fixe.
               </p>
               <div className="flex md:flex-row flex-col gap-10 my-12">
                 <div className="bg-tip_box text-center text-gray-800 rounded-xl outline-black">
@@ -386,7 +387,7 @@ const PerancisJangkaPanjang = () => {
             </Glassmorphism>
           </div>
         </section>
-        <section className="text-primary md:py-10 mt-10 max-w-4xl mx-auto">
+        <section className="text-primary md:py-10 md:mt-0 mt-10 max-w-4xl mx-auto">
           <h2 className="text-center">TITRE DE SÉJOUR - CARTE DE SÉJOUR</h2>
           <div className="grid md:grid-cols-2 grid-cols-1 py-10 gap-10">
             <div>
@@ -404,11 +405,11 @@ const PerancisJangkaPanjang = () => {
                 Setelah jadi, TDS mempunyai masa berlaku{" "}
                 <b>dari 6 bulan atau 1 semester sampai beberapa tahun,</b>{" "}
                 berdasarkan sisa tahun ajaran jurusanmu. Misalkan licencemu sisa
-                2 tahun, kamu akan mendapatka n TDS berlaku 2 tahun.
+                2 tahun, kamu akan mendapatkan TDS berlaku 2 tahun.
               </p>
               <br />
               <p className={`${h.indent}`}>
-                Proses pengajuan pembuatan TDS untuk pertama kalianya dibagi
+                Proses pengajuan pembuatan TDS untuk pertama kalinya dibagi
                 menjadi dua langkah besar, dengan urutan berikut:{" "}
               </p>
               <ul className="ml-10 list-decimal">
@@ -441,10 +442,14 @@ const PerancisJangkaPanjang = () => {
             masing- masing di masa liburan, dan tetap mempunyai wewenang untuk
             kembali ke Prancis untuk tahun ajaran baru.
           </p>
-          <div className="grid md:grid-cols-2  py-10 md:gap-20 gap-10">
-            <Modal btn={"Option 1"} content={récépissé} />
+          <div
+            data-scroll
+            data-scroll-speed="1"
+            className="grid md:grid-cols-2  py-10 md:gap-20 gap-10"
+          >
+            <RoomType type="Option 1" content={récépissé} />
             <div>
-              <Modal btn={"Option 2"} content={recep2} />
+              <RoomType type={"Option 2"} content={recep2} />
             </div>
           </div>
           <p>
@@ -509,12 +514,16 @@ const PerancisJangkaPanjang = () => {
             visa yang habis Juni - September, untuk periode lainnya bisa
             langsung ke langkah ini.
           </p>
-          <div className="grid md:grid-cols-2 py-10 md:gap-20 gap-10">
+          <div
+            data-scroll
+            data-scroll-speed="1"
+            className="grid md:grid-cols-2 py-10 md:gap-20 gap-10"
+          >
             <button id="modal">
-              <Modal btn={"Option 1"} content={titre1} />
+              <RoomType type={"Option 1"} content={titre1} />
             </button>
             <div>
-              <Modal btn={"Option 2"} content={titre2} />
+              <RoomType type={"Option 2"} content={titre2} />
             </div>
           </div>
           <p className={`${h.indent}`}>
@@ -600,31 +609,29 @@ const PerancisJangkaPanjang = () => {
               </p>
             </li>
           </ul>
-          <div className="flex md:flex-row flex-col gap-x-10 pt-10">
-            <div>
-              <p className={`${h.indent}`}>
-                Ketika dokumen sudah lengkap dan sudah diperiksa oleh pihak
-                universitas kalau ada, pastikan kamu hadir jauh lebih awal dari
-                jam buka Student Welcome Desk, atau jauh lebih awal dari jam
-                janji temu apabila di prefektur. Pastikan dokumen lengkap,
-                karena permintaan tidak akan diproses apabila tidak lengkap, dan
-                kamu harus datang di hari lain. Total waktu menyerahkan dokumen
-                beserta menjelaskan situasi di Prancis sekitar 15-30 menit.
-                Apabila dokumen lengkap dan diterima, kamu akan langsung
-                diberikan récépissé yang kedua, namun kali ini disebut récépissé
-                de demande de carte de séjour, yang berlaku 3 bulan dari hari
-                menyerahkan dokumen. Récépissé ini digunakan sebagai bukti TDS
-                sedang dibuat dan kamu bisa gunakan untuk keluar negeri, selama
-                bersamaan dengan visa yang sudah habis masa berlakunya.
-              </p>
-            </div>
+          <div className="flex  md:flex-row flex-col gap-x-5 mt-10">
+            <p className={`${h.indent} max-w-lg`}>
+              Ketika dokumen sudah lengkap dan sudah diperiksa oleh pihak
+              universitas kalau ada, pastikan kamu hadir jauh lebih awal dari
+              jam buka Student Welcome Desk, atau jauh lebih awal dari jam janji
+              temu apabila di prefektur. Pastikan dokumen lengkap, karena
+              permintaan tidak akan diproses apabila tidak lengkap, dan kamu
+              harus datang di hari lain. Total waktu menyerahkan dokumen beserta
+              menjelaskan situasi di Prancis sekitar 15-30 menit. Apabila
+              dokumen lengkap dan diterima, kamu akan langsung diberikan
+              récépissé yang kedua, namun kali ini disebut récépissé de demande
+              de carte de séjour, yang berlaku 3 bulan dari hari menyerahkan
+              dokumen. Récépissé ini digunakan sebagai bukti TDS sedang dibuat
+              dan kamu bisa gunakan untuk keluar negeri, selama bersamaan dengan
+              visa yang sudah habis masa berlakunya.
+            </p>
             <div className="m-auto h-full">
               <Image src={ktp_front} layout="fixed" width={300} height={200} />
             </div>
           </div>
-          <div className="flex md:flex-row flex-col py-10 gap-x-10">
+          <div className="flex md:flex-row flex-col mt-10 gap-x-10">
             <div>
-              <p className={`${h.indent}`}>
+              <p className={`${h.indent} max-w-lg`}>
                 Setelah 1 bulan, bisa lebih, kamu akan menerima SMS dari
                 prefektur apabila TDSmu sudah jadi dan dapat diambil. Kamu bisa
                 datang kapanpun, tanpa membuat janji temu, selama jam buka
@@ -642,7 +649,7 @@ const PerancisJangkaPanjang = () => {
                 konfirmasi jadinya TDSmu.
               </p>
             </div>
-            <div className="md:mt-0 mt-10">
+            <div className="m-auto">
               <Image src={ktp_back} layout="fixed" width={300} height={200} />
             </div>
           </div>
@@ -743,7 +750,7 @@ const PerancisJangkaPanjang = () => {
           <h3 className="text-center mt-10">
             Recruitment Process Untuk Magang
           </h3>
-          <div className="my-8">
+          <div className="my-10" data-scroll data-scroll-speed="1">
             <Glassmorphism>
               <Image src={magang} />
             </Glassmorphism>
@@ -846,7 +853,7 @@ const PerancisJangkaPanjang = () => {
           </div>
 
           <p className="py-10 text-center">
-            Travelling dapat dilakukan dengan pesawat a kereta, atau bus untuk
+            Travelling dapat dilakukan dengan pesawat, kereta, atau bus untuk
             opsi yang lebih murah:
           </p>
           <div className="grid md:grid-cols-2 gap-10 max-w-lg mx-auto md:py-10 md:mb-0 mb-10">
@@ -888,8 +895,8 @@ const PerancisJangkaPanjang = () => {
             Republik Indonesia (KBRI) Paris. Permohonan ini dapat dilakukan juga
             untuk permintaan penggantian paspor karena rusak, hilang atau
             dicuri. <br /> <br /> Syarat dan instruksi untuk melakukan
-            permohonan dapat diikuti secara lebih detil di situs Kementrian Luar
-            Negeri:
+            permohonan dapat diikuti secara lebih detil di situs Kementerian
+            Luar Negeri:
           </p>
           <div className="text-center">
             <a
@@ -924,11 +931,10 @@ const PerancisJangkaPanjang = () => {
           </p>
           <br />
           <p className={`${h.indent}`}>
-            &emsp;&emsp;&emsp;&emsp;Setelah mendapatkan konfirmasi dari KBRI
-            Paris bahwa paspor baru sudah jadi, kamu bisa datang kembali ke KBRI
-            Paris untuk mengambil langsung atau kamu bisa meminta KBRI Paris
-            untuk mengirim paspor tersebut{" "}
-            <b>lewat pos dengan biaya tambahan.</b> <br />
+            Setelah mendapatkan konfirmasi dari KBRI Paris bahwa paspor baru
+            sudah jadi, kamu bisa datang kembali ke KBRI Paris untuk mengambil
+            langsung atau kamu bisa meminta KBRI Paris untuk mengirim paspor
+            tersebut <b>lewat pos dengan biaya tambahan.</b> <br />
           </p>
           <br />
           <p className={`${h.indent}`}>

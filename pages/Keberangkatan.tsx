@@ -20,7 +20,7 @@ import obat from "../images/icon/fontisto_pills.png";
 import books from "../images/icon/books.png";
 import blur1 from "../images/blur1.png";
 import Disclose from "../components/Disclosure";
-
+import Link from "next/link";
 const studio = `1 kamar tidur dan dapur dalam satu
 ruangan. Kamar mandi dan toilet
 terpisah`;
@@ -54,13 +54,13 @@ const Keberangkatan = () => {
           <Hero img={k} title={"Keberangkatan"} />
         </div>
         <div className="layout md:p-0 p-10">
-          <section className="text-primary md:p-20 p-0 mx-auto">
+          <section className="text-primary md:px-20 px-0 md:mt-5 mt-0 mx-auto">
             <h2 className="text-center max-w-xl mx-auto">
               Mengajukan visa VLS-TS
             </h2>
-            <div className="flex md:flex-row flex-col justify-around py-10 md:gap-0 gap-5 text-justify">
-              <div className="mx-auto">
-                <Image src={ifi} alt="" layout="fixed" />
+            <div className="flex md:flex-row flex-col justify-around py-10 md:gap-0 gap-5 text-justify ">
+              <div className="mx-auto md:w-full w-2/3">
+                <Image src={ifi} alt="" />
               </div>
               <p className="max-w-xl m-auto">
                 Hal pertama yang harus dilakukan setelah mendapat pengumuman
@@ -127,13 +127,13 @@ const Keberangkatan = () => {
               <p className="text-justify">
                 Apartemen dapat disewakan dalam bentuk Properti perseorangan (
                 <span className="italic">propriete privee</span>) atau khusus
-                pelajar (<span className="italic">résidences é tudiantes</span>
+                pelajar (<span className="italic">résidences étudiantes</span>
                 ).
                 <span className="italic">Appartements prives</span> berarti kamu
                 menyewa apartemen dari pemilik pribadi, di mana kontrak tempat
                 tinggal, tagihan bulanan, laporan kerusakan atau perbaikan dan
-                kebutuhan lainnya adalaah antara kamu kamu bisa coba di link
-                berikut:
+                kebutuhan lainnya adalah antara kamu dan pemilik pribadi. Kamu
+                bisa coba di link berikut:
               </p>
               <ul className="grid grid-cols-2 list-disc list-inside gap-3 ">
                 <li>
@@ -290,7 +290,11 @@ const Keberangkatan = () => {
                 </p>
               </div>
             </div>
-            <div className="max-w-4xl mx-auto">
+            <div
+              className="max-w-4xl mx-auto"
+              data-scroll
+              data-scroll-speed="1"
+            >
               <Glassmorphism>
                 <h3 className="text-center text-third ">PENTING !</h3>
                 <p className="mt-5 text-justify">
@@ -365,8 +369,11 @@ const Keberangkatan = () => {
                     sedangkan untuk dua bulan berikutnya dalam kartu kredit atau
                     debit untuk mencegah kemungkinan adanya kehilangan atau
                     pencurian di Prancis! Untuk dana yang kamu siapkan
-                    perbulannya, lihat bagian 4 untuk contoh budgeting bulanan
-                    di Lyon
+                    perbulannya, lihat{" "}
+                    <Link href={"Budgeting"}>
+                      <a className="underline text-blue-500">budgeting</a>
+                    </Link>{" "}
+                    bulanan di Lyon
                   </p>
                 </div>
               </div>
@@ -419,7 +426,11 @@ const Keberangkatan = () => {
               </p>
             </div>
           </section>
-          <section className="max-w-4xl mx-auto py-10">
+          <section
+            className="max-w-4xl mx-auto py-10"
+            data-scroll
+            data-scroll-speed="1"
+          >
             <Glassmorphism>
               <h2 className="text-center text-third">PENTING!</h2>
               <p className="mt-10">

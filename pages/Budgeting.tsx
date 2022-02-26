@@ -4,11 +4,11 @@ import hero from "../images/hero/hero.png";
 const Budgeting = () => {
   return (
     <>
-    <div className="w-screen overflow-y-hidden">
-      <Hero img={hero} title={"Budgeting"} isHome={1} />
-    </div>
+      <div className="w-screen overflow-y-hidden">
+        <Hero img={hero} title={"Budgeting"} isHome={1} />
+      </div>
       <div className="layout">
-        <section className="text-center md:mt-10 mt-0 p-7 ">
+        <section className="text-center md:-mt-5 mt-0 p-7 ">
           <h2>Budgeting</h2>
           <p className="mt-5 max-w-4xl mx-auto">
             Bagian ini dapat membantu kamu membuat budgeting pengeluaran selama
@@ -21,7 +21,7 @@ const Budgeting = () => {
         </section>
         <section className="py-10">
           <h2 className="text-center">Biaya Pengeluaran</h2>
-          <div className="p-5">
+          <div className="p-5" data-scroll data-scroll-speed="1">
             <Glassmorphism>
               <div className="grid grid-cols-2 items-center ">
                 <h3 className="text-danger">Pengeluaran Tahunan</h3>
@@ -53,12 +53,18 @@ const Budgeting = () => {
                   <p>Loyer Apartemen</p>
                   <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>400 €</p>
-                    <p className="md:col-span-4 col-span-3"> | sebelum dipotong CAF</p>
+                    <p className="md:col-span-4 col-span-3">
+                      {" "}
+                      | sebelum dipotong CAF
+                    </p>
                   </div>
                   <p>Charges (Listrik, Gas, Air)</p>
                   <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>30 € </p>
-                    <p className="md:col-span-4 col-span-3"> | bisa termasuk Loyer</p>
+                    <p className="md:col-span-4 col-span-3">
+                      {" "}
+                      | bisa termasuk Loyer
+                    </p>
                   </div>
                   <p>Abonnement TCL</p>
                   <div className="grid md:grid-cols-5 grid-cols-4">
@@ -71,7 +77,10 @@ const Budgeting = () => {
                   <p>Kartu SIM</p>
                   <div className="grid md:grid-cols-5 grid-cols-4">
                     <p>15 € </p>
-                    <p className="md:col-span-4 col-span-3"> | bisa dikurangi sampai 10 €</p>
+                    <p className="md:col-span-4 col-span-3">
+                      {" "}
+                      | bisa dikurangi sampai 10 €
+                    </p>
                   </div>
                   <p>Belanja Bahan Pangan</p>
                   <div className="grid md:grid-cols-5 grid-cols-4">
@@ -113,7 +122,7 @@ const Budgeting = () => {
                   Pengeluaran Sesekali Lainnya
                 </h3>
                 <div className="grid grid-cols-2 col-span-2 md:my-5 my-3 md:gap-0 gap-3">
-                  <p>Membeli perlatan dapur</p>
+                  <p>Membeli peralatan dapur</p>
                   <p>50 €</p>
                   <p>Membeli bantal, selimut, dll</p>
                   <p>50 €</p>
@@ -130,22 +139,22 @@ const Budgeting = () => {
                 <h3 className="text-danger">Pemasukan Di Prancis</h3>
                 <h3 className="">Harga</h3>
                 <div className="grid grid-cols-2 col-span-2 md:my-5 my-3 md:gap-0 gap-3">
-                <p>APL dari CAF</p>
-                <div className="grid md:grid-cols-5 grid-cols-4 ">
-                  <p>85 €</p>
-                  <p className="md:col-span-4 col-span-3">
-                    | bisa lebih tinggi berdasarkan loyer
-                  </p>
-                </div>
-                <p>Pekerjaan temps partiel lama</p>
-                <div className="grid md:grid-cols-5 grid-cols-4 ">
-                  <p>750 €</p>
-                  <p className="md:col-span-4 col-span-3 ">
-                    | rata-rata pendapatan temps partiel
-                  </p>
-                </div>
-                <p className="font-bold">Total</p>
-                <p className="font-bold">835 €</p>
+                  <p>APL dari CAF</p>
+                  <div className="grid md:grid-cols-5 grid-cols-4 ">
+                    <p>85 €</p>
+                    <p className="md:col-span-4 col-span-3">
+                      | bisa lebih tinggi berdasarkan loyer
+                    </p>
+                  </div>
+                  <p>Pekerjaan temps partiel lama</p>
+                  <div className="grid md:grid-cols-5 grid-cols-4 ">
+                    <p>750 €</p>
+                    <p className="md:col-span-4 col-span-3 ">
+                      | rata-rata pendapatan temps partiel
+                    </p>
+                  </div>
+                  <p className="font-bold">Total</p>
+                  <p className="font-bold">835 €</p>
                 </div>
               </div>
             </Glassmorphism>

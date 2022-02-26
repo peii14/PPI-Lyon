@@ -14,17 +14,17 @@ const RoomType = (props) => {
     );
   }
   return (
-    <div className="max-w-sm mx-auto">
+    <div className="max-w-sm min-w-full mx-auto">
       <Disclosure>
         {({ open }) => (
           <Neuromorphism>
             <>
               <Disclosure.Button>
                 <div
-                  className={`grid md:grid-cols-6 grid-cols-8 transform duration-200 justify-around px-4 py-2 items-center`}
+                  className={`grid md:grid-cols-5 grid-cols-8 transform duration-200 justify-around px-4 py-2 items-center`}
                 >
-                  <h2>{props.type}</h2>
-                  <div className="md:col-span-5 col-span-7  ml-auto">
+                  <h2 className="whitespace-nowrap">{props.type}</h2>
+                  <div className="md:col-span-4 col-span-7 ml-auto">
                     <FontAwesomeIcon
                       size="2x"
                       className={`transform duration-500 m-auto w-full
@@ -46,7 +46,7 @@ const RoomType = (props) => {
               >
                 <Disclosure.Panel>
                   <p
-                    className={`transition-all ml-5 ${
+                    className={`transition-all px-5 text-justify ${
                       open ? "visible" : "hidden"
                     }`}
                   >

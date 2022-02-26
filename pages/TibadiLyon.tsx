@@ -27,9 +27,9 @@ import bukti from "../images/icon/bukti.png";
 const TibadiLyon = () => {
   return (
     <>
-    <div className="w-screen overflow-y-hidden">
-      <Hero img={k} title={"Tiba di Lyon"} />
-    </div>
+      <div className="w-screen overflow-y-hidden">
+        <Hero img={k} title={"Tiba di Lyon"} />
+      </div>
       <div className="layout md:p-0 p-10">
         <section className="text-primary md:pt-20 pt-0 ">
           <h2 className="text-center">Membuat Rekening Bank Prancis</h2>
@@ -37,17 +37,19 @@ const TibadiLyon = () => {
             <Image src={bank} width={1200} height={800} />
             <p className="text-justify justify-center my-auto">
               Ketika sudah di bank, langsung menuju resepsionis untuk meminta
-              ouvrir un compte dan kamu akan ditetapkan conseiller dari bank
-              tersebut. D Perancis, semua kebutuhan dan pertanyaan tentang
-              transaksi bank kamu kedepannya dapat diajukan melalui conseiller
+              <span className="italic">ouvrir un compte</span> dan kamu akan
+              ditetapkan <span className="italic">conseiller</span> dari bank
+              tersebut. Di Perancis, semua kebutuhan dan pertanyaan tentang
+              transaksi bank kamu kedepannya dapat diajukan melalui{" "}
+              <span className="italic">conseiller</span>
               ini.
             </p>
           </div>
         </section>
         <section>
           <h2 className="text-center">
-            Dokumen RIB <br />
-            (Relevé d'Identité Bancaire)
+            Dokumen RIB <br />(
+            <span className="italic">Relevé d'Identité Bancaire</span>)
           </h2>
           <p className="text-center p-5">
             Pada saat membuka akun, Conseillermu akan langsung memberikan
@@ -102,7 +104,7 @@ const TibadiLyon = () => {
               <p className="">Membuka akun</p>
               <div className=" row-span-16 col-start-2 ">
                 <div className="py-5">
-                  <Image src={arrow2}/>
+                  <Image src={arrow2} />
                 </div>
               </div>
               <p className="row-span-16 col-start-3 -mt-10 ">
@@ -261,7 +263,7 @@ const TibadiLyon = () => {
             </Glassmorphism>
           </div>
         </section>
-        <section className="max-w-4xl mx-auto p-10">
+        <section className="max-w-4xl mx-auto px-10">
           <h2 className="text-center">Saran Dari PPI</h2>
           <p className="mt-5 text-justify">
             Beberapa minggu <span className="font-bold">pertama</span> kamu
@@ -276,11 +278,11 @@ const TibadiLyon = () => {
             durasinya habis, biasanya satu tahun.
           </p>
         </section>
-        <section className="py-5">
+        <section className="py-10 ">
           <h2 className="text-center max-w-3xl mx-auto ">
             Penilaian SIM Berdasarkan Pengalaman Mahasiswa di Prancis
           </h2>
-          <div className="flex md:flex-row flex-col md:gap-20 gap-10 py-10 ">
+          <div className="flex md:flex-row flex-col md:gap-20 gap-10 mt-10 py-5 ">
             <div className="">
               <Glassmorphism>
                 <h3 className="text-center">Sosh</h3>
@@ -363,11 +365,11 @@ const TibadiLyon = () => {
               <Image src={tcl} width={500} height={400} />
             </div>
             <p className="m-auto text-justify">
-              Transportasi publik di Lyon dipegang oleh satu perusahaan: TCL
-              (Transport en Commun LyonnaisI), termasuk métro, tram, dan bus.
-              TCL menawarkan banyak pilihan tarif untuk transportasi, namun
-              secara umum dibagi menjadi dua kategori utama: abonnement dan
-              ticket à l'unité.
+              Transportasi publik di Lyon dipegang oleh satu perusahaan: TCL (
+              <span className="italic">Transports en Commun Lyonnais</span>),
+              termasuk métro, tram, dan bus. TCL menawarkan banyak pilihan tarif
+              untuk transportasi, namun secara umum dibagi menjadi dua kategori
+              utama: abonnement dan ticket à l'unité.
             </p>
           </div>
           <div className="max-w-4xl mx-auto py-5">
@@ -429,7 +431,11 @@ const TibadiLyon = () => {
         </section>
         <section className="max-w-4xl mx-auto">
           <h2 className="text-center">Saran Dari PPI</h2>
-          <div className="md:p-10 p-0 md:mt-0 mt-5">
+          <div
+            className="md:p-10 p-0 md:mt-0 mt-5"
+            data-scroll
+            data-scroll-speed="1"
+          >
             <Glassmorphism>
               <p>
                 Membuat kartu TCL dengan abonnement agar kamu bisa dengan{" "}
@@ -446,7 +452,11 @@ const TibadiLyon = () => {
           <h2 className="text-center">
             Mengurus Daftar Ulang Kuliah: CVEC & Kelas
           </h2>
-          <div className="py-10 max-w-4xl mx-auto ">
+          <div
+            className="py-10 max-w-4xl mx-auto "
+            data-scroll
+            data-scroll-speed="1"
+          >
             <Glassmorphism>
               <div className="flex flex-col gap-10 text-justify">
                 <p>
@@ -457,20 +467,24 @@ const TibadiLyon = () => {
                 <p>
                   Setiap universitas di Lyon memiliki bagian layanan
                   administrasi khusus mahasiswa internasional seperti{" "}
-                  <span className="font-bold">maison internationale</span> atau{" "}
+                  <span className="font-bold italic">
+                    maison internationale
+                  </span>{" "}
+                  atau{" "}
                   <span className="font-bold">
                     servicé scolarité pour les étudiants internationaux
                   </span>
                   , atau apabila tidak ada bagian administrasi khusus bisa
                   dilakukan lewat layanan administrasi reguler. Semua proses
-                  asministrasi yang bersangkutan dengan sekolah kamu dapat
+                  administrasi yang bersangkutan dengan sekolah kamu dapat
                   diajukan lewat bagian ini.
                 </p>
                 <p>
                   Biasanya sebelum hari pertama dimulainya tahun ajaran baru,
                   kamu harus daftar ulang ke bagian maison internationale dengan
-                  membawa attestation d’acceptationmu. Setelah itu kamu akan
-                  dapat nomor{" "}
+                  membawa{" "}
+                  <span className="italic">attestation d’acceptationmu</span>.
+                  Setelah itu kamu akan dapat nomor{" "}
                   <span className="font-bold">
                     INE (Identifiant national étudiants)
                   </span>{" "}
@@ -504,10 +518,10 @@ const TibadiLyon = () => {
               <br />
               <span className="font-bold">Pembayaran CVEC</span> ini adalah
               langkah penting yang harus dilakukan
-              <span className="font-bold">sekali setiap tahun</span>. Ini adalah
-              pembayaran sebesar <span className="font-bold">90€</span> yang
-              termasuk asuransi kesehatan Prancis untuk pelajar, kesehatan di
-              klinik universitas dan kontribusi untuk kegiatan asosiasi
+              <span className="font-bold"> sekali setiap tahun</span>. Ini
+              adalah pembayaran sebesar <span className="font-bold">90€</span>{" "}
+              yang termasuk asuransi kesehatan Prancis untuk pelajar, kesehatan
+              di klinik universitas dan kontribusi untuk kegiatan asosiasi
               universitas. Pembayaran dilakukan lewat akunmu menggunakan{" "}
               <span className="font-bold ">kartu kredit atau debit</span> dan
               setelah itu kamu akan mendapatkan
@@ -515,11 +529,11 @@ const TibadiLyon = () => {
               harus tunjukkan ke administrasi.
               <br />
               <br />
-              <span className="font-bold">Carte d'etudiant</span> atau kartu
-              mahasiswa bisa dimintakan ke administrasi dan biasanya dikirim
-              lewat pos ke alamat rumah atau diambil di administrasi satu bulan
-              setelah daftar ulang. Untuk semua kartu pelajar dari universitas
-              manapun di Lyon tipenya sama: kartu berwarna{" "}
+              <span className="font-bold italic">Carte d'etudiant</span> atau
+              kartu mahasiswa bisa dimintakan ke administrasi dan biasanya
+              dikirim lewat pos ke alamat rumah atau diambil di administrasi
+              satu bulan setelah daftar ulang. Untuk semua kartu pelajar dari
+              universitas manapun di Lyon tipenya sama: kartu berwarna{" "}
               <span className="font-bold">biru</span> dengan{" "}
               <span className="font-bold">foto</span>,{" "}
               <span className="font-bold">nama universitas</span>, nomor{" "}
@@ -637,6 +651,7 @@ const TibadiLyon = () => {
               Pembayaran pengeluaran medis di Prancis sifatnya remboursement
               atau reimbursement di mana kamu akan bayar sendiri dulu, lalu akan
               <span className="font-awesome">
+                {" "}
                 dikembalikan uangnya via transfer bank
               </span>
               . Semua proses ini dapat dipantau, diubah dan dilakukan lewat
@@ -753,6 +768,7 @@ const TibadiLyon = () => {
                 Lalu kamu harus memesan{" "}
                 <span className="font-bold">carte vitale</span> dan{" "}
                 <span className="font-bold">
+                  {" "}
                   CEAM (carte européenne d'assurance maladie)
                 </span>{" "}
                 yang bisa dilakukan di{" "}
@@ -769,8 +785,11 @@ const TibadiLyon = () => {
                 </span>{" "}
                 untuk kebutuhan reimbursement, sedangkan CEAM digunakan untuk
                 <span className="font-bold">
-                  mengakses sécurité sociale Prancis ketika kamu mengalami
-                  masalah medis di Uni Eropa
+                  {" "}
+                  mengakses <span className="italic">
+                    sécurité sociale
+                  </span>{" "}
+                  Prancis ketika kamu mengalami masalah medis di Uni Eropa
                 </span>
               </p>
             </Glassmorphism>
@@ -838,14 +857,14 @@ const TibadiLyon = () => {
                   Membuat akun di website administration- etrangers-en
                   france.interieur.gouv.fr dengan memilih Je valide mon VLS-TS
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
                   Mengikuti instruksi di website seperti memasukkan nomor visa
                   dan identitas dengan hati-hati
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -853,7 +872,7 @@ const TibadiLyon = () => {
                   timbre fiscal online menggunakan kartu kredit atau debit di
                   website yang sama, untuk tipe étudiant seharga 60€
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -861,7 +880,7 @@ const TibadiLyon = () => {
                   atau toko rokok. Kamu akan diberikan perangko dalam bentuk
                   fisik dengan kode yang kamu bisa masukkan online
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -995,7 +1014,7 @@ const TibadiLyon = () => {
                     caf.fr
                   </a>
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -1003,7 +1022,7 @@ const TibadiLyon = () => {
                   <span className="font-bold">faire une simulation</span>, lalu
                   di bawah kolom Vous n’êtes pas allocataire memilih le logement
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -1015,7 +1034,7 @@ const TibadiLyon = () => {
                   kamu tidak berpenghasilan di Prancis. Jika ada langkah
                   spesifik yang kurang jelas bisa hubungi PPI Lyon langsung
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -1024,7 +1043,7 @@ const TibadiLyon = () => {
                   kisaran 200-430€ per bulan, kamu bisa mendapatkan 85€ subsidi
                   per bulan
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -1032,16 +1051,16 @@ const TibadiLyon = () => {
                   pengguna yang harus disimpan untuk akses OFII online
                   kedepannya dan dokumen konfirmasi validasi visa kamu
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
                   Setelah simulasi, pilih faire une demande dan kamu akan
-                  <span className="font-bold">membuat akun CAF baru</span>{" "}
-                  dengan memasukan nama, email, alamat dan identitas diri
-                  lainnyaÏ
+                  <span className="font-bold"> membuat akun CAF baru</span>{" "}
+                  dengan memasukkan nama, email, alamat dan identitas diri
+                  lainnya
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -1052,13 +1071,14 @@ const TibadiLyon = () => {
                   </span>{" "}
                   satu surat berisi
                   <span className="font-bold italic">
+                    {" "}
                     numéro allocataire
                   </span>{" "}
                   dan satu surat lainnya berisi password untuk login akunmu.
                   Seperti pembuatan akun bank, proses ini bisa memakan waktu{" "}
                   <span className="font-bold">sampai dua bulan</span>
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
@@ -1070,15 +1090,16 @@ const TibadiLyon = () => {
                   , di mana kamu masukkan 0 bila tidak ada penghasilan di
                   Prancis
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>
                   Langkah terakhir adalah mengajukan semua dokumen yang diminta
-                  dan menunggu konfirmasi dari CAF (dossier à traiter). Proses
-                  ini juga bisa memakan waktu lebih dari satu bulan
+                  dan menunggu konfirmasi dari CAF (
+                  <span className="italic">dossier à traiter</span>). Proses ini
+                  juga bisa memakan waktu lebih dari satu bulan
                 </p>
-                <div>
+                <div data-scroll data-scroll-speed="0.7">
                   <Image src={arrow} />
                 </div>
                 <p>

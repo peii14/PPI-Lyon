@@ -85,7 +85,7 @@ const LyonSlider = () => {
           <LyonSliderContent
             img={vieuxlyon}
             title={"Vieux Lyon"}
-            content={`Kota tua Lyon di kaki bukit Fourvière. Terdapat jalan kuno, toko cindermata dan restoran khas Lyon yang disebut Boouchon Lyonnais. Vieux Lyon dapat diakses dengan métro dari Bellecour dan tempat pemberhentian funikular ke Fourvière.`}
+            content={`Kota tua Lyon di kaki bukit Fourvière. Terdapat jalan kuno, toko cindermata dan restoran khas Lyon yang disebut Bouchon Lyonnais. Vieux Lyon dapat diakses dengan métro dari Bellecour dan tempat pemberhentian funikular ke Fourvière.`}
           />
         </SwiperSlide>
         <SwiperSlide>

@@ -22,12 +22,14 @@ const Hero = (props: any): JSX.Element => {
 
   if (props.isHome == 0) {
     return (
-      <section className="relative w-screen md:h-screen" >
+      <section className="relative w-screen md:h-screen">
         <div
           className="z-0 md:absolute"
-          style={{
-            transform: `translateY(${offset * 0.5}px)`,
-          }}
+          // style={{
+          //   transform: `translateY(${offset * 0.5}px)`,
+          // }}
+          data-scroll
+          data-scroll-speed="2"
         >
           <Image src={props.img} alt="" className={`${g.hero}`} priority />
         </div>

@@ -13,7 +13,7 @@ const ProkerContent = (props) => {
         </div>
       </div>
       <div className="col-span-2 select-none">
-        <div className="block">
+        <div className="block" data-scroll data-scroll-speed="1">
           <Image src={props.img} alt="" />
         </div>
       </div>

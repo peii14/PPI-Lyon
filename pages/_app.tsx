@@ -5,6 +5,8 @@ import { createGlobalStyle } from "styled-components";
 import { config as cfg, dom } from "@fortawesome/fontawesome-svg-core";
 import Layout from "../components/Layout";
 import { useEffect } from "react";
+import Navbar from "../components/Navbar";
+import Head from "next/head";
 cfg.autoAddCss = false;
 const GlobalStyles = createGlobalStyle`
     ${dom.css()}
@@ -35,12 +37,43 @@ function MyApp({ Component, pageProps }: AppProps) {
     return () => scroll.destroy();
   }, []);
   return (
-    <main data-scroll-container>
-      <Layout>
-        <GlobalStyles />
-        <Component {...pageProps} />
-      </Layout>
-    </main>
+    <>
+      <Head>
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/images/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/favicon-16x16.png"
+        />
+        <title>PPI-Lyon</title>
+        <meta
+          name="keywords"
+          content="Perhimpunan Pelajar Indonesia - Lyon. PPI Lyon adalah sebuah platform yang didirikan pada tahun
+                    2007 dengan tujuan menghubungkan semua pelajar Indonesia
+                    yang sedang menempuh pendidikan di kota Lyon."
+        ></meta>
+      </Head>
+
+      <Navbar />
+      <main data-scroll-container>
+        <Layout>
+          <GlobalStyles />
+          <Component {...pageProps} />
+        </Layout>
+      </main>
+    </>
   );
 }
 
