@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className=" flex flex-col gap-3">
           <h4 className="tracking-widest">Contact Us</h4>
-          <div className="flex flex-row space-x-20  ">
+          <div className="flex flex-row md:space-x-20 space-x-5  ">
             <div className="flex-col flex gap-2">
               <Link href="https://www.linkedin.com/company/ppi-lyon/">
                 <a target={"_blank"}>
