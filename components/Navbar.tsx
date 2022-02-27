@@ -30,13 +30,13 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-screen bg-primary  max-h-16 fixed z-50 md:visible invisible">
-        <ul className="flex flex-row text-white justify-between max-w-md mx-auto text-center transition-all duration-300">
+        <ul className="flex flex-row justify-between text-white max-w-lg mx-auto text-center transition-all duration-300">
           <Link href="/">
             <li className="transition-all duration-300 hover:bg-gray-300 hover:text-black p-5 cursor-pointer h-full">
               <a>Home</a>
             </li>
           </Link>
-          <li className="flex-grow-0">
+          <li className="flex-grow-0 w-1/3">
             <Disclosure>
               {({ open }) => (
                 <>
@@ -56,7 +56,7 @@ const Navbar = () => {
                     leaveFrom="transform scale-100 translate-0 opacity-100"
                     leaveTo="transform scale-95 -translate-20 opacity-0"
                   >
-                    <Disclosure.Panel className="mx-auto bg-primary">
+                    <Disclosure.Panel className="mx-auto bg-primary md:w-10/12 2xl:w-11/12">
                       {({ close }) => (
                         <button
                           onClick={async () => {

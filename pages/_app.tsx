@@ -14,8 +14,8 @@ const GlobalStyles = createGlobalStyle`
 
 function MyApp({ Component, pageProps }: AppProps) {
   // useEffect(() => {
-  //   console.log("UPDATE");
-  //   window.dispatchEvent(new Event("resize"));
+    
+   
   // }, [Component]);
 
   useEffect(() => {
@@ -23,17 +23,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     if (typeof window === "undefined") {
       return;
     }
+    console.log("UPDATE");
     window.dispatchEvent(new Event("resize"));
     import("locomotive-scroll").then((LocomotiveScroll) => {
-      scroll = new LocomotiveScroll.default(
-        {
-          el: document.querySelector("[data-scroll-container]"),
-          smooth: true,
-          smoothMobile: false,
-          inertia: 0.65,
-        },
-        2000
-      );
+      scroll = new LocomotiveScroll.default({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smoothMobile: false,
+        inertia: 0.65,
+      });
     });
     return () => scroll.destroy();
   }, [Component]);
