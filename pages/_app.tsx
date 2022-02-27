@@ -13,16 +13,17 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    console.log("UPDATE");
-    window.dispatchEvent(new Event("resize"));
-  }, [Component]);
+  // useEffect(() => {
+  //   console.log("UPDATE");
+  //   window.dispatchEvent(new Event("resize"));
+  // }, [Component]);
 
   useEffect(() => {
     let scroll;
     if (typeof window === "undefined") {
       return;
     }
+    window.dispatchEvent(new Event("resize"));
     import("locomotive-scroll").then((LocomotiveScroll) => {
       scroll = new LocomotiveScroll.default(
         {
@@ -35,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       );
     });
     return () => scroll.destroy();
-  }, []);
+  }, [Component]);
   return (
     <>
       <Head>

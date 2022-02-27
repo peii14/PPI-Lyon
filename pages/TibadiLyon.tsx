@@ -996,7 +996,7 @@ const TibadiLyon = () => {
             meminta.
           </p>
         </section>
-        <section className="max-w-4xl mx-auto text-center">
+        <section className="max-w-4xl mx-auto text-center mt-10">
           <h2>
             Langkah-langkah Mengajukan Permohonan APL ke CAF Untuk Pertama
             Kalinya:
