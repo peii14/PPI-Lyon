@@ -59,7 +59,7 @@ const Footer = () => {
                 <a target={"_blank"}>
                   <div className="flex flex-row gap-3">
                     <FontAwesomeIcon icon={faGoogle} size="lg" />
-                    <p className="ml-1">ppi.di.lyon@gmail.com</p>
+                    <p className="ml-0.5">ppi.di.lyon@gmail.com</p>
                   </div>
                 </a>
               </Link>

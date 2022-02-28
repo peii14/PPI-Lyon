@@ -10,21 +10,21 @@ import salwa from "../images/member/salwa.jpg";
 import adam from "../images/member/adam.jpg";
 import farel from "../images/member/farel.jpg";
 import gayuh from "../images/member/gayuh.jpg";
-import kevin from "../images/member/kevin.jpg"; 
-import bari from "../images/member/bari.jpg"
-import coleta from "../images/member/coleta.jpg"
-import talenta from "../images/member/talenta.jpg"
-import zahra from "../images/member/zahra.jpg"
-import faal from "../images/member/faal.jpg"
-import clara from "../images/member/clara.jpg"
-import endarman from "../images/member/endarman.jpeg"
-import fahri from "../images/member/fahri.jpg"
+import kevin from "../images/member/kevin.jpg";
+import bari from "../images/member/bari.jpg";
+import coleta from "../images/member/coleta.jpg";
+import talenta from "../images/member/talenta.jpg";
+import zahra from "../images/member/zahra.jpg";
+import faal from "../images/member/faal.jpg";
+import clara from "../images/member/clara.jpg";
+import endarman from "../images/member/endarman.jpeg";
+import fahri from "../images/member/fahri.jpg";
 const Organization = () => {
   return (
     <>
-    <div className="w-screen overflow-y-hidden">
-      <Hero img={sem} title={"Organization"} />
-    </div>
+      <div className="w-screen overflow-y-hidden">
+        <Hero img={sem} title={"Organization"} />
+      </div>
       <div className="layout md:p-0 p-10">
         <section className="grid md:grid-cols-3 grid-cols-1 mx-auto gap-y-10 mt-10 ">
           <div className="md:col-span-3">
@@ -80,62 +80,69 @@ const Organization = () => {
           </div>
         </section>
         <section className="py-5">
-        <h2 className="text-center">Event Organizer</h2>
-        <div className="grid md:grid-cols-3 grid-cols-1 mx-auto gap-y-10 mt-10">
-        <OrgCard
+          <h2 className="text-center">Event Organizer</h2>
+          <div className="grid md:grid-cols-3 grid-cols-1 mx-auto gap-y-10 mt-10">
+            <OrgCard
               name={"Nazly Bari Muhammad"}
               title={"Event Organizer"}
               image={bari}
             />
             <div className="md:-mt-10">
-            <OrgCard
-              name={"Colleta Oneida Nathania"}
-              title={"Event Organizer"}
-              image={coleta}
-            />
+              <OrgCard
+                name={"Colleta Oneida Nathania"}
+                title={"Event Organizer"}
+                image={coleta}
+              />
             </div>
             <OrgCard
               name={"Talenta Miracle Tobing"}
               title={"Event Organizer"}
               image={talenta}
             />
-             <OrgCard
-              name={"Imaduddin Salma Faalih"}
-              title={"Event Organizer"}
-              image={faal}
-            />
-             <OrgCard
+          </div>
+        </section>
+        <section className="py-5">
+          <h2 className="text-center">Kajian Strategis</h2>
+          <div className="grid md:grid-cols-3 grid-cols-1 mx-auto gap-y-10 mt-10">
+            <OrgCard
               name={"Clara Avila Dea Permata"}
-              title={"Event Organizer"}
+              title={"Kajian Strategis"}
               image={clara}
             />
-             <OrgCard
+            <div className="md:-mt-10">
+              <OrgCard
+                name={"Imaduddin Salma Faalih"}
+                title={"Kajian Strategis"}
+                image={faal}
+              />
+            </div>
+            <OrgCard
               name={"Zahra Kurniawati"}
-              title={"Event Organizer"}
+              title={"Kajian Strategis"}
               image={zahra}
             />
-        </div>
+          </div>
         </section>
         <section className="flex md:flex-row flex-col md:gap-0 gap-10 justify-around py-10">
           <div>
             <h2 className="text-center ">Dewan Penasihat</h2>
             <div className="md:mt-0 mt-5">
-            <OrgCard
-              name={"Endarman Saputra"}
-              title={"Dewan Penasihat"}
-              image={endarman}
+              <OrgCard
+                name={"Endarman Saputra"}
+                title={"Dewan Penasihat"}
+                image={endarman}
               />
-              </div>
+            </div>
           </div>
           <div>
             <h2 className="text-center">Badan Musyawarah</h2>
             <div className="md:mt-0 mt-5">
-            <OrgCard
-              name={"Muhammad Fahri Khalid"}
-              title={"Badan Musyawarah"}
-              image={fahri}
+              <OrgCard
+                name={"Muhammad Fahri Khalid"}
+                title={"Badan Musyawarah"}
+                image={fahri}
               />
-              </div>
+            </div>
           </div>
         </section>
       </div>
