@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="shortcut icon" href="/images/favicon.ico" />
-        <link
+        {/* <link
           rel="apple-touch-icon"
           sizes="180x180"
           href="/images/apple-touch-icon.png"
@@ -55,7 +55,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           type="image/png"
           sizes="16x16"
           href="/images/favicon-16x16.png"
-        />
+        /> */}
         <title>PPI-Lyon</title>
         <meta
           name="keywords"
